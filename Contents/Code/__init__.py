@@ -130,14 +130,29 @@ class PhoenixAdultAgent(Agent.Movies):
         valid_images = list()
 
         HTTP.ClearCache()
+        metadata.collections.clear()
+
         metadata.genres.clear()
+        movieGenres.clearGenres()
+
         metadata.roles.clear()
+        movieActors.clearActors()
+
+        metadata.directors.clear()
+        movieActors.clearDirectors()
+
+        metadata.producers.clear()
+        movieActors.clearProducers()
 
         Log('******UPDATE CALLED*******')
 
         metadata_id = str(metadata.id).split('|')
         siteNum = int(metadata_id[1])
         Log('SiteNum: %d' % siteNum)
+
+        if Prefs['remove_images']:
+            metadata.posters.validate_keys(valid_images)
+            metadata.art.validate_keys(valid_images)
 
         provider = PAsiteList.getProviderFromSiteNum(siteNum)
         if provider is not None:
@@ -147,12 +162,20 @@ class PhoenixAdultAgent(Agent.Movies):
 
         # Cleanup Genres and Add
         Log('Genres')
-        movieGenres.processGenres(metadata)
+        movieGenres.processGenres(metadata, siteNum)
         metadata.genres = sorted(metadata.genres)
 
         # Cleanup Actors and Add
         Log('Actors')
-        movieActors.processActors(metadata)
+        movieActors.processActors(metadata, siteNum)
+
+        # Cleanup Directors and Add
+        Log('Directors')
+        movieActors.processDirectors(metadata, siteNum)
+
+        # Cleanup Producers and Add
+        Log('Producers')
+        movieActors.processProducers(metadata, siteNum)
 
         # Add Content Rating
         metadata.content_rating = 'XXX'

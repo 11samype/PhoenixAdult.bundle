@@ -7,7 +7,7 @@ def search(results, lang, siteNum, searchData):
     searchResults = HTML.ElementFromString(req.text)
     for searchResult in searchResults.xpath('//div[@class="gallery"]/div'):
         titleNoFormatting = searchResult.xpath('.//div[@class="video-title truncate"]/a')[0].text_content().strip()
-        curID = PAutils.Encode(PAsearchSites.getSearchBaseURL(siteNum) + searchResult.xpath('.//div[@class="video-title truncate"]/a/@href')[0])
+        curID = PAutils.Encode(PAsearchSites.getSearchBaseURL(siteNum) + searchResult.xpath('.//div[@class="video-title truncate"]/a/@href')[0].strip())
         releaseDate = parse(searchResult.xpath('.//span[@class="small date"]')[0].text_content().strip()).strftime('%Y-%m-%d')
         firstActor = searchResult.xpath('.//span[@class="subtitle small"]/a')[0].text_content().strip()
 
@@ -39,8 +39,7 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     metadata.studio = 'FuckingAwesome'
 
     # Tagline and Collection(s)
-    metadata.collections.clear()
-    tagline = PAsearchSites.getSearchSiteName(siteNum).strip()
+    tagline = PAsearchSites.getSearchSiteName(siteNum)
     metadata.tagline = tagline
     metadata.collections.add(tagline)
 
@@ -52,14 +51,12 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         metadata.year = metadata.originally_available_at.year
 
     # Genres
-    movieGenres.clearGenres()
     for genreLink in detailsPageElements.xpath('//div[@class="tags"]/ul/li/a'):
         genreName = genreLink.text_content().strip().lower()
 
         movieGenres.addGenre(genreName)
 
-    # Actors
-    movieActors.clearActors()
+    # Actor(s)
     actors = detailsPageElements.xpath('//div[@class="pornstarnames"]/ul/li/a[contains(@href, "pornstars")]')
     if actors:
         if len(actors) == 3:

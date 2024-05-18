@@ -48,7 +48,7 @@ def search(results, lang, siteNum, searchData):
         if req:
             searchResults = req.json()['result']
             for searchResult in searchResults:
-                titleNoFormatting = searchResult['title']
+                titleNoFormatting = PAutils.parseTitle(searchResult['title'].replace('ï¿½', '\''), siteNum)
                 releaseDate = parse(searchResult['dateReleased']).strftime('%Y-%m-%d')
                 curID = searchResult['id']
                 siteName = searchResult['brand'].title()
@@ -91,7 +91,7 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     detailsPageElements = req.json()['result'][0]
 
     # Title
-    metadata.title = detailsPageElements['title']
+    metadata.title = PAutils.parseTitle(detailsPageElements['title'], siteNum).replace('ï¿½', '\'')
 
     # Summary
     description = None
@@ -105,15 +105,15 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         metadata.summary = description
 
     # Studio
-    metadata.studio = detailsPageElements['brand'].title()
+    metadata.studio = PAutils.parseTitle(detailsPageElements['brand'], siteNum)
 
     # Tagline and Collection(s)
-    metadata.collections.clear()
     seriesNames = []
 
     if 'collections' in detailsPageElements and detailsPageElements['collections']:
         for collection in detailsPageElements['collections']:
             seriesNames.append(collection['name'])
+
     if 'parent' in detailsPageElements:
         if 'title' in detailsPageElements['parent']:
             seriesNames.append(detailsPageElements['parent']['title'])
@@ -137,15 +137,13 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     metadata.year = metadata.originally_available_at.year
 
     # Genres
-    movieGenres.clearGenres()
     genres = detailsPageElements['tags']
     for genreLink in genres:
         genreName = genreLink['name']
 
         movieGenres.addGenre(genreName)
 
-    # Actors
-    movieActors.clearActors()
+    # Actor(s)
     actors = detailsPageElements['actors']
     for actorLink in actors:
         actorPageURL = PAsearchSites.getSearchSearchURL(siteNum) + '/v1/actors?id=%d' % actorLink['id']
@@ -163,7 +161,7 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     # Posters
     for imageType in ['poster', 'cover']:
         if imageType in detailsPageElements['images']:
-            for image in detailsPageElements['images'][imageType]:
+            for image in sorted(detailsPageElements['images'][imageType]):
                 if image.isdigit():
                     art.append(detailsPageElements['images'][imageType][image]['xx']['url'])
 

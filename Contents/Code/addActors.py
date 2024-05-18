@@ -61,7 +61,6 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         metadata.collections.add(siteName)
 
     # Tagline and Collection(s)
-    metadata.collections.clear()
     tagline = 'Actors Manually Added'
     metadata.collections.add(tagline)
 
@@ -72,14 +71,12 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         metadata.year = metadata.originally_available_at.year
 
     # Genres
-    movieGenres.clearGenres()
     for genreLink in sceneGenres.split(','):
         genreName = genreLink.strip()
 
         movieGenres.addGenre(genreName)
 
-    # Actors
-    movieActors.clearActors()
+    # Actor(s)
     for actorLink in sceneActors.split(','):
         actorName = actorLink.strip()
         actorPhotoURL = ''

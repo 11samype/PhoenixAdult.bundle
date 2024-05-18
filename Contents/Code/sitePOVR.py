@@ -6,9 +6,9 @@ def search(results, lang, siteNum, searchData):
     req = PAutils.HTTPRequest(PAsearchSites.getSearchSearchURL(siteNum) + searchData.encoded)
     searchResults = HTML.ElementFromString(req.text)
     for searchResult in searchResults.xpath('//div[@class="thumbnail-wrap"]/div'):
-        titleNoFormatting = searchResult.xpath('.//div/h6[@class="thumbnail__title"]')[0].text_content()
+        titleNoFormatting = searchResult.xpath('.//div//h6[@class="thumbnail__title"]')[0].text_content()
         curID = PAutils.Encode(searchResult.xpath('.//a[@class="thumbnail__link"]/@href')[0])
-        subSite = searchResult.xpath('.//div/div/a[@class="thumbnail__footer-link"]')[0].text_content()
+        subSite = searchResult.xpath('.//a[contains(@class, "thumbnail__footer-link")]')[0].text_content()
         siteScore = 60 - (Util.LevenshteinDistance(subSite.lower().replace('originals', ''), PAsearchSites.getSearchSiteName(siteNum).lower()) * 6 / 10)
         titleScore = 40 - (Util.LevenshteinDistance(searchData.title.lower(), titleNoFormatting.lower()) * 4 / 10)
         score = siteScore + titleScore
@@ -38,14 +38,16 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     # Studio
     metadata.studio = metadata_id[2]
 
+    # Tagline and Collection(s)
+    metadata.collections.add(metadata.studio)
+
     # Release Date
-    date = scene_data['datePublished']
+    date = scene_data['uploadDate']
     date_object = parse(date)
     metadata.originally_available_at = date_object
     metadata.year = metadata.originally_available_at.year
 
-    # Actors
-    movieActors.clearActors()
+    # Actor(s)
     for actor_link in scene_data['actor']:
         actor_name = actor_link['name']
         actor_page = actor_link['@id']
@@ -57,7 +59,6 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         movieActors.addActor(actor_name, actor_photo_url)
 
     # Genres
-    movieGenres.clearGenres()
     for genre_link in detailsPageElements.xpath('//ul[@class="category-link mb-2"]/li/a'):
         genre_name = genre_link.text_content().strip()
         movieGenres.addGenre(genre_name)
@@ -65,7 +66,6 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     # Posters/Background
     background = scene_data['thumbnailUrl'].replace('tiny', 'large')
     art.append(background)
-
 
     Log('Artwork found: %d' % len(art))
     for idx, posterUrl in enumerate(art, 1):

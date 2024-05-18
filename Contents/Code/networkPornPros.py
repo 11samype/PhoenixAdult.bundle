@@ -15,24 +15,30 @@ def search(results, lang, siteNum, searchData):
         if '/video/' in sceneURL and sceneURL not in searchResults:
             searchResults.append(sceneURL)
 
-    searchResults = list(dict.fromkeys([sceneURL.replace('www.', '', 1) for sceneURL in searchResults]))
-
+    pluralResults = list(searchResults)
     for sceneURL in searchResults:
         if sceneURL == directURL.replace('www.', '', 1):
             for original, new in plurals.items():
                 sceneURL = sceneURL.replace(original, new)
+            pluralResults.append(sceneURL)
 
+    searchResults = list(dict.fromkeys([sceneURL.replace('www.', '', 1) for sceneURL in pluralResults]))
+
+    for sceneURL in searchResults:
         req = PAutils.HTTPRequest(sceneURL)
         if 'signup.' not in req.url:
             detailsPageElements = HTML.ElementFromString(req.text)
-            titleNoFormatting = detailsPageElements.xpath('//h1')[0].text_content().strip()
+
+            titleNoFormatting = PAutils.parseTitle(detailsPageElements.xpath('//h1')[0].text_content().strip(), siteNum)
+            subSite = PAsearchSites.getSearchSiteName(siteNum)
+
             curID = PAutils.Encode(sceneURL)
 
             releaseDate = searchData.dateFormat() if searchData.date else ''
 
             score = 100 - Util.LevenshteinDistance(searchData.title.lower(), titleNoFormatting.lower())
 
-            results.Append(MetadataSearchResult(id='%s|%d' % (curID, siteNum), name='%s [%s] %s' % (titleNoFormatting, PAsearchSites.getSearchSiteName(siteNum), releaseDate), score=score, lang=lang))
+            results.Append(MetadataSearchResult(id='%s|%d|%s' % (curID, siteNum, releaseDate), name='%s [%s]' % (titleNoFormatting, subSite), score=score, lang=lang))
 
     return results
 
@@ -40,37 +46,43 @@ def search(results, lang, siteNum, searchData):
 def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     metadata_id = str(metadata.id).split('|')
     sceneURL = PAutils.Decode(metadata_id[0])
+    sceneDate = metadata_id[2]
     if not sceneURL.startswith('http'):
         sceneURL = PAsearchSites.getSearchBaseURL(siteNum) + sceneURL
-
-    sceneDate = None
-    if len(metadata_id) > 2:
-        sceneDate = metadata_id[2]
+    actorDate = None
 
     req = PAutils.HTTPRequest(sceneURL)
     detailsPageElements = HTML.ElementFromString(req.text)
 
     # Title
-    metadata.title = detailsPageElements.xpath('//h1')[0].text_content().strip()
+    title = PAutils.parseTitle(detailsPageElements.xpath('//h1')[0].text_content().strip(), siteNum)
+
+    metadata.title = title
 
     # Summary
     try:
-        metadata.summary = detailsPageElements.xpath('//div[contains(@id, "description")]')[0].text_content().strip()
+        if 'pornplus' in sceneURL:
+            summary = detailsPageElements.xpath('//div[contains(@class, "space-x-4 items-start")]//span')[0].text_content().strip()
+        else:
+            summary = detailsPageElements.xpath('//div[contains(@id, "description")]')[0].text_content().strip()
     except:
-        pass
+        summary = ''
+
+    metadata.summary = summary
 
     # Studio
-    metadata.studio = 'Porn Pros'
+    metadata.studio = 'PornPros'
 
-    # Collections / Tagline
+    # Tagline and Collection(s)
     siteName = PAsearchSites.getSearchSiteName(siteNum)
-    metadata.collections.clear()
     metadata.tagline = siteName
     metadata.collections.add(siteName)
 
-    # Actors
-    movieActors.clearActors()
-    actors = detailsPageElements.xpath('//div[@id="t2019-sinfo"]//a[contains(@href, "/girls/")]')
+    # Actor(s)
+    if 'pornplus' in sceneURL:
+        actors = detailsPageElements.xpath('//div[contains(@class, "space-y-4 p-4")]//a[contains(@href, "/models/")]')
+    else:
+        actors = detailsPageElements.xpath('//div[@id="t2019-sinfo"]//a[contains(@href, "/girls/")]')
     if actors:
         if len(actors) == 3:
             movieGenres.addGenre('Threesome')
@@ -83,49 +95,60 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
             actorName = actorLink.text_content().strip()
             actorPhotoURL = ''
 
-            movieActors.addActor(actorName, actorPhotoURL)
+            if '&' in actorName:
+                actorNames = actorName.split('&')
+                for name in actorNames:
+                    movieActors.addActor(name.strip(), actorPhotoURL)
+            else:
+                movieActors.addActor(actorName, actorPhotoURL)
 
-            if not sceneDate:
+            if not actorDate:
                 actorURL = actorLink.get('href')
                 if not actorURL.startswith('http'):
-                    actorURL = PAsearchSites.getSearchBaseURL(siteNum) + actorURL
+                    actorURL = PAsearchSites.getSearchBaseURL(siteNum) + actorURL.replace('girls?page=', '')
 
                 req = PAutils.HTTPRequest(actorURL)
                 actorPageElements = HTML.ElementFromString(req.text)
 
-                sceneDate = None
-                for sceneLink in actorPageElements.xpath('//div[@class="row"]//div[contains(@class, "box-shadow")]'):
-                    sceneTitle = sceneLink.xpath('.//h5[@class="card-title"]')[0].text_content().strip()
-                    date = sceneLink.xpath('.//@data-date')
-                    if metadata.title == sceneTitle and date:
-                        sceneDate = date[0].strip()
+                actorDate = None
+                if 'pornplus' in sceneURL:
+                    sceneLinkxPath = '//div[contains(@class, "video-thumbnail flex")]'
+                    sceneTitlexPath = './/a[contains(@class, "dropshadow")]'
+                    sceneDatexpath = './/span[contains(@class, "font-extra-light")]/text()'
+                    dateFormat = '%m/%d/%Y'
+                else:
+                    sceneLinkxPath = '//div[@class="row"]//div[contains(@class, "box-shadow")]'
+                    sceneTitlexPath = './/h5[@class="card-title"]'
+                    sceneDatexpath = './/@data-date'
+                    dateFormat = '%B %d, %Y'
+
+                for sceneLink in actorPageElements.xpath(sceneLinkxPath):
+                    sceneTitle = re.sub(r'\W', '', sceneLink.xpath(sceneTitlexPath)[0].text_content().strip().replace(' ', '')).lower()
+                    date = sceneLink.xpath(sceneDatexpath)
+                    if re.sub(r'\W', '', metadata.title.replace(' ', '')).lower() == sceneTitle and date:
+                        actorDate = date[0].strip()
                         break
 
     # Manually Add Actors
     # Add Actor Based on Title
-    actors = []
-    for key, value in actorsDB.items():
-        if key == metadata.title:
-            actors = value
-            break
-
-    for actor in actors:
+    for actor in PAutils.getDictValuesFromKey(actorsDB, metadata.title):
         movieActors.addActor(actor, '')
 
-    if sceneDate:
+    # Release Date
+    if actorDate:
+        date_object = datetime.strptime(actorDate, dateFormat)
+        metadata.originally_available_at = date_object
+        metadata.year = metadata.originally_available_at.year
+    elif sceneDate:
         date_object = parse(sceneDate)
         metadata.originally_available_at = date_object
         metadata.year = metadata.originally_available_at.year
 
     # Genres
-    movieGenres.clearGenres()
-    genres = []
-    for key, value in genresDB.items():
-        if key.lower() == siteName.lower():
-            genres = value
-            break
+    genres = PAutils.getDictValuesFromKey(genresDB, siteName)
+    for genreLink in genres:
+        genreName = genreLink.strip()
 
-    for genreName in genres:
         movieGenres.addGenre(genreName)
 
     # Posters
@@ -177,10 +200,8 @@ genresDB = {
 }
 
 actorsDB = {
-    'Poke Her In The Front': [
-        'Sara Luvv',
-        'Dillion Harper',
-    ],
+    'Poke Her In The Front': ['Sara Luvv', 'Dillion Harper'],
+    'Best Friends With Nice Tits!': ['April O\'Neil', 'Victoria Rae Black'],
 }
 
 plurals = {
@@ -188,7 +209,6 @@ plurals = {
     'bros': 'bro-s',
     'sisters': 'sister-s',
     'siss': 'sis-s',
-    'friends': 'friend-s',
     'mothers': 'mother-s',
     'moms': 'mom-s',
     'fathers': 'father-s',

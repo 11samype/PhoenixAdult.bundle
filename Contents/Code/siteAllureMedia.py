@@ -61,7 +61,6 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     metadata.studio = 'Allure Media'
 
     # Tagline and Collection(s)
-    metadata.collections.clear()
     tagline = PAsearchSites.getSearchSiteName(siteNum)
     metadata.tagline = tagline
     metadata.collections.add(tagline)
@@ -81,15 +80,13 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         metadata.year = metadata.originally_available_at.year
 
     # Genres
-    movieGenres.clearGenres()
     for genreLink in detailsPageElements.xpath('//span[@class="update_tags"]//a'):
         genreName = genreLink.text_content().strip('\n').lower()
 
         movieGenres.addGenre(genreName)
     movieGenres.addGenre('Amateur')
 
-    # Actors
-    movieActors.clearActors()
+    # Actor(s)
     for actorLink in detailsPageElements.xpath('//div[@class="backgroundcolor_info"]//span[@class="update_models"]/a'):
         actorName = actorLink.text_content().strip()
         actorPhotoURL = ''
@@ -107,12 +104,42 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
 
     # Manually Add Actors
     actors = [
-        'Faith', 'Nikki Rhodes', 'Talia Tyler', 'Hadley', 'Evangeline', 'Zoe Voss', 'Raquel Diamond', 'Shay Golden', 'Emily Grey',
-        'Allyssa Hall', 'Alexa Grace', 'Remy LaCroix', 'Nadine Sage', 'Chloe Starr', 'Melissa Moore', 'Taylor Renae', 'Veronica Rodriguez',
-        'Naomi Woods', 'Amanda Aimes', 'Alice Green', 'Kimber Woods', 'Alina Li', 'Holly Michaels', 'Layla London', 'Dakota Brookes', 'Adriana Chechik',
-        'Belle Noire', 'Lilly Banks', 'Linda Lay', 'Miley May', 'Belle Knox', 'Ava Taylor', 'Stella May', 'Claire Heart', 'Kennedy Leigh', 'Lucy Tyler',
-        'Cadence Lux', 'Goldie Glock', 'Jayma Reid', 'Samantha Sin', 'Emma Hix', 'Lexi Mansfield', 'Emma Wilson', 'Kenzie Reeves', 'Devon Green', 'Jane Wilde',
-        'Lena Anderson', 'Lilly Banks', 'Linda Lay', 'Belle Knox', 'Miley May'
+        'Adriana Chechik',
+        'Alexa Grace',
+        'Alice Green',
+        'Alina Li',
+        'Amanda Aimes',
+        'Ava Taylor',
+        'Belle Knox',
+        'Belle Noire',
+        'Cadence Lux',
+        'Claire Heart',
+        'Devon Green',
+        'Emily Grey',
+        'Emma Hix',
+        'Evangeline',
+        'Faith',
+        'Hadley',
+        'Holly Michaels',
+        'Jane Wilde'
+        'Kennedy Leigh',
+        'Kenzie Reeves',
+        'Kimber Woods',
+        'Layla London',
+        'Lexi Mansfield',
+        'Lilly Banks',
+        'Linda Lay',
+        'Lucy Tyler',
+        'Melissa Moore',
+        'Nadine Sage',
+        'Naomi Woods',
+        'Remy LaCroix',
+        'Samantha Sin',
+        'Stella May',
+        'Talia Tyler',
+        'Taylor Renae',
+        'Veronica Rodriguez',
+        'Zoe Voss',
     ]
     for actorName in actors:
         if actorName in metadata.title or actorName in metadata.summary:

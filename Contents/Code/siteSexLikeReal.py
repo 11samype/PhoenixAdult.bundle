@@ -45,25 +45,23 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     if maybeSummary and len(maybeSummary) == 1:
         metadata.summary = maybeSummary[0].text_content().strip()
 
-    # Studio/Tagline/Collection
-    metadata.collections.clear()
+    # Studio
     metadata.studio = detailsPageElements.xpath('//div[contains(@class, "u-inline-block u-align-y--m u-relative u-fw--bold")]')[0].text_content().strip()
-    metadata.tagline = metadata.studio
+
+    # Tagline and Collection(s)
     metadata.collections.add(metadata.studio)
 
     # Release Date
-    date = detailsPageElements.xpath('//time[contains(@class, "u-inline-block u-align-y--m u-ml--three desktop:u-ml--four")]')[0].text_content().strip()
+    date = detailsPageElements.xpath('//time[contains(@class, "u-inline-block u-align-y--m u-ml--three desktop:u-ml--four")]/@datetime')[0]
     date_object = parse(date)
     metadata.originally_available_at = date_object
     metadata.year = metadata.originally_available_at.year
 
     # Genres
-    movieGenres.clearGenres()
     for genreName in detailsPageElements.xpath('//meta[@property="video:tag"]/@content'):
         movieGenres.addGenre(genreName)
 
-    # Actors
-    movieActors.clearActors()
+    # Actor(s)
     actors = detailsPageElements.xpath('//meta[@property="video:actor"]/@content')
     for actorName in actors:
         actorLink = '/pornstars/' + actorName.replace(' ', '-').lower()
@@ -71,7 +69,7 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
 
         req = PAutils.HTTPRequest(actorPageURL)
         actorPage = HTML.ElementFromString(req.text)
-        actorPhotoURL = actorPage.xpath('//div[contains(@class, "c-meta-poster")]//img/@data-src')[0]
+        actorPhotoURL = actorPage.xpath('//div[contains(@class, "c-meta-model-poster")]//img/@data-src')[0]
 
         movieActors.addActor(actorName, actorPhotoURL)
 

@@ -3,10 +3,7 @@ import PAutils
 
 
 def getGraphQL(queryType, variable, query, siteNum):
-    for key, value in apiKeyDB.items():
-        if key.lower() == PAsearchSites.getSearchSiteName(siteNum).lower():
-            apiKey = value[0]
-            break
+    apiKey = PAutils.getDictValuesFromKey(apiKeyDB, PAsearchSites.getSearchSiteName(siteNum))[0]
 
     params = json.dumps({'query': queryType, 'variables': {variable: query}})
     headers = {
@@ -62,7 +59,6 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     metadata.studio = PAsearchSites.getSearchSiteName(siteNum)
 
     # Tagline and Collection(s)
-    metadata.collections.clear()
     metadata.collections.add(metadata.studio)
 
     # Release Date
@@ -72,15 +68,12 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         metadata.year = metadata.originally_available_at.year
 
     # Genres
-    movieGenres.clearGenres()
-    for key, value in genresDB.items():
-        if key.lower() == PAsearchSites.getSearchSiteName(siteNum).lower():
-            for genreName in value:
-                movieGenres.addGenre(genreName)
-            break
+    for genreLink in PAutils.getDictValuesFromKey(genresDB, PAsearchSites.getSearchSiteName(siteNum)):
+        genreName = genreLink.strip()
 
-    # Actors
-    movieActors.clearActors()
+        movieGenres.addGenre(genreName)
+
+    # Actor(s)
     for actorLink in detailsPageElements['talent']:
         actorPhoto = []
         actorName = actorLink['talent']['name']

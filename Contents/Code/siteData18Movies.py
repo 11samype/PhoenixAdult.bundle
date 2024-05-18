@@ -21,12 +21,14 @@ def search(results, lang, siteNum, searchData):
 
     searchData.encoded = searchData.title.replace('\'', '').replace(',', '').replace('& ', '').replace('#', '')
     searchURL = '%s%s&key2=%s' % (PAsearchSites.getSearchSearchURL(siteNum), searchData.encoded, searchData.encoded)
-    req = PAutils.HTTPRequest(searchURL, headers={'Referer': 'https://www.data18.com'})
+    req = PAutils.HTTPRequest(searchURL, headers={'Referer': 'https://www.data18.com'}, cookies={'data_user_captcha': '1'})
     searchPageElements = HTML.ElementFromString(req.text)
 
     searchPages = re.search(r'(?<=pages:\s).*(?=])', req.text)
     if searchPages:
         numSearchPages = int(searchPages.group(0))
+        if numSearchPages > 10:
+            numSearchPages = 10
     else:
         numSearchPages = 1
 
@@ -70,7 +72,7 @@ def search(results, lang, siteNum, searchData):
 
                     if score > 70:
                         sceneURL = PAutils.Decode(curID)
-                        req = PAutils.HTTPRequest(sceneURL)
+                        req = PAutils.HTTPRequest(sceneURL, cookies={'data_user_captcha': '1'})
                         detailsPageElements = HTML.ElementFromString(req.text)
 
                         # Studio
@@ -116,7 +118,7 @@ def search(results, lang, siteNum, searchData):
 
         if numSearchPages > 1 and not idx + 1 == numSearchPages:
             searchURL = '%s%s&key2=%s&next=1&page=%d' % (PAsearchSites.getSearchSearchURL(siteNum), searchData.encoded, searchData.encoded, idx + 1)
-            req = PAutils.HTTPRequest(searchURL, headers={'Referer': 'https://www.data18.com'})
+            req = PAutils.HTTPRequest(searchURL, headers={'Referer': 'https://www.data18.com'}, cookies={'data_user_captcha': '1'})
             searchPageElements = HTML.ElementFromString(req.text)
 
     googleResults = PAutils.getFromGoogleSearch(searchData.title, siteNum)
@@ -126,16 +128,20 @@ def search(results, lang, siteNum, searchData):
             searchResults.append(movieURL)
 
     for movieURL in searchResults:
-        req = PAutils.HTTPRequest(movieURL)
+        req = PAutils.HTTPRequest(movieURL, cookies={'data_user_captcha': '1'})
         detailsPageElements = HTML.ElementFromString(req.text)
         urlID = re.sub(r'.*/', '', movieURL)
 
+        if not detailsPageElements:
+            Log('Possible IP BAN: Retry on VPN')
+            break
+
         # Studio
         try:
-            studio = detailsPageElements.xpath('//b[contains(., "Network")]//following-sibling::b')[0].text_content().strip()
+            studio = detailsPageElements.xpath('//b[contains(., "Studio") or contains(., "Network")]//following-sibling::a')[0].text_content().strip()
         except:
             try:
-                studio = detailsPageElements.xpath('//b[contains(., "Studio")]//following-sibling::b')[0].text_content().strip()
+                studio = detailsPageElements.xpath('//b[contains(., "Studio") or contains(., "Network")]//following-sibling::b')[0].text_content().strip()
             except:
                 try:
                     studio = detailsPageElements.xpath('//p[contains(., "Site:")]//following-sibling::a[@class="bold"]')[0].text_content().strip()
@@ -200,8 +206,12 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     metadata_id = str(metadata.id).split('|')
     sceneURL = PAutils.Decode(metadata_id[0])
     sceneDate = metadata_id[2]
-    req = PAutils.HTTPRequest(sceneURL)
+    req = PAutils.HTTPRequest(sceneURL, cookies={'data_user_captcha': '1'})
     detailsPageElements = HTML.ElementFromString(req.text)
+
+    if not detailsPageElements:
+        Log('Possible IP BAN: Retry on VPN')
+        return metadata
 
     if len(metadata_id) > 3:
         Log('Switching to Data18Scenes')
@@ -232,7 +242,6 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         metadata.studio = studio
 
     # Tagline and Collection(s)
-    metadata.collections.clear()
     metadata.collections.add(metadata.studio)
     try:
         tagline = detailsPageElements.xpath('//p[contains(., "Movie Series")]//a[@title]')[0].text_content().strip()
@@ -255,32 +264,33 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
             pass
 
     # Genres
-    movieGenres.clearGenres()
     for genreLink in detailsPageElements.xpath('//p[./b[contains(., "Categories")]]//a'):
         genreName = genreLink.text_content().strip()
 
         movieGenres.addGenre(genreName)
 
-    # Actors
-    movieActors.clearActors()
+    # Actor(s)
     actors = detailsPageElements.xpath('//b[contains(., "Cast")]//following::div//a[contains(@href, "/pornstars/")]//img')
     actors.extend(detailsPageElements.xpath('//b[contains(., "Cast")]//following::div//img[contains(@data-original, "user")]'))
+    actors.extend(detailsPageElements.xpath('//h3[contains(., "Cast")]//following::div[@style]//img'))
     for actorLink in actors:
         actorName = actorLink.xpath('./@alt')[0].strip()
-        actorPhotoURL = actorLink.xpath('./@data-src')[0].strip()
+        try:
+            actorPhotoURL = actorLink.xpath('./@data-src')[0].strip()
+        except:
+            break
 
-        if actorName:
-            movieActors.addActor(actorName, actorPhotoURL)
+        actorPhotoURL = ''
+        movieActors.addActor(actorName, actorPhotoURL)
 
     # Director
-    metadata.directors.clear()
-    director = metadata.directors.new()
-    try:
-        directorName = detailsPageElements.xpath('//p[./b[contains(., "Director")]]')[0].text_content().split(':')[-1].split('-')[0].strip()
-        if not directorName == 'Unknown':
-            director.name = directorName
-    except:
-        pass
+    director = detailsPageElements.xpath('//p[./b[contains(., "Director")]]')
+    if director:
+        directorLink = director[0].text_content().split(':')[-1].split('-')[0].strip()
+        if not directorLink == 'Unknown':
+            directorName = directorLink
+
+            movieActors.addDirector(directorName, '')
 
     # Posters
     photos = []
@@ -322,7 +332,10 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         if not PAsearchSites.posterAlreadyExists(posterUrl, metadata):
             # Download image file for analysis
             try:
-                image = PAutils.HTTPRequest(posterUrl, headers={'Referer': 'http://www.data18.com'})
+                try:
+                    image = PAutils.HTTPRequest(posterUrl, headers={'Referer': 'http://i.dt18.com'})
+                except:
+                    image = PAutils.HTTPRequest(posterUrl, headers={'Referer': 'https://www.data18.com'})
                 images.append(image)
                 im = StringIO(image.content)
                 resized_image = Image.open(im)

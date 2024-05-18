@@ -6,14 +6,16 @@ def search(results, lang, siteNum, searchData):
     searchData.encoded = urllib.quote('"%s"' % searchData.title)
     req = PAutils.HTTPRequest(PAsearchSites.getSearchSearchURL(siteNum) + searchData.encoded)
     searchResults = HTML.ElementFromString(req.text)
+
     for searchResult in searchResults.xpath('//div[@class="category_listing_wrapper_updates"]'):
         titleNoFormatting = searchResult.xpath('.//h3')[0].text_content().strip()
         if titleNoFormatting[-3:] == ' 4k':
             titleNoFormatting = titleNoFormatting[:-3].strip()
-        curID = PAutils.Encode(searchResult.xpath('.//a[@class="ampLink"]/@href')[0])
+        curID = PAutils.Encode(searchResult.xpath('.//a/@href')[0])
 
         try:
-            releaseDate = parse(searchResult.xpath('.//div[@class="date-label"]')[0].text_content()[22:].strip()).strftime('%Y-%m-%d')
+            xPath = PAutils.getDictValuesFromKey(xPathDB, str(siteNum))
+            releaseDate = parse(searchResult.xpath(xPath[0])[-1].strip()).strftime('%Y-%m-%d')
         except:
             releaseDate = ''
 
@@ -22,7 +24,7 @@ def search(results, lang, siteNum, searchData):
         else:
             score = 100 - Util.LevenshteinDistance(searchData.title.lower(), titleNoFormatting.lower())
 
-        results.Append(MetadataSearchResult(id='%s|%d' % (curID, siteNum), name='%s [Spizoo] %s' % (titleNoFormatting, releaseDate), score=score, lang=lang))
+        results.Append(MetadataSearchResult(id='%s|%d' % (curID, siteNum), name='%s [%s] %s' % (titleNoFormatting, PAsearchSites.getSearchSiteName(siteNum), releaseDate), score=score, lang=lang))
 
     return results
 
@@ -39,7 +41,7 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     title = detailsPageElements.xpath('//h1/text() | //video/@data-video')[0].strip()
     if title[-3:] == ' 4k':
         title = title[:-3].strip()
-    metadata.title = title
+    metadata.title = PAutils.parseTitle(title, siteNum)
 
     # Summary
     metadata.summary = detailsPageElements.xpath('//p[@class="description"] | //p[@class="description-scene"] | //h2/following-sibling::p')[0].text_content().strip()
@@ -48,14 +50,11 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     metadata.studio = 'Spizoo'
 
     # Tagline and Collection(s)
-    metadata.collections.clear()
     try:
         tagline = detailsPageElements.xpath('//i[@id="site"]/@value')[0].strip()
     except:
-        if 'rawattack' in sceneURL:
-            tagline = 'RawAttack'
-        else:
-            tagline = 'Spizoo'
+        if 'Spizoo' not in PAsearchSites.getSearchSiteName(siteNum):
+            tagline = PAsearchSites.getSearchSiteName(siteNum)
     metadata.tagline = tagline
     metadata.collections.add(tagline)
 
@@ -68,22 +67,22 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         metadata.year = metadata.originally_available_at.year
 
     # Genres
-    movieGenres.clearGenres()
-    genres = detailsPageElements.xpath('//div[@class="categories-holder"]/a')
+    genres = detailsPageElements.xpath('//div[@class="categories-holder"]/a|//div[./h3[contains(., "Categories")]]/a')
     if genres:
         for genreLink in genres:
             genreName = genreLink.text_content().lower().strip()
 
             movieGenres.addGenre(genreName)
-    else:  # Manual genres for Rawattack
-        if siteNum == 577:
-            movieGenres.addGenre('Unscripted')
-            movieGenres.addGenre('Raw')
-            movieGenres.addGenre('Hardcore')
 
-    # Actors
-    movieActors.clearActors()
-    for actorLink in detailsPageElements.xpath('//h3[text()="Pornstars:"]/../a'):
+    # Actor(s)
+    if siteNum == 1374:
+        xPath = '//div[./h3[contains(., "Girls")]]/a'
+    elif siteNum == 577:
+        xPath = '//div[./h3[contains(., "playmates")]]/a'
+    else:
+        xPath = '//h3[text()="Pornstars:"]/../a'
+
+    for actorLink in detailsPageElements.xpath(xPath):
         actorName = actorLink.text_content().replace('.', '').strip()
         actorPhotoURL = ''
 
@@ -102,18 +101,24 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         movieActors.addActor(actorName, actorPhotoURL)
 
     # Posters
-    try:
-        twitterBG = detailsPageElements.xpath('//img[contains(@class, "update_thumb thumbs")]/@src')[0]
-        if 'http' not in twitterBG:
-            twitterBG = PAsearchSites.getSearchBaseURL(siteNum) + '/' + twitterBG
+    xpaths = [
+        '//section[@id="photos-tour"]//img[contains(@class, "update_thumb thumbs")]/@src',
+        '//div[@class="content-block-video"]//img/@alt'
+    ]
 
-        art.append(twitterBG)
-    except:
-        pass
+    for xpath in xpaths:
+        for img in detailsPageElements.xpath(xpath):
+            if '&imgh' in img:
+                img = img.split('&imgh')[0]
+
+            art.append(img)
 
     Log('Artwork found: %d' % len(art))
     for idx, posterUrl in enumerate(art, 1):
-        if not PAsearchSites.posterAlreadyExists(posterUrl, metadata):
+        # Remove Timestamp and Token from URL
+        cleanUrl = posterUrl.split('?')[0]
+        art[idx - 1] = cleanUrl
+        if not PAsearchSites.posterAlreadyExists(cleanUrl, metadata):
             # Download image file for analysis
             try:
                 image = PAutils.HTTPRequest(posterUrl)
@@ -123,11 +128,17 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
                 # Add the image proxy items to the collection
                 if width > 1 or height > width:
                     # Item is a poster
-                    metadata.posters[posterUrl] = Proxy.Media(image.content, sort_order=idx)
+                    metadata.posters[cleanUrl] = Proxy.Media(image.content, sort_order=idx)
                 if width > 100 and width > height:
                     # Item is an art item
-                    metadata.art[posterUrl] = Proxy.Media(image.content, sort_order=idx)
+                    metadata.art[cleanUrl] = Proxy.Media(image.content, sort_order=idx)
             except:
                 pass
 
     return metadata
+
+
+xPathDB = {
+    ('293', '571', '572', '573', '574', '575', '576', '1374'): ['.//div[./h4[contains(., "date")]]/text()'],
+    ('577', '1757'): ['.//div[./h4[contains(., "date")]]/p/text()']
+}

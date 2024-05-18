@@ -20,12 +20,14 @@ def search(results, lang, siteNum, searchData):
 
     searchData.encoded = searchData.title.replace('\'', '').replace(',', '').replace('& ', '')
     searchURL = '%s%s&key2=%s&next=1&page=0' % (PAsearchSites.getSearchSearchURL(siteNum), searchData.encoded, searchData.encoded)
-    req = PAutils.HTTPRequest(searchURL, headers={'Referer': 'https://www.data18.com'})
+    req = PAutils.HTTPRequest(searchURL, headers={'Referer': 'https://www.data18.com'}, cookies={'data_user_captcha': '1'})
     searchPageElements = HTML.ElementFromString(req.text)
 
     searchPages = re.search(r'(?<=pages:\s).*(?=])', req.text)
     if searchPages:
         numSearchPages = int(searchPages.group(0))
+        if numSearchPages > 10:
+            numSearchPages = 10
     else:
         numSearchPages = 1
 
@@ -75,7 +77,7 @@ def search(results, lang, siteNum, searchData):
 
         if numSearchPages > 1 and not idx + 1 == numSearchPages:
             searchURL = '%s%s&key2=%s&next=1&page=%d' % (PAsearchSites.getSearchSearchURL(siteNum), searchData.encoded, searchData.encoded, idx + 1)
-            req = PAutils.HTTPRequest(searchURL, headers={'Referer': 'https://www.data18.com'})
+            req = PAutils.HTTPRequest(searchURL, headers={'Referer': 'https://www.data18.com'}, cookies={'data_user_captcha': '1'})
             searchPageElements = HTML.ElementFromString(req.text)
 
     googleResults = PAutils.getFromGoogleSearch(searchData.title, siteNum)
@@ -85,9 +87,13 @@ def search(results, lang, siteNum, searchData):
             searchResults.append(sceneURL)
 
     for sceneURL in searchResults:
-        req = PAutils.HTTPRequest(sceneURL)
+        req = PAutils.HTTPRequest(sceneURL, cookies={'data_user_captcha': '1'})
         detailsPageElements = HTML.ElementFromString(req.text)
         urlID = re.sub(r'.*/', '', sceneURL)
+
+        if not detailsPageElements:
+            Log('Possible IP BAN: Retry on VPN')
+            break
 
         try:
             siteName = detailsPageElements.xpath('//b[contains(., "Network")]//following-sibling::b')[0].text_content().strip()
@@ -147,8 +153,12 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     metadata_id = str(metadata.id).split('|')
     sceneURL = PAutils.Decode(metadata_id[0])
     sceneDate = metadata_id[2]
-    req = PAutils.HTTPRequest(sceneURL)
+    req = PAutils.HTTPRequest(sceneURL, cookies={'data_user_captcha': '1'})
     detailsPageElements = HTML.ElementFromString(req.text)
+
+    if not detailsPageElements:
+        Log('Possible IP BAN: Retry on VPN')
+        return metadata
 
     # Title
     metadata.title = PAutils.parseTitle(detailsPageElements.xpath('//h1')[0].text_content(), siteNum)
@@ -158,25 +168,38 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         summary = detailsPageElements.xpath('//div[@class="gen12"]/div[contains(., "Story")]')[0].text_content().split('Story -')[-1].strip()
     except:
         try:
-            summary = detailsPageElements.xpath('//div[@class="gen12"]/div[contains(., "Description")]')[0].text_content().rsplit('---')[-1].strip()
+            summary = detailsPageElements.xpath('//div[@class="gen12"]//div[@class="hideContent boxdesc" and contains(., "Description")]')[0].text_content().rsplit('---')[-1].strip()
         except:
-            summary = ''
+            try:
+                summary = detailsPageElements.xpath('//div[@class="gen12"]/div[contains(., "Movie Description")]')[0].text_content().rsplit('--')[-1].strip()
+            except:
+                summary = ''
 
     metadata.summary = summary
 
     # Studio
     try:
-        metadata.studio = detailsPageElements.xpath('//b[contains(., "Network")]//following-sibling::b')[0].text_content().strip()
+        metadata.studio = detailsPageElements.xpath('//b[contains(., "Studio") or contains(., "Network")]//following-sibling::b')[0].text_content().strip()
     except:
         try:
-            metadata.studio = detailsPageElements.xpath('//b[contains(., "Studio")]//following-sibling::a')[0].text_content().strip()
+            metadata.studio = detailsPageElements.xpath('//b[contains(., "Studio") or contains(., "Network")]//following-sibling::a')[0].text_content().strip()
         except:
-            pass
+            try:
+                metadata.studio = detailsPageElements.xpath('//p[contains(., "Site:")]//following-sibling::a[@class="bold"]')[0].text_content().strip()
+            except:
+                metadata.studio = ''
 
     # Tagline and Collection(s)
-    metadata.collections.clear()
     try:
-        tagline = detailsPageElements.xpath('//p[contains(., "Site:")]//following-sibling::a[@class="bold"]')[0].text_content().strip()
+        try:
+            tagline = detailsPageElements.xpath('//p[contains(., "Site:")]//following-sibling::a[@class="bold"]')[0].text_content().strip()
+        except:
+            try:
+                tagline = detailsPageElements.xpath('//b[contains(., "Network")]//following-sibling::a')[0].text_content().strip()
+            except:
+                tagline = detailsPageElements.xpath('//p[contains(., "Movie:")]/a')[0].text_content()
+                metadata.collections.add(metadata.studio)
+
         if len(metadata_id) > 3:
             Log('Using original series information')
             tagline = detailsPageElements.xpath('//p[contains(., "Serie")]//a[@title]')[0].text_content().strip()
@@ -212,25 +235,19 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         metadata.year = metadata.originally_available_at.year
 
     # Genres
-    movieGenres.clearGenres()
     for genreLink in detailsPageElements.xpath('//div[./b[contains(., "Categories")]]//a'):
         genreName = genreLink.text_content().strip()
 
         movieGenres.addGenre(genreName)
 
-    # Actors
-    movieActors.clearActors()
-    actors = detailsPageElements.xpath('//h3[contains(., "Cast")]//following::div//a[contains(@href, "/name/")]/img')
-    for actorLink in actors:
-        actorName = actorLink.xpath('./@alt')[0].strip()
+    # Actor(s)
+    actors = detailsPageElements.xpath('//h3[contains(., "Cast")]//following::div[./p[contains(., "No Profile")]]//span[@class]/text()')
+    actors.extend(detailsPageElements.xpath('//h3[contains(., "Cast")]//following::div//a[contains(@href, "/name/")]/img/@alt'))
+    for actor in actors:
+        actorName = actor
         actorPhotoURL = ''
 
-        actorPhotoNode = actorLink.xpath('./@data-src')
-        if actorPhotoNode:
-            actorPhotoURL = actorPhotoNode[0].strip()
-
-        if actorName:
-            movieActors.addActor(actorName, actorPhotoURL)
+        movieActors.addActor(actorName, actorPhotoURL)
 
     # Posters
     xpaths = [
@@ -253,7 +270,7 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
 
         for gallery in galleries:
             galleryID = gallery.xpath('./@id')[0].replace('gallery', '')
-            photoViewerURL = ("%s/sys/media_photos.php?s=1&scene=%s&pic=%s" % (PAsearchSites.getSearchBaseURL(siteNum), sceneID[1:], galleryID))
+            photoViewerURL = ("%s/sys/media_photos.php?s=%s&scene=%s&pic=%s" % (PAsearchSites.getSearchBaseURL(siteNum), sceneID[0], sceneID[1:], galleryID))
             req = PAutils.HTTPRequest(photoViewerURL)
             photoPageElements = HTML.ElementFromString(req.text)
 
@@ -276,7 +293,10 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         if not PAsearchSites.posterAlreadyExists(posterUrl, metadata):
             # Download image file for analysis
             try:
-                image = PAutils.HTTPRequest(posterUrl, headers={'Referer': 'http://i.dt18.com'})
+                try:
+                    image = PAutils.HTTPRequest(posterUrl, headers={'Referer': 'http://i.dt18.com'})
+                except:
+                    image = PAutils.HTTPRequest(posterUrl, headers={'Referer': 'https://www.data18.com'})
                 images.append(image)
                 im = StringIO(image.content)
                 resized_image = Image.open(im)

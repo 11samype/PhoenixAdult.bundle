@@ -9,7 +9,7 @@ def search(results, lang, siteNum, searchData):
         req = PAutils.HTTPRequest(url)
         searchResults = HTML.ElementFromString(req.text)
         for searchResult in searchResults.xpath('//div[contains(@class, "video-thumb") or contains(@class, "item-video")]'):
-            titleNoFormatting = searchResult.xpath('(.//p[@class="text-thumb"] | .//div[@class="item-title"])/a')[0].text_content().strip()
+            titleNoFormatting = PAutils.parseTitle(searchResult.xpath('(.//p[@class="text-thumb"] | .//div[@class="item-title"])/a')[0].text_content().strip(), siteNum)
             curID = PAutils.Encode(searchResult.xpath('(.//p[@class="text-thumb"] | .//div[@class="item-title"])/a/@href')[0])
             subSite = searchResult.xpath('.//p[@class="text-thumb"]/a[@class="badge"] | .//div[@class="item-sitename"]/a')[0].text_content().strip()
 
@@ -42,7 +42,7 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     detailsPageElements = HTML.ElementFromString(req.text)
 
     # Title
-    metadata.title = detailsPageElements.xpath('//*[@class="trailer-block_title"] | //h1')[0].text_content().strip()
+    metadata.title = PAutils.parseTitle(detailsPageElements.xpath('//*[@class="trailer-block_title"] | //h1')[0].text_content().strip(), siteNum)
 
     # Summary
     metadata.summary = detailsPageElements.xpath('//div[@class="info-block"]//p[@class="text"] | //div[@class="update-info-block"]//p')[0].text_content().strip()
@@ -51,8 +51,7 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     metadata.studio = 'Cherry Pimps'
 
     # Tagline and Collection(s)
-    metadata.collections.clear()
-    tagline = PAsearchSites.getSearchSiteName(siteNum).strip()
+    tagline = PAsearchSites.getSearchSiteName(siteNum)
     metadata.tagline = tagline
     metadata.collections.add(tagline)
 
@@ -64,14 +63,12 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         metadata.year = metadata.originally_available_at.year
 
     # Genres
-    movieGenres.clearGenres()
     for genreLink in detailsPageElements.xpath('//div[@class="info-block"]//a | //ul[@class="tags"]//a'):
         genreName = genreLink.text_content().strip()
 
         movieGenres.addGenre(genreName)
 
-    # Actors
-    movieActors.clearActors()
+    # Actor(s)
     actors = detailsPageElements.xpath('//div[@class="info-block_data"]//a | //div[contains(@class, "model-list-item")]//a')
     if actors:
         if len(actors) == 3:

@@ -8,14 +8,16 @@ def search(results, lang, siteNum, searchData):
         req = PAutils.HTTPRequest(url)
         searchResults = HTML.ElementFromString(req.text)
         for searchResult in searchResults.xpath('//div[contains(@class, "content-grid-item")]'):
-            titleNoFormatting = searchResult.xpath('.//span[@class="title"]/a')[0].text_content().strip()
+            title = searchResult.xpath('.//span[@class="title"]/a')[0].text_content().split('-')
+            if len(title) > 1:
+                titleNoFormatting = '%s - %s' % (PAutils.parseTitle(title[0].strip(), siteNum), title[1])
+            else:
+                titleNoFormatting = PAutils.parseTitle(title[0].strip(), siteNum)
+
             curID = searchResult.xpath('.//span[@class="title"]/a/@href')[0].split('/')[3]
             releaseDate = parse(searchResult.xpath('.//span[@class="date"]')[0].text_content().strip()).strftime('%Y-%m-%d')
 
-            if searchData.date:
-                score = 100 - Util.LevenshteinDistance(searchData.date, releaseDate)
-            else:
-                score = 100 - Util.LevenshteinDistance(searchData.title.lower(), titleNoFormatting.lower())
+            score = 100 - Util.LevenshteinDistance(titleNoActors.lower(), titleNoFormatting.lower().rsplit('-')[0])
 
             results.Append(MetadataSearchResult(id='%s|%d' % (curID, siteNum), name='%s [%s] %s' % (titleNoFormatting, PAsearchSites.getSearchSiteName(siteNum), releaseDate), score=score, lang=lang))
 
@@ -44,7 +46,11 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     detailsPageElements = HTML.ElementFromString(req.text)
 
     # Title
-    metadata.title = detailsPageElements.xpath('//div[contains(@class, "content-pane-title")]//h2')[0].text_content().strip()
+    title = detailsPageElements.xpath('//div[contains(@class, "content-pane-title")]//h2')[0].text_content().split('-')
+    if len(title) > 1:
+        metadata.title = '%s - %s' % (PAutils.parseTitle(title[0].strip(), siteNum), title[1])
+    else:
+        metadata.title = PAutils.parseTitle(title[0].strip(), siteNum)
 
     # Summary
     description = detailsPageElements.xpath('//div[@class="col-12 content-pane-column"]/div')
@@ -60,8 +66,7 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     # Studio
     metadata.studio = 'Nubiles'
 
-    # Collections / Tagline
-    metadata.collections.clear()
+    # Tagline and Collection(s)
     tagline = PAsearchSites.getSearchSiteName(siteNum)
     metadata.tagline = tagline
     metadata.collections.add(tagline)
@@ -74,14 +79,12 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         metadata.year = metadata.originally_available_at.year
 
     # Genres
-    movieGenres.clearGenres()
     for genreLink in detailsPageElements.xpath('//div[@class="categories"]/a'):
         genreName = genreLink.text_content().strip()
 
         movieGenres.addGenre(genreName)
 
-    # Actors
-    movieActors.clearActors()
+    # Actor(s)
     for actorLink in detailsPageElements.xpath('//div[contains(@class, "content-pane-performer")]/a'):
         actorName = actorLink.text_content().strip()
 
@@ -135,7 +138,14 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
             art.append(poster)
 
     try:
-        galleryURL = PAsearchSites.getSearchBaseURL(siteNum) + detailsPageElements.xpath('//div[contains(@class, "content-pane-related-links")]/a[contains(., "Pic")]/@href')[0]
+        try:
+            galleryURL = PAsearchSites.getSearchBaseURL(siteNum) + detailsPageElements.xpath('//div[contains(@class, "content-pane-related-links")]/a[contains(., "Pic")]/@href')[0]
+        except:
+            match = re.search(r'(?<=videos\/).*(?=\/sample)', detailsPageElements.xpath('//video/@poster')[0])
+            if match:
+                sceneID = match.group(0)
+            galleryURL = '%s/galleries/%s/screenshots' % (PAsearchSites.getSearchBaseURL(siteNum), sceneID)
+
         req = PAutils.HTTPRequest(galleryURL)
         photoPageElements = HTML.ElementFromString(req.text)
         for poster in photoPageElements.xpath('//div[@class="img-wrapper"]//picture/source[1]/@srcset'):
@@ -146,6 +156,8 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     except:
         pass
 
+    images = []
+    posterExists = False
     Log('Artwork found: %d' % len(art))
     for idx, posterUrl in enumerate(art, 1):
         if not PAsearchSites.posterAlreadyExists(posterUrl, metadata):
@@ -153,15 +165,30 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
             try:
                 image = PAutils.HTTPRequest(posterUrl)
                 im = StringIO(image.content)
+                images.append(image)
                 resized_image = Image.open(im)
                 width, height = resized_image.size
                 # Add the image proxy items to the collection
-                if width > 1 or height > width:
+                if height > width:
                     # Item is a poster
                     metadata.posters[posterUrl] = Proxy.Media(image.content, sort_order=idx)
-                if width > 100 and width > height:
+                    posterExists = True
+                if width > height:
                     # Item is an art item
                     metadata.art[posterUrl] = Proxy.Media(image.content, sort_order=idx)
+            except:
+                pass
+
+    if not posterExists:
+        for idx, image in enumerate(images, 1):
+            try:
+                im = StringIO(image.content)
+                resized_image = Image.open(im)
+                width, height = resized_image.size
+                # Add the image proxy items to the collection
+                if width > 1:
+                    # Item is a poster
+                    metadata.posters[art[idx - 1]] = Proxy.Media(image.content, sort_order=idx)
             except:
                 pass
 

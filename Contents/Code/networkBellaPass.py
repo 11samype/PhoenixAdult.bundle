@@ -38,9 +38,14 @@ def search(results, lang, siteNum, searchData):
             else:
                 releaseDate = searchData.dateFormat() if searchData.date else ''
 
-            score = 100 - Util.LevenshteinDistance(searchData.title.lower(), titleNoFormatting.lower())
+            displayDate = releaseDate if date else ''
 
-            results.Append(MetadataSearchResult(id='%s|%d|%s' % (curID, siteNum, releaseDate), name='%s [%s] %s' % (titleNoFormatting, PAsearchSites.getSearchSiteName(siteNum), releaseDate), score=score, lang=lang))
+            if searchData.date and displayDate:
+                score = 100 - Util.LevenshteinDistance(searchData.date, releaseDate)
+            else:
+                score = 100 - Util.LevenshteinDistance(searchData.title.lower(), titleNoFormatting.lower())
+
+            results.Append(MetadataSearchResult(id='%s|%d|%s' % (curID, siteNum, releaseDate), name='%s [%s] %s' % (titleNoFormatting, PAsearchSites.getSearchSiteName(siteNum), displayDate), score=score, lang=lang))
         except:
             pass
 
@@ -64,27 +69,23 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     if description:
         metadata.summary = description[0].text_content().strip()
 
-    # Studio
-    if PAsearchSites.getSearchSiteName(siteNum) in ['Hussie Pass', 'Babe Archives']:
-        metadata.studio = PAsearchSites.getSearchSiteName(siteNum)
+    # Studio, Tagline and Collection(s)
+    if PAsearchSites.getSearchSiteName(siteNum) in ['Hussie Pass', 'Babe Archives', 'See Him Fuck']:
+        tagline = PAsearchSites.getSearchSiteName(siteNum)
+        metadata.studio = tagline
     else:
         metadata.studio = 'BellaPass'
-
-    # Tagline and Collection(s)
-    metadata.collections.clear()
-    tagline = PAsearchSites.getSearchSiteName(siteNum)
-    metadata.tagline = tagline
+        tagline = PAsearchSites.getSearchSiteName(siteNum)
+        metadata.tagline = tagline
     metadata.collections.add(tagline)
 
     # Genres
-    movieGenres.clearGenres()
     for genreLink in detailsPageElements.xpath('//div[contains(@class, "featuring")]//a[contains(@href, "/categories/")]'):
         genreName = genreLink.text_content().strip()
 
         movieGenres.addGenre(genreName)
 
-    # Actors
-    movieActors.clearActors()
+    # Actor(s)
     actors = detailsPageElements.xpath('//div[contains(@class, "featuring")]//a[contains(@href, "/models/")]')
     if actors:
         if len(actors) == 3:
@@ -94,8 +95,10 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         if len(actors) > 4:
             movieGenres.addGenre('Orgy')
 
+        re_actorName = re.compile(r' *?[^\w\s]+')
         for actorLink in actors:
             actorName = actorLink.text_content().strip()
+            actorName = re_actorName.sub('', actorName).strip()
 
             actorPageURL = actorLink.get('href')
             if actorPageURL.startswith('//'):
@@ -153,6 +156,8 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         for image in photoPageElements.xpath('//img[@id="%s"]/@src0_3x' % setID):
             art.append(PAsearchSites.getSearchBaseURL(siteNum) + image)
 
+    images = []
+    posterExists = False
     Log('Artwork found: %d' % len(art))
     for idx, posterUrl in enumerate(art, 1):
         if not PAsearchSites.posterAlreadyExists(posterUrl, metadata):
@@ -160,15 +165,30 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
             try:
                 image = PAutils.HTTPRequest(posterUrl)
                 im = StringIO(image.content)
+                images.append(image)
+                resized_image = Image.open(im)
+                width, height = resized_image.size
+                # Add the image proxy items to the collection
+                if height > width:
+                    # Item is a poster
+                    metadata.posters[posterUrl] = Proxy.Media(image.content, sort_order=idx)
+                    posterExists = True
+                if width > height:
+                    # Item is an art item
+                    metadata.art[posterUrl] = Proxy.Media(image.content, sort_order=idx)
+            except:
+                pass
+
+    if not posterExists:
+        for idx, image in enumerate(images, 1):
+            try:
+                im = StringIO(image.content)
                 resized_image = Image.open(im)
                 width, height = resized_image.size
                 # Add the image proxy items to the collection
                 if width > 1:
                     # Item is a poster
-                    metadata.posters[posterUrl] = Proxy.Media(image.content, sort_order=idx)
-                if width > 100:
-                    # Item is an art item
-                    metadata.art[posterUrl] = Proxy.Media(image.content, sort_order=idx)
+                    metadata.posters[art[idx - 1]] = Proxy.Media(image.content, sort_order=idx)
             except:
                 pass
 

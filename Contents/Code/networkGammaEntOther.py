@@ -17,6 +17,11 @@ def getAPIKey(siteNum):
 
     if not token:
         req = PAutils.HTTPRequest(url)
+
+        if not req.ok:
+            url = PAsearchSites.getSearchBaseURL(siteNum) + '/en'
+            req = PAutils.HTTPRequest(url)
+
         match = re.search(r'\"apiKey\":\"(.*?)\"', req.text)
         if match:
             token = match.group(1)
@@ -104,7 +109,9 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
 
     # Title
     title = None
-    if sceneType == 'scenes' and len(scenesPagesElements) > 1:
+    if 'dogfart' in PAsearchSites.getSearchBaseURL(siteNum).lower():
+        title = '%s from %s.com' % (PAutils.parseTitle(detailsPageElements['title'], siteNum), detailsPageElements['serie_name'])
+    elif sceneType == 'scenes' and len(scenesPagesElements) > 1:
         for idx, scene in scenesPagesElements:
             if scene['clip_id'] == sceneID:
                 title = '%s, Scene %d' % (detailsPageElements['title'], idx)
@@ -118,10 +125,17 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     metadata.summary = detailsPageElements['description'].replace('</br>', '\n').replace('<br>', '\n')
 
     # Studio
-    metadata.studio = detailsPageElements['network_name']
+    if not detailsPageElements['network_name']:
+        if 'filthykings' in PAsearchSites.getSearchBaseURL(siteNum):
+            metadata.studio = detailsPageElements['sitename_pretty']
+        else:
+            metadata.studio = detailsPageElements['studio_name']
+    else:
+        metadata.studio = detailsPageElements['network_name']
 
     # Tagline and Collection(s)
-    metadata.collections.clear()
+    if 'filthykings' in PAsearchSites.getSearchBaseURL(siteNum):
+        metadata.tagline = detailsPageElements['serie_name']
     for collectionName in ['studio_name', 'serie_name']:
         if collectionName in detailsPageElements:
             metadata.collections.add(detailsPageElements[collectionName])
@@ -135,7 +149,6 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     metadata.year = metadata.originally_available_at.year
 
     # Genres
-    movieGenres.clearGenres()
     for genreLink in detailsPageElements['categories']:
         genreName = genreLink['name']
         if genreName:
@@ -148,8 +161,7 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
                 if genreName:
                     movieGenres.addGenre(genreName)
 
-    # Actors
-    movieActors.clearActors()
+    # Actor(s)
     female = []
     male = []
     for actorLink in detailsPageElements['actors']:

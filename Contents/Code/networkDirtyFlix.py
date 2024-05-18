@@ -7,9 +7,9 @@ def search(results, lang, siteNum, searchData):
     req = PAutils.HTTPRequest(searchPage)
     searchResults = HTML.ElementFromString(req.text)
 
-    xPath = dictValuesFromKey(xPathDB, PAsearchSites.getSearchSiteName(siteNum))
-    scenes = dictValuesFromKey(sceneActorsDB, searchData.title)
-    (siteKey, sitePages) = dictValuesFromKey(siteDB, PAsearchSites.getSearchSiteName(siteNum))
+    xPath = PAutils.getDictValuesFromKey(xPathDB, PAsearchSites.getSearchSiteName(siteNum))
+    scenes = PAutils.getDictValuesFromKey(sceneActorsDB, searchData.title)
+    (siteKey, sitePages) = PAutils.getDictValuesFromKey(siteDB, PAsearchSites.getSearchSiteName(siteNum))
 
     dirtyFlixTour1 = 'http://dirtyflix.com/index.php/main/show_one_tour/%d' % siteKey
     req = PAutils.HTTPRequest(dirtyFlixTour1)
@@ -79,7 +79,7 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     req = PAutils.HTTPRequest(searchPageURL)
     detailsPageElements = HTML.ElementFromString(req.text).xpath('//div[@class="movie-block"][.//*[contains(@src, "%s")]]' % sceneID)[0]
 
-    xPath = dictValuesFromKey(xPathDB, PAsearchSites.getSearchSiteName(siteNum))
+    xPath = PAutils.getDictValuesFromKey(xPathDB, PAsearchSites.getSearchSiteName(siteNum))
 
     # Title
     metadata.title = PAutils.parseTitle(detailsPageElements.xpath(xPath[0])[0].text_content().strip(), siteNum)
@@ -90,8 +90,7 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
     # Studio
     metadata.studio = 'Dirty Flix'
 
-    # Collections / Tagline
-    metadata.collections.clear()
+    # Tagline and Collection(s)
     tagline = PAsearchSites.getSearchSiteName(siteNum)
     metadata.tagline = tagline
     metadata.collections.add(tagline)
@@ -103,14 +102,12 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
         metadata.year = metadata.originally_available_at.year
 
     # Genres
-    movieGenres.clearGenres()
-    genres = dictValuesFromKey(genresDB, PAsearchSites.getSearchSiteName(siteNum))
+    genres = PAutils.getDictValuesFromKey(genresDB, PAsearchSites.getSearchSiteName(siteNum))
     for genreName in genres:
         movieGenres.addGenre(genreName)
 
-    # Actors
-    movieActors.clearActors()
-    actors = dictKeyFromValues(sceneActorsDB, sceneID)
+    # Actor(s)
+    actors = PAutils.getDictKeyFromValues(sceneActorsDB, sceneID)
     for actor in actors:
         actorName = actor.strip()
         actorPhotoURL = ''
@@ -140,25 +137,6 @@ def update(metadata, lang, siteNum, movieGenres, movieActors, art):
                 pass
 
     return metadata
-
-
-def dictValuesFromKey(dictDB, identifier):
-    for k, values in dictDB.items():
-        keys = list(k) if type(k) == tuple else [k]
-        for key in keys:
-            if key.lower() == identifier.lower():
-                return values
-    return []
-
-
-def dictKeyFromValues(dictDB, identifier):
-    values = []
-    for key, value in dictDB.items():
-        for item in value:
-            if item.lower() == identifier.lower():
-                values.append(key)
-                break
-    return values
 
 
 genresDB = {
@@ -255,6 +233,7 @@ sceneActorsDB = {
     'Emma Brown': ['wfc1089', 'wtag1102'],
     'Emma Fantazy': ['wnc1448'],
     'Eva': ['wrygf865', 'wnc880'],
+    'Eva Red': ['wnc1707'],
     'Eveline Neill': ['pfc123'],
     'Evelyn Cage': ['wrygf651', 'wtag644'],
     'Foxy Di': ['wrygf886', 'wrygf828', 'wtag859', 'wnc821'],
@@ -271,6 +250,7 @@ sceneActorsDB = {
     'Henna Ssy': ['wnc1599'],
     'Herda Wisky': ['wnc1294'],
     'Holly Molly': ['snc184'],
+    'Hungry Fox': ['snc218'],
     'Inga Zolva': ['wrygf747', 'wtag767', 'wnc879', 'wnc746'],
     'Iris Kiss': ['snc165', 'wnc1637'],
     'Isabel Stern': ['wfc1075'],
@@ -283,6 +263,7 @@ sceneActorsDB = {
     'Jessica Malone': ['wrygf1078', 'wtag1101', 'wnc1086'],
     'Jessica Rox': ['prygf138', 'pfc137'],
     'Jessy Nikea': ['wfc374'],
+    'Jolie Butt': ['wnc1703'],
     'Kari Sweet': ['prygf135', 'pfc134'],
     'Karry Slot': ['snc080'],
     'Kate Quinn': ['snc159'],
@@ -326,6 +307,7 @@ sceneActorsDB = {
     'Madlen': ['wnc1430'],
     'Maggie Gold': ['pfc057'],
     'Margarita C': ['wfc940', 'wnc941'],
+    'Margo Von Teese': ['wnc1741'],
     'Maribel': ['wfc367'],
     'Mary Solaris': ['wnc1500'],
     'Matty': ['irnc003'],
@@ -333,8 +315,9 @@ sceneActorsDB = {
     'Megan Promesita': ['pfc104'],
     'Megan Venturi': ['wnc1539'],
     'Melissa Benz': ['wfc1276'],
+    'Meow Miu': ['wnc1742'],
     'Mia Hilton': ['pfc065'],
-    'Mia Piper': ['snc182'],
+    'Mia Piper': ['snc182', 'snc240'],
     'Mia Reese': ['wtag887', 'wnc890'],
     'Michelle Can': ['wfc1392', 'wnc1354'],
     'Mila Gimnasterka': ['wfc1100'],
@@ -352,6 +335,7 @@ sceneActorsDB = {
     'Natalya C': ['wtag649'],
     'Nelya Smalls': ['wnc1273'],
     'Nesti': ['wfc696', 'wnc697'],
+    'Nika A': ['snc223'],
     'Nika Charming': ['wnc1513'],
     'Nikki Hill': ['snc094'],
     'Norah Nova': ['cfc008'],

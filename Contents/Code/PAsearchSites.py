@@ -52,7 +52,7 @@ def getSearchSettings(mediaTitle):
 
     for abbreviation, full in PAsiteList.abbreviations:
         r = re.compile(abbreviation, flags=re.IGNORECASE)
-        if r.match(mediaTitle):
+        if r.match(mediaTitle) and not mediaTitle.lower().startswith(full.lower()):
             mediaTitle = r.sub(full, mediaTitle, 1)
             break
 
@@ -135,6 +135,16 @@ def posterAlreadyExists(posterUrl, metadata):
     for url in metadata.art.keys():
         if url.lower() == posterUrl.lower():
             Log('Found %s in art collection' % posterUrl)
+            return True
+
+    return False
+
+
+def posterOnlyAlreadyExists(posterUrl, metadata):
+    posterUrl = PAutils.getClearURL(posterUrl)
+    for url in metadata.posters.keys():
+        if url.lower() == posterUrl.lower():
+            Log('Found %s in posters collection' % posterUrl)
             return True
 
     return False

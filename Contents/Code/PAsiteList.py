@@ -1,6 +1,5 @@
 import siteNaughtyAmerica
 import siteXart
-import networkBangBros
 import sitePorndoePremium
 import siteAnalVids
 import siteGloryHoleSecrets
@@ -10,15 +9,13 @@ import sitePrivate
 import networkFullPornNetwork
 import networkSteppedUp
 import networkGammaEnt
-import networkDogfart
 import siteJulesJordan
 import networkPerfectGonzo
-import networkPornFidelity
+import networkKellyMadison
 import networkBadoinkVR
 import siteVRBangers
 import networkHighTechVR
 import siteMilfVR
-import siteJoymii
 import networkPornPros
 import networkStrike3
 import networkKink
@@ -37,7 +34,7 @@ import networkTeenMegaWorld
 import siteScrewbox
 import siteDorcelClub
 import siteMissaX
-import siteMylf
+import networkMYLF
 import addActors
 import siteFirstAnalQuest
 import siteHegre
@@ -47,16 +44,14 @@ import siteXConfessions
 import networkCzechAV
 import siteArchAngel
 import siteWeAreHairy
-import siteLoveHerFeet
+import networkLoveHerFilms
 import siteMomPOV
 import networkFuelVirtual
 import siteStraplezz
 import siteLittleCaprice
-import siteWowGirls
 import siteVIPissy
 import siteGirlsOutWest
 import siteGirlsRimming
-import siteGangbangCreampie
 import siteStepSecrets
 import siteVRHush
 import networkMetArt
@@ -71,14 +66,10 @@ import siteZTOD
 import siteClubFilly
 import networkIntersec
 import networkCherryPimps
-import site18OnlyGirls
-import siteClubSweethearts
-import siteElegantAngel
 import siteReidMyLips
 import sitePlayboyPlus
 import siteMeanaWolf
 import siteAmourAngels
-import networkR18
 import networkBang
 import siteVivid
 import networkAdultEmpireCash
@@ -96,8 +87,7 @@ import networkTeamSkeet
 import networkGammaEntOther
 import siteRealityLovers
 import siteHoloGirlsVR
-import siteLethalHardcoreVR
-import siteDefeated
+import networkRomero
 import siteXVirtual
 import siteLustReality
 import siteSexLikeReal
@@ -111,7 +101,6 @@ import siteHucows
 import networkVNA
 import siteQueenSnake
 import siteScrewMeToo
-import siteBoxTruckSex
 import siteAussieAss
 import network5Kporn
 import networkTeenCoreClub
@@ -129,7 +118,6 @@ import siteTwoTGirls
 import siteSicflics
 import networkModelCentro
 import siteAlettaOceanLive
-import siteCulioneros
 import networkPornWorld
 import siteMormonGirlz
 import sitePurgatoryX
@@ -180,65 +168,84 @@ import siteSwallowBay
 import siteVirtualPorn
 import siteJavLibrary
 import siteKillergram
-import networkHugeMedia
+import networkVIP4K
 import network18
 import networkDirtyFlix
 import networkNVG
+import networkBlurredMedia
+import siteBelAmi
+import siteMomComesFirst
+import siteCaribbeancom
+import siteVRAllure
+import siteKin8tengoku
+import siteJAVDatabase
+import networkAdultPrime
+import networkRadicalCash
+import siteTeenyTaboo
+import networkWowNetwork
+import networkAuntJudys
+import siteColette
+import networkThickCashOther
+import siteXevUnleashed
+import networkPKJMedia
+import networkBellesa
+import siteBrandNewAmateurs
+import sitePornbox
 
 searchSites = {
-    0: ('BlackedRaw', 'https://www.blackedraw.com', '/api'),
-    1: ('Blacked', 'https://www.blacked.com', '/api'),
+    0: ('BlackedRaw', 'https://www.blackedraw.com', '/graphql'),
+    1: ('Blacked', 'https://www.blacked.com', '/graphql'),
     2: ('Brazzers', 'http://www.brazzers.com', 'https://site-api.project1service.com'),
-    3: ('MetadataAPI', 'https://metadataapi.net', 'https://api.metadataapi.net'),
+    3: ('MetadataAPI', 'https://theporndb.net', 'https://api.theporndb.net'),
     4: (),
-    5: ('My Friends Hot Mom', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    6: ('My First Sex Teacher', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    7: ('Seduced By A Cougar', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    8: ('My Daughters Hot Friend', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    9: ('My Wife is My Pornstar', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    10: ('Tonights Girlfriend Classic', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    11: ('Wives on Vacation', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    12: ('My Sisters Hot Friend', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    13: ('Naughty Weddings', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    14: ('Dirty Wives Club', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    15: ('My Dads Hot Girlfriend', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    16: ('My Girl Loves Anal', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    17: ('Lesbian Girl on Girl', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    18: ('Naughty Office', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    19: ('I have a Wife', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    20: ('Naughty Bookworms', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    21: ('Housewife 1 on 1', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    22: ('My Wifes Hot Friend', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    23: ('Latin Adultery', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    24: ('Ass Masterpiece', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    25: ('2 Chicks Same Time', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    26: ('My Friends Hot Girl', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    27: ('Neighbor Affair', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    28: ('My Girlfriends Busty Friend', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    29: ('Naughty Athletics', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    30: ('My Naughty Massage', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    31: ('Fast Times', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    32: ('The Passenger', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    33: ('Milf Sugar Babes Classic', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    34: ('Perfect Fucking Strangers Classic', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    35: ('Asian 1 on 1', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    36: ('American Daydreams', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    37: ('SoCal Coeds', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    38: ('Naughty Country Girls', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    39: ('Diary of a Milf', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    40: ('Naughty Rich Girls', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    41: ('My Naughty Latin Maid', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    42: ('Naughty America', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    43: ('Diary of a Nanny', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    44: ('Naughty Flipside', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    45: ('Live Party Girl', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    46: ('Live Naughty Student', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    47: ('Live Naughty Secretary', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    48: ('Live Gym Cam', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    49: ('Live Naughty Teacher', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    50: ('Live Naughty Milf', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    51: ('Live Naughty Nurse', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    52: ('Vixen', 'http://www.vixen.com', '/api'),
+    5: ('My Friends Hot Mom', 'https://naughtyamerica.com', '/search?term='),
+    6: ('My First Sex Teacher', 'https://naughtyamerica.com', '/search?term='),
+    7: ('Seduced By A Cougar', 'https://naughtyamerica.com', '/search?term='),
+    8: ('My Daughters Hot Friend', 'https://naughtyamerica.com', '/search?term='),
+    9: ('My Wife is My Pornstar', 'https://naughtyamerica.com', '/search?term='),
+    10: ('Tonights Girlfriend Classic', 'https://naughtyamerica.com', '/search?term='),
+    11: ('Wives on Vacation', 'https://naughtyamerica.com', '/search?term='),
+    12: ('My Sisters Hot Friend', 'https://naughtyamerica.com', '/search?term='),
+    13: ('Naughty Weddings', 'https://naughtyamerica.com', '/search?term='),
+    14: ('Dirty Wives Club', 'https://naughtyamerica.com', '/search?term='),
+    15: ('My Dads Hot Girlfriend', 'https://naughtyamerica.com', '/search?term='),
+    16: ('My Girl Loves Anal', 'https://naughtyamerica.com', '/search?term='),
+    17: ('Lesbian Girl on Girl', 'https://naughtyamerica.com', '/search?term='),
+    18: ('Naughty Office', 'https://naughtyamerica.com', '/search?term='),
+    19: ('I have a Wife', 'https://naughtyamerica.com', '/search?term='),
+    20: ('Naughty Bookworms', 'https://naughtyamerica.com', '/search?term='),
+    21: ('Housewife 1 on 1', 'https://naughtyamerica.com', '/search?term='),
+    22: ('My Wifes Hot Friend', 'https://naughtyamerica.com', '/search?term='),
+    23: ('Latin Adultery', 'https://naughtyamerica.com', '/search?term='),
+    24: ('Ass Masterpiece', 'https://naughtyamerica.com', '/search?term='),
+    25: ('2 Chicks Same Time', 'https://naughtyamerica.com', '/search?term='),
+    26: ('My Friends Hot Girl', 'https://naughtyamerica.com', '/search?term='),
+    27: ('Neighbor Affair', 'https://naughtyamerica.com', '/search?term='),
+    28: ('My Girlfriends Busty Friend', 'https://naughtyamerica.com', '/search?term='),
+    29: ('Naughty Athletics', 'https://naughtyamerica.com', '/search?term='),
+    30: ('My Naughty Massage', 'https://naughtyamerica.com', '/search?term='),
+    31: ('Fast Times', 'https://naughtyamerica.com', '/search?term='),
+    32: ('The Passenger', 'https://naughtyamerica.com', '/search?term='),
+    33: ('Milf Sugar Babes', 'https://naughtyamerica.com', '/search?term='),
+    34: ('Perfect Fucking Strangers', 'https://naughtyamerica.com', '/search?term='),
+    35: ('Asian 1 on 1', 'https://naughtyamerica.com', '/search?term='),
+    36: ('American Daydreams', 'https://naughtyamerica.com', '/search?term='),
+    37: ('SoCal Coeds', 'https://naughtyamerica.com', '/search?term='),
+    38: ('Naughty Country Girls', 'https://naughtyamerica.com', '/search?term='),
+    39: ('Diary of a Milf', 'https://naughtyamerica.com', '/search?term='),
+    40: ('Naughty Rich Girls', 'https://naughtyamerica.com', '/search?term='),
+    41: ('My Naughty Latin Maid', 'https://naughtyamerica.com', '/search?term='),
+    42: ('Naughty America', 'https://naughtyamerica.com', '/search?term='),
+    43: ('Diary of a Nanny', 'https://naughtyamerica.com', '/search?term='),
+    44: ('Naughty Flipside', 'https://naughtyamerica.com', '/search?term='),
+    45: ('Live Party Girl', 'https://naughtyamerica.com', '/search?term='),
+    46: ('Live Naughty Student', 'https://naughtyamerica.com', '/search?term='),
+    47: ('Live Naughty Secretary', 'https://naughtyamerica.com', '/search?term='),
+    48: ('Live Gym Cam', 'https://naughtyamerica.com', '/search?term='),
+    49: ('Live Naughty Teacher', 'https://naughtyamerica.com', '/search?term='),
+    50: ('Live Naughty Milf', 'https://naughtyamerica.com', '/search?term='),
+    51: ('Live Naughty Nurse', 'https://naughtyamerica.com', '/search?term='),
+    52: ('Vixen', 'https://www.vixen.com', '/graphql'),
     53: ('Girlsway', 'https://www.girlsway.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     54: ('Moms in Control', 'http://www.brazzers.com', 'https://site-api.project1service.com'),
     55: ('Pornstars Like It Big', 'http://www.brazzers.com', 'https://site-api.project1service.com'),
@@ -269,60 +276,60 @@ searchSites = {
     80: ('Butts and Blacks', 'http://www.brazzers.com', 'https://site-api.project1service.com'),
     81: (),
     82: ('X-Art', 'https://www.x-art.com', '/search/'),
-    83: ('Bang Bros', 'https://bangbros.com', '/search/'),
-    84: ('Ass Parade', 'https://bangbros.com', '/search/'),
-    85: ('AvaSpice', 'https://bangbros.com', '/search/'),
-    86: ('Back Room Facials', 'https://bangbros.com', '/search/'),
-    87: ('Backroom MILF', 'https://bangbros.com', '/search/'),
-    88: ('Ball Honeys', 'https://bangbros.com', '/search/'),
-    89: ('Bang Bus', 'https://bangbros.com', '/search/'),
-    90: ('Bang Casting', 'https://bangbros.com', '/search/'),
-    91: ('Bang POV', 'https://bangbros.com', '/search/'),
-    92: ('Bang Tryouts', 'https://bangbros.com', '/search/'),
-    93: ('BangBros 18', 'https://bangbros.com', '/search/'),
-    94: ('BangBros Angels', 'https://bangbros.com', '/search/'),
-    95: ('Bangbros Clips', 'https://bangbros.com', '/search/'),
-    96: ('BangBros Remastered', 'https://bangbros.com', '/search/'),
-    97: ('Big Mouthfuls', 'https://bangbros.com', '/search/'),
-    98: ('Big Tit Cream Pie', 'https://bangbros.com', '/search/'),
-    99: ('Big Tits Round Asses', 'https://bangbros.com', '/search/'),
-    100: ('BlowJob Fridays', 'https://bangbros.com', '/search/'),
-    101: ('Blowjob Ninjas', 'https://bangbros.com', '/search/'),
-    102: ('Boob Squad', 'https://bangbros.com', '/search/'),
-    103: ('Brown Bunnies', 'https://bangbros.com', '/search/'),
-    104: ('Can He Score', 'https://bangbros.com', '/search/'),
-    105: ('Bang Casting', 'https://bangbros.com', '/search/'),
-    106: ('Chongas', 'https://bangbros.com', '/search/'),
-    107: ('Colombia Fuck Fest', 'https://bangbros.com', '/search/'),
-    108: ('Dirty World Tour', 'https://bangbros.com', '/search/'),
-    109: ('Dorm Invasion', 'https://bangbros.com', '/search/'),
-    110: ('Facial Fest', 'https://bangbros.com', '/search/'),
-    111: ('Fuck Team Five', 'https://bangbros.com', '/search/'),
-    112: ('Glory Hole Loads', 'https://bangbros.com', '/search/'),
-    113: ('Latina Rampage', 'https://bangbros.com', '/search/'),
-    114: ('Living With Anna', 'https://bangbros.com', '/search/'),
-    115: ('Magical Feet', 'https://bangbros.com', '/search/'),
-    116: ('MILF Lessons', 'https://bangbros.com', '/search/'),
-    117: ('Milf Soup', 'https://bangbros.com', '/search/'),
-    118: ('MomIsHorny', 'https://bangbros.com', '/search/'),
-    119: ('Monsters of Cock', 'https://bangbros.com', '/search/'),
-    120: ('Mr CamelToe', 'https://bangbros.com', '/search/'),
-    121: ('Mr Anal', 'https://bangbros.com', '/search/'),
-    122: ('My Dirty Maid', 'https://bangbros.com', '/search/'),
-    123: ('My Life In Brazil', 'https://bangbros.com', '/search/'),
-    124: ('Newbie Black', 'https://bangbros.com', '/search/'),
-    125: ('Party of 3', 'https://bangbros.com', '/search/'),
-    126: ('Pawg', 'https://bangbros.com', '/search/'),
-    127: ('Penny Show', 'https://bangbros.com', '/search/'),
-    128: ('Porn Star Spa', 'https://bangbros.com', '/search/'),
-    129: ('Power Munch', 'https://bangbros.com', '/search/'),
-    130: ('Public Bang', 'https://bangbros.com', '/search/'),
-    131: ('Slutty White Girls', 'https://bangbros.com', '/search/'),
-    132: ('Stepmom Videos', 'https://bangbros.com', '/search/'),
-    133: ('Street Ranger', 'https://bangbros.com', '/search/'),
-    134: ('Tugjobs', 'https://bangbros.com', '/search/'),
-    135: ('Working Latinas', 'https://bangbros.com', '/search/'),
-    136: ('Tushy', 'https://www.tushy.com', '/api'),
+    83: ('Bang Bros', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    84: ('Ass Parade', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    85: ('AvaSpice', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    86: ('Back Room Facials', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    87: ('Backroom MILF', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    88: ('Ball Honeys', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    89: ('Bang Bus', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    90: ('Bang Casting', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    91: ('Bang POV', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    92: ('Bang Tryouts', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    93: ('BangBros 18', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    94: ('BangBros Angels', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    95: ('Bangbros Clips', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    96: ('BangBros Remastered', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    97: ('Big Mouthfuls', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    98: ('Big Tit Cream Pie', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    99: ('Big Tits Round Asses', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    100: ('BlowJob Fridays', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    101: ('Blowjob Ninjas', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    102: ('Boob Squad', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    103: ('Brown Bunnies', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    104: ('Can He Score', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    105: ('Bang Casting', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    106: ('Chongas', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    107: ('Colombia Fuck Fest', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    108: ('Dirty World Tour', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    109: ('Dorm Invasion', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    110: ('Facial Fest', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    111: ('Fuck Team Five', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    112: ('Glory Hole Loads', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    113: ('Latina Rampage', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    114: ('Living With Anna', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    115: ('Magical Feet', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    116: ('MILF Lessons', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    117: ('Milf Soup', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    118: ('MomIsHorny', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    119: ('Monsters of Cock', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    120: ('Mr CamelToe', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    121: ('Mr Anal', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    122: ('My Dirty Maid', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    123: ('My Life In Brazil', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    124: ('Newbie Black', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    125: ('Party of 3', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    126: ('Pawg', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    127: ('Penny Show', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    128: ('Porn Star Spa', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    129: ('Power Munch', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    130: ('Public Bang', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    131: ('Slutty White Girls', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    132: ('Stepmom Videos', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    133: ('Street Ranger', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    134: ('Tugjobs', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    135: ('Working Latinas', 'https://bangbros.com', 'https://site-api.project1service.com'),
+    136: ('Tushy', 'https://www.tushy.com', '/graphql'),
     137: ('Reality Kings', 'https://www.realitykings.com', 'https://site-api.project1service.com'),
     138: ('40 Inch Plus', 'https://www.realitykings.com', 'https://site-api.project1service.com'),
     139: ('8th Street Latinas', 'https://www.realitykings.com', 'https://site-api.project1service.com'),
@@ -370,38 +377,38 @@ searchSites = {
     181: ('We Live Together', 'https://www.realitykings.com', 'https://site-api.project1service.com'),
     182: ('Wives in Pantyhose', 'https://www.realitykings.com', 'https://site-api.project1service.com'),
     183: ('21Naturals', 'https://www.21naturals.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
-    184: ('PornFidelity', 'https://www.pornfidelity.com', '/episodes/search/?site=2&page=1&search='),
-    185: ('TeenFidelity', 'https://www.pornfidelity.com', '/episodes/search/?site=3&page=1&search='),
-    186: ('Kelly Madison', 'https://www.pornfidelity.com', '/episodes/search/?site=1&page=1&search='),
-    187: ('TeamSkeet', 'https://www.teamskeet.com', '/movies'),
-    188: ('Exxxtra Small', 'https://www.teamskeet.com', '/movies'),
-    189: ('Teen Pies', 'https://www.teamskeet.com', '/movies'),
-    190: ('Innocent High', 'https://www.teamskeet.com', '/movies'),
-    191: ('Teen Curves', 'https://www.teamskeet.com', '/movies'),
-    192: ('CFNM Teens', 'https://www.teamskeet.com', '/movies'),
-    193: ('Teens Love Anal', 'https://www.teamskeet.com', '/movies'),
-    194: ('My Babysitters Club', 'https://www.teamskeet.com', '/movies'),
-    195: ('Shes New', 'https://www.teamskeet.com', '/movies'),
-    196: ('Teens Do Porn', 'https://www.teamskeet.com', '/movies'),
-    197: ('POV Life', 'https://www.teamskeet.com', '/movies'),
-    198: ('The Real Workout', 'https://www.teamskeet.com', '/movies'),
-    199: ('This Girl Sucks', 'https://www.teamskeet.com', '/movies'),
-    200: ('Teens Love Money', 'https://www.teamskeet.com', '/movies'),
-    201: ('Oye Loca', 'https://www.teamskeet.com', '/movies'),
-    202: ('Titty Attack', 'https://www.teamskeet.com', '/movies'),
-    203: ('Teeny Black', 'https://www.teamskeet.com', '/movies'),
-    204: ('Lust HD', 'https://www.teamskeet.com', '/movies'),
-    205: ('Rub A Teen', 'https://www.teamskeet.com', '/movies'),
-    206: ('Her Freshman Year', 'https://www.teamskeet.com', '/movies'),
-    207: ('Self Desire', 'https://www.teamskeet.com', '/movies'),
-    208: ('Solo Interviews', 'https://www.teamskeet.com', '/movies'),
-    209: ('Team Skeet Extras', 'https://www.teamskeet.com', '/movies'),
-    210: ('Dyked', 'https://www.teamskeet.com', '/movies'),
-    211: ('Badmilfs', 'https://www.teamskeet.com', '/movies'),
-    212: ('Gingerpatch', 'https://www.teamskeet.com', '/movies'),
-    213: ('BraceFaced', 'https://www.teamskeet.com', '/movies'),
-    214: ('TeenJoi', 'https://www.teamskeet.com', '/movies'),
-    215: ('StepSiblings', 'https://www.teamskeet.com', '/movies'),
+    184: ('PornFidelity', 'https://www.pornfidelity.com', '/episodes/search/??site=2&page=1&search='),
+    185: ('TeenFidelity', 'https://www.pornfidelity.com', '/episodes/search/??site=3&page=1&search='),
+    186: ('Kelly Madison', 'https://www.pornfidelity.com', '/episodes/search/??site=1&page=1&search='),
+    187: ('TeamSkeet', 'https://www.teamskeet.com', '/movies/'),
+    188: ('Exxxtra Small', 'https://www.teamskeet.com', '/movies/'),
+    189: ('Teen Pies', 'https://www.teamskeet.com', '/movies/'),
+    190: ('Innocent High', 'https://www.teamskeet.com', '/movies/'),
+    191: ('Teen Curves', 'https://www.teamskeet.com', '/movies/'),
+    192: ('CFNM Teens', 'https://www.teamskeet.com', '/movies/'),
+    193: ('Teens Love Anal', 'https://www.teamskeet.com', '/movies/'),
+    194: ('My Babysitters Club', 'https://www.teamskeet.com', '/movies/'),
+    195: ('Shes New', 'https://www.teamskeet.com', '/movies/'),
+    196: ('Teens Do Porn', 'https://www.teamskeet.com', '/movies/'),
+    197: ('POV Life', 'https://www.teamskeet.com', '/movies/'),
+    198: ('The Real Workout', 'https://www.teamskeet.com', '/movies/'),
+    199: ('This Girl Sucks', 'https://www.teamskeet.com', '/movies/'),
+    200: ('Teens Love Money', 'https://www.teamskeet.com', '/movies/'),
+    201: ('Oye Loca', 'https://www.teamskeet.com', '/movies/'),
+    202: ('Titty Attack', 'https://www.teamskeet.com', '/movies/'),
+    203: ('Teeny Black', 'https://www.teamskeet.com', '/movies/'),
+    204: ('Lust HD', 'https://www.teamskeet.com', '/movies/'),
+    205: ('Rub A Teen', 'https://www.teamskeet.com', '/movies/'),
+    206: ('Her Freshman Year', 'https://www.teamskeet.com', '/movies/'),
+    207: ('Self Desire', 'https://www.teamskeet.com', '/movies/'),
+    208: ('Solo Interviews', 'https://www.teamskeet.com', '/movies/'),
+    209: ('Team Skeet Extras', 'https://www.teamskeet.com', '/movies/'),
+    210: ('Dyked', 'https://www.teamskeet.com', '/movies/'),
+    211: ('Badmilfs', 'https://www.badmilfs.com', '/movies/'),
+    212: ('Gingerpatch', 'https://www.teamskeet.com', '/movies/'),
+    213: ('BraceFaced', 'https://www.teamskeet.com', '/movies/'),
+    214: ('TeenJoi', 'https://www.teamskeet.com', '/movies/'),
+    215: ('StepSiblings', 'https://www.teamskeet.com', '/movies/'),
     216: ('Lets Doe It', 'https://letsdoeit.com', '/search.en.html?q='),
     217: ('The White Boxxx', 'https://letsdoeit.com', '/search.en.html?q='),
     218: ('Scam Angels', 'https://letsdoeit.com', '/search.en.html?q='),
@@ -464,16 +471,16 @@ searchSites = {
     275: ('Office Obsession', 'https://www.babes.com', 'https://site-api.project1service.com'),
     276: ('Stepmom Lessons', 'https://www.babes.com', 'https://site-api.project1service.com'),
     277: ('Evil Angel', 'https://www.evilangel.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
-    278: ('HardX', 'https://www.xempire.com', '/en/search/hardx/'),
+    278: ('HardX', 'https://www.xempire.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     279: ('GloryHoleSecrets', 'http://www.gloryholesecrets.com', '/tour/search.php?query='),
     280: ('New Sensations', 'http://www.newsensations.com', '/tour_ns/'),
     281: ('Pure Taboo', 'https://www.puretaboo.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
-    282: ('Swallowed', 'https://tour.swallowed.com', '/view/'),
-    283: ('TrueAnal', 'https://tour.trueanal.com', '/scenes/'),
-    284: ('Nympho', 'https://tour.nympho.com', '/view/'),
-    285: ('EroticaX', 'https://www.xempire.com', '/en/search/eroticax/'),
-    286: ('DarkX', 'https://www.xempire.com', '/en/search/darkx/'),
-    287: ('LesbianX', 'http://www.xempire.com', '/en/search/lesbianx/'),
+    282: ('Swallowed', 'https://tour.swallowed.com', '/_next/data/'),
+    283: ('TrueAnal', 'https://tour.trueanal.com', '/_next/data/'),
+    284: ('Nympho', 'https://tour.nympho.com', '/_next/data/'),
+    285: ('EroticaX', 'https://www.xempire.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    286: ('DarkX', 'https://www.xempire.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    287: ('LesbianX', 'http://www.xempire.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     288: ('Twistys', 'https://www.twistys.com', 'https://site-api.project1service.com'),
     289: ('WhenGirlsPlay', 'https://www.twistys.com', 'https://site-api.project1service.com'),
     290: ('MomKnowsBest', 'https://www.twistys.com', 'https://site-api.project1service.com'),
@@ -515,7 +522,7 @@ searchSites = {
     326: ('PimpParade', 'https://www.pornpros.com', '/video/'),
     327: ('SquirtDisgrace', 'https://www.pornpros.com', '/video/'),
     328: ('DigitalPlayground', 'https://www.digitalplayground.com', 'https://site-api.project1service.com'),
-    329: ('Throated', 'https://www.blowpass.com', '/en/search/throated/scene/'),
+    329: ('Throated', 'https://www.blowpass.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     330: ('Nuru Massage', 'https://www.fantasymassage.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     331: (),
     332: ('DDF Babes', 'https://ddfnetwork.com', '/videos/freeword/'),
@@ -527,7 +534,7 @@ searchSites = {
     338: ('Massage Rooms', 'https://www.sexyhub.com', 'https://site-api.project1service.com'),
     339: ('MomXXX', 'https://www.sexyhub.com', 'https://site-api.project1service.com'),
     340: ('FakeHub', 'https://www.fakehub.com', 'https://site-api.project1service.com'),
-    341: ('Big Cock Bully', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
+    341: ('Big Cock Bully', 'https://naughtyamerica.com', '/search?term='),
     342: ('VirtualRealPorn', 'https://virtualrealporn.com', '/vr-porn-video/'),
     343: ('Analized', 'https://analized.com', '/1/search/'),
     344: ('James Deen', 'https://jamesdeen.com', '/1/search/'),
@@ -537,10 +544,10 @@ searchSites = {
     348: ('POV Perverts', 'https://povperverts.net', '/1/search/'),
     349: ('Pervert Gallery', 'https://pervertgallery.com', '/1/search/'),
     350: ('DTF Sluts', 'https://dtfsluts.com', '/1/search/'),
-    351: ('Mommy Blows Best', 'http://www.blowpass.com', '/en/search/mommyblowsbest/scene/'),
-    352: ('Only Teen Blowjobs', 'http://www.blowpass.com', '/en/search/onlyteenblowjobs/scene/'),
-    353: ('1000 Facials', 'http://www.blowpass.com', '/en/search/1000facials/scene/'),
-    354: ('Immoral Live', 'http://www.blowpass.com', '/en/search/immorallive/scene/'),
+    351: ('Mommy Blows Best', 'http://www.blowpass.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    352: ('Only Teen Blowjobs', 'http://www.blowpass.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    353: ('1000 Facials', 'http://www.blowpass.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    354: ('Immoral Live', 'http://www.blowpass.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     355: ('Fantasy Massage', 'http://www.fantasymassage.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     356: ('All Girl Massage', 'http://www.fantasymassage.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     357: ('Soapy Massage', 'http://www.fantasymassage.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
@@ -568,9 +575,9 @@ searchSites = {
     379: ('Girlsway Originals', 'http://www.girlsway.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     380: ('Girlfriends Films', 'http://www.girlfriendsfilms.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     381: ('Burning Angel', 'http://www.burningangel.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
-    382: ('Pretty Dirty', 'http://www.prettydirty.com', '/en/search/'),
+    382: ('Pretty Dirty', 'http://www.prettydirty.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     383: ('Devils Film', 'http://www.devilsfilm.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
-    384: ('Peter North', 'http://www.peternorth.com', '/en/search/'),
+    384: ('Peter North', 'http://www.peternorth.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     385: ('Rocco Siffredi', 'http://www.roccosiffredi.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     386: ('Tera Patrick', 'http://www.terapatrick.com', '/en/search/'),
     387: ('Sunny Leone', 'http://www.sunnyleone.com', '/en/search/scene/'),
@@ -579,10 +586,10 @@ searchSites = {
     390: ('Abbey Brooks', 'http://www.abbeybrooks.com', '/en/search/scene/'),
     391: ('Devon Lee', 'http://www.devonlee.com', '/en/search/scene/'),
     392: ('Hanna Hilton', 'http://www.hannahilton.com', '/en/search/scene/'),
-    393: ('LA Sluts', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    394: ('Slut Stepsister', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    395: ('Teens Love Cream', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    396: ('Latina Stepmom', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
+    393: ('LA Sluts', 'https://naughtyamerica.com', '/search?term='),
+    394: ('Slut Stepsister', 'https://naughtyamerica.com', '/search?term='),
+    395: ('Teens Love Cream', 'https://naughtyamerica.com', '/search?term='),
+    396: ('Latina Stepmom', 'https://naughtyamerica.com', '/search?term='),
     397: ('Fake Taxi', 'https://www.fakehub.com', 'https://site-api.project1service.com'),
     398: ('Fakehub Originals', 'https://www.fakehub.com', 'https://site-api.project1service.com'),
     399: ('Public Agent', 'https://www.fakehub.com', 'https://site-api.project1service.com'),
@@ -594,30 +601,30 @@ searchSites = {
     405: ('Female Fake Taxi', 'https://www.fakehub.com', 'https://site-api.project1service.com'),
     406: ('Fake Driving School', 'https://www.fakehub.com', 'https://site-api.project1service.com'),
     407: ('Fake Hostel', 'https://www.fakehub.com', 'https://site-api.project1service.com'),
-    408: ('Dogfart', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    409: ('BlacksOnBlondes', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    410: ('CuckoldSessions', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    411: ('GloryHole', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    412: ('BlacksOnCougars', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    413: ('WeFuckBlackGirls', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    414: ('WatchingMyMomGoBlack', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    415: ('InterracialBlowbang', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    416: ('CumBang', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    417: ('InterracialPickups', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    418: ('WatchingMyDaughterGoBlack', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    419: ('ZebraGirls', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    420: ('GloryHoleInitiations', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    421: ('DogfartBehindTheScenes', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    422: ('BlackMeatWhiteFeet', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    423: ('SpringThomas', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    424: ('KatieThomas', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    425: ('RuthBlackwell', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    426: ('CandyMonroe', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    427: ('WifeWriting', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    428: ('BarbCummings', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    429: ('TheMinion', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    430: ('BlacksOnBoys', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
-    431: ('GloryholesAndHandjobs', 'https://www.dogfartnetwork.com', '/tour/search.php?search='),
+    408: ('Dogfart', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    409: ('BlacksOnBlondes', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    410: ('CuckoldSessions', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    411: ('GloryHole', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    412: ('BlacksOnCougars', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    413: ('WeFuckBlackGirls', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    414: ('WatchingMyMomGoBlack', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    415: ('InterracialBlowbang', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    416: ('CumBang', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    417: ('InterracialPickups', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    418: ('WatchingMyDaughterGoBlack', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    419: ('ZebraGirls', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    420: ('GloryHoleInitiations', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    421: ('DogfartBehindTheScenes', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    422: ('BlackMeatWhiteFeet', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    423: ('SpringThomas', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    424: ('KatieThomas', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    425: ('RuthBlackwell', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    426: ('CandyMonroe', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    427: ('WifeWriting', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    428: ('BarbCummings', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    429: ('TheMinion', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    430: ('BlacksOnBoys', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    431: ('GloryholesAndHandjobs', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     432: ('Jules Jordan', 'https://www.julesjordan.com', '/trial/search.php?query='),
     433: ('DDFNetwork', 'https://ddfnetwork.com', '/videos/freeword/'),
     434: ('Sandys Fantasies', 'https://ddfnetwork.com', '/videos/freeword/'),
@@ -653,18 +660,18 @@ searchSites = {
     464: ('Zoliboy', 'http://www.21sextreme.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     465: ('DominatedGirls', 'http://www.21sextreme.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     466: ('Asshole Fever', 'http://www.21sextury.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
-    467: ('Anal College', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    468: ('Watch Your Wife', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
+    467: ('Anal College', 'https://naughtyamerica.com', '/search?term='),
+    468: ('Watch Your Wife', 'https://naughtyamerica.com', '/search?term='),
     469: ('BadoinkVR', 'https://www.badoinkvr.com', '/vrpornvideos/search/'),
     470: ('BabeVR', 'https://www.babevr.com', '/vrpornvideos/search/'),
     471: ('18VR', 'https://www.18vr.com', '/vrpornvideos/search/'),
     472: ('KinkVR', 'http://www.kinkvr.com', '/bdsm-vr-videos/search/'),
     473: ('VRCosplayX', 'https://www.vrcosplayx.com', '/cosplaypornvideos/search/'),
     474: ('VRBangers', 'https://www.vrbangers.com', '/api/content/v1/search/'),
-    475: ('SexBabesVR', 'https://www.sexbabesvr.com', '/virtualreality/scene/id/'),
+    475: ('SexBabesVR', 'https://www.sexbabesvr.com', '/video/'),
     476: ('WankzVR', 'https://www.wankzvr.com', '/search?q='),
     477: ('MilfVR', 'https://www.milfvr.com', '/search?q='),
-    478: ('Joymii', 'https://www.joymii.com', '/search?query='),
+    478: ('Joymii', 'https://www.joymii.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     479: ('POVD', 'https://www.povd.com', '/video/'),
     480: ('Cum4K', 'https://www.cum4k.com', '/video/'),
     481: ('Exotic4k', 'https://www.exotic4k.com', '/video/'),
@@ -752,8 +759,8 @@ searchSites = {
     563: ('Bella HD', 'https://www.bellahd.com', '/search.php?query='),
     564: ('Amateur Allure', 'https://www.amateurallure.com', '/tour/search.php?st=advanced&cat[]=5&qany='),
     565: ('Swallow Salon', 'https://www.swallowsalon.com', '/search.php?st=advanced&cat[]=5&qany='),
-    566: ('Black Valley Girls', 'https://www.blackvalleygirls.com', '/movies'),
-    567: ('Sis Loves Me', 'https://www.sislovesme.com', '/movies'),
+    566: ('Black Valley Girls', 'https://www.blackvalleygirls.com', '/movies/'),
+    567: ('Sis Loves Me', 'https://www.sislovesme.com', '/movies/'),
     568: ('Manyvids', 'https://www.manyvids.com', '/video/'),
     569: ('SinsVR', 'https://www.xsinsvr.com', '/search/'),
     570: ('StasyQ VR', 'https://www.stasyqvr.com', '/virtualreality/scene/id/'),
@@ -767,7 +774,7 @@ searchSites = {
     578: ('CzechVR', 'https://www.czechvr.com', '/model-'),
     579: ('CzechVR Fetish', 'https://www.czechvrfetish.com', '/model-'),
     580: ('CzechVR Casting', 'https://www.czechvrcasting.com', '/model-'),
-    581: ('Slut Stepmom', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
+    581: ('Slut Stepmom', 'https://naughtyamerica.com', '/search?term='),
     582: ('ZZ Series', 'http://www.brazzers.com', 'https://site-api.project1service.com'),
     583: ('Latina Sex Tapes', 'https://www.mofos.com', 'https://site-api.project1service.com'),
     584: ('Mano Job', 'https://www.finishesthejob.com', '/search?search='),
@@ -806,17 +813,17 @@ searchSites = {
     617: ('Young Sluts Hardcore', 'https://www.wankz.com', '/search?q='),
     618: ('Matrix Models', 'https://www.wankz.com', '/search?q='),
     619: ('Blow Patrol', 'https://www.wankz.com', '/search?q='),
-    620: ('Sleazy Stepdad', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
+    620: ('Sleazy Stepdad', 'https://naughtyamerica.com', '/search?term='),
     621: ('SexArt', 'https://www.sexart.com', '/api'),
     622: ('TheLifeErotic', 'https://www.thelifeerotic.com', '/api'),
     623: ('VivThomas', 'https://www.vivthomas.com', '/api'),
     624: ('Baeb', 'http://www.baeb.com', '/video/'),
-    625: ('Open Family', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    626: ('Family Strokes', 'https://www.familystrokes.com', '/movies'),
+    625: ('Open Family', 'https://naughtyamerica.com', '/search?term='),
+    626: ('Family Strokes', 'https://www.familystrokes.com', '/movies/'),
     627: ('Tonights Girlfriend', 'https://www.tonightsgirlfriend.com', '/pornstar/'),
-    628: ('Karups Private Collection', 'https://www.karups.com', '/models/search/'),
-    629: ('Karups Hometown Amateurs', 'https://www.karups.com', '/models/search/'),
-    630: ('Karups Older Women', 'https://www.karups.com', '/models/search/'),
+    628: ('KarupsPC', 'https://www.karups.com', '/models/search/'),
+    629: ('KarupsHA', 'https://www.karups.com', '/models/search/'),
+    630: ('KarupsOW', 'https://www.karups.com', '/models/search/'),
     631: ('Teen Mega World', 'http://teenmegaworld.net', '/search.php?query='),
     632: ('18 First Sex', 'http://teenmegaworld.net', '/search.php?query='),
     633: ('ATMovs', 'http://teenmegaworld.net', '/search.php?query='),
@@ -856,8 +863,8 @@ searchSites = {
     667: ('PJGirls', 'http://www.pjgirls.com', '/en/videos/?fulltext='),
     668: ('Screwbox', 'https://screwbox.com', '/search.php?query='),
     669: ('Dorcel Club', 'https://www.dorcelclub.com', '/en/search?s='),
-    670: ('TushyRaw', 'https://www.tushyraw.com', '/api'),
-    671: ('Deeper', 'https://www.deeper.com', '/api'),
+    670: ('TushyRaw', 'https://www.tushyraw.com', '/graphql'),
+    671: ('Deeper', 'https://www.deeper.com', '/graphql'),
     672: ('MissaX', 'https://missax.com', '/tour/search.php?query='),
     673: ('AllHerLuv', 'https://allherluv.com', '/tour/search.php?query='),
     674: ('Mylf', 'https://www.mylf.com', '/movies/'),
@@ -872,12 +879,12 @@ searchSites = {
     683: ('Full Of JOI', 'https://www.mylf.com', '/movies/'),
     684: ('ManualAddActors', '', ''),
     685: ('First Anal Quest', 'http://www.firstanalquest.com', '/search/?q='),
-    686: ('PervMom', 'https://www.pervmom.com', '/movies'),
+    686: ('PervMom', 'https://www.pervmom.com', '/movies/'),
     687: ('Chantas Bitches', 'http://www.kink.com', '/search?channelIds=chantasbitches&q='),
     688: ('Hegre', 'http://www.hegre.com', '/search?q='),
     689: ('Femdom Empire', 'https://femdomempire.com', '/tour/search.php?st=advanced&qany='),
-    690: ('Day With A Porn Star', 'http://www.brazzers.com', 'https://site-api.project1service.com'),
-    691: ('Watch Your Mom', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
+    690: ('Day With a Pornstar', 'http://www.brazzers.com', 'https://site-api.project1service.com'),
+    691: ('Watch Your Mom', 'https://naughtyamerica.com', '/search?term='),
     692: ('Butt Plays', 'http://www.21sextury.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     693: ('Dorcel Vision', 'https://www.dorcelvision.com', '/en/search?type=4&keyword='),
     694: ('Feminized', 'http://feminized.com', '/tour/search.php?st=advanced&qany='),
@@ -933,9 +940,9 @@ searchSites = {
     744: ('VIPissy', 'https://www.vipissy.com', '/updates?search='),
     745: ('GirlsOutWest', 'https://tour.girlsoutwest.com', '/trailers/'),
     746: ('Girls Rimming', 'https://www.girlsrimming.com', '/tour/trailers/'),
-    747: ('Gangbang Creampie', 'https://gangbangcreampie.com', '/tour/search.php?query='),
-    749: ('Show My BF', 'https://tour.naughtyamerica.com', 'https://i6p9q9r18e-3.algolianet.com/1/indexes/*/queries'),
-    748: ('DadCrush', 'https://www.dadcrush.com', '/movies'),
+    747: ('Gangbang Creampie', 'https://www.gangbangcreampie.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    749: ('Show My BF', 'https://naughtyamerica.com', '/search?term='),
+    748: ('DadCrush', 'https://www.dadcrush.com', '/movies/'),
     750: ('POV Massage', 'http://www.fantasymassage.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     751: ('Step Secrets', 'http://www.stepsecrets.com', 'https://www.stepsecrets.com/?query='),
     752: ('VRHush', 'https://www.vrhush.com', '/scenes/'),
@@ -948,15 +955,15 @@ searchSites = {
     759: ('FamilyHookups', 'https://www.familyhookups.com', 'https://site-api.project1service.com'),
     760: ('Clips4Sale', 'https://www.clips4sale.com', '/studio/'),
     761: ('VogoV', 'https://vogov.com', '/search/?q='),
-    762: ('Ultrafilms', 'https://www.ultrafilms.xxx', '/?s='),
+    762: ('UltraFilms', 'https://www.ultrafilms.xxx', '/?s='),
     763: ('FuckingAwesome', 'https://fuckingawesome.com', '/search/videos/'),
-    764: ('ToughLoveX', 'https://tour.toughlovex.com', '/models?letter='),
+    764: ('ToughLoveX', 'https://tour.toughlovex.com', '/search/'),
     765: ('CumLouder', 'https://www.cumlouder.com', '/search?q='),
     766: ('Deep Lush', 'https://deeplush.com', '/video/'),
-    767: ('AllAnal', 'https://tour.allanal.com', '/view/'),
+    767: ('AllAnal', 'https://tour.allanal.com', '/_next/data/'),
     768: ('TurningTwistys', 'https://www.twistys.com', 'https://site-api.project1service.com'),
     769: ('GirlCum', 'https://www.girlcum.com', '/video/'),
-    770: ('ZeroTolerance', 'http://www.ztod.com', '/videos?query='),
+    770: ('Zero Tolerance', 'http://www.ztod.com', '/videos?query='),
     771: ('ClubFilly', 'http://www.clubfilly.com', '/scenefocus.php?vnum=V'),
     772: ('Insex', 'https://www.insexondemand.com', '/iod/home.php?s='),
     773: ('Sexuallybroken', 'https://www.insexondemand.com', '/iod/home.php?d=sexuallybroken.com&s='),
@@ -985,21 +992,21 @@ searchSites = {
     796: ('Moms On Moms', 'https://www.girlsway.com', '/en/video/1/1/'),
     797: ('We Like Girls', 'https://www.girlsway.com', '/en/video/1/1/'),
     798: ('Lil Humpers', 'https://www.realitykings.com', 'https://site-api.project1service.com'),
-    799: ('Bellesa Films', 'https://www.bellesafilms.com', 'https://site-api.project1service.com'),
-    800: ('ClubSweethearts', 'https://www.clubsweethearts.com', '/video.php?slug='),
-    801: ('Elegant Angel', 'https://www.elegantangel.com', '/Search?q='),
+    799: ('Bellesa Films', 'https://bellesaplus.co', 'https://bellesaplus.co/api/rest/v1'),
+    800: ('ClubSweethearts', 'https://adultprime.com', '/studios/search?type='),
+    801: (),
     802: ('Family Sinners', 'https://www.familysinners.com', 'https://site-api.project1service.com'),
     803: ('ReidMyLips', 'https://www.reidmylips.com', '/updates/'),
     804: ('Playboy Plus', 'https://www.playboyplus.com', '/search'),
     805: ('Meana Wolf', 'https://meanawolf.elxcomplete.com', '/search.php?query='),
     806: ('Transsensual', 'https://www.transsensual.com', 'https://site-api.project1service.com'),
-    807: ('DaughterSwap', 'https://www.daughterswap.com', '/movies'),
+    807: ('DaughterSwap', 'https://www.daughterswap.com', '/movies/'),
     808: ('Erito', 'https://www.erito.com', 'https://site-api.project1service.com'),
     809: ('True Amateurs', 'https://www.trueamateurs.com', 'https://site-api.project1service.com'),
     810: ('Hustler', 'https://hustler.com', '/api'),
     811: ('AmourAngels', 'http://www.amourangels.com', '/z_cover_'),
-    812: ('JAV', 'https://www.r18.com', '/common/search/searchword='),
-    813: ('Bang', 'https://www.bang.com', 'https://617fb597b659459bafe6472470d9073a.us-east-1.aws.found.io/videos/video/_search'),
+    812: (),
+    813: ('Bang', 'https://www.bang.com', '/videos?term='),
     814: ('Vivid', 'https://www.vivid.com', '/'),
     815: ('JAYs POV', 'https://jayspov.net', '/MemberSceneSearch?q='),
     816: ('Errotica Archives', 'https://www.errotica-archives.com', '/api'),
@@ -1023,31 +1030,31 @@ searchSites = {
     834: ('LadyVoyeurs', 'https://www.ladyvoyeurs.com', '/models/'),
     835: ('BAMVisions', 'https://tour.bamvisions.com', '/search.php?st=advanced&qall='),
     836: ('ATKGirlfriends', 'https://www.atkgirlfriends.com', '/tour/model/'),
-    837: ('Wank It Now', 'https://www.wankitnow.com', '/?s='),
-    838: ('Bopping Babes', 'https://www.boppingbabes.com', '/v2/?s='),
-    839: ('Upskirt Jerk', 'https://www.upskirtjerk.com', '/?s='),
+    837: ('Wank It Now', 'https://www.wankitnow.com', '/search'),
+    838: ('Bopping Babes', 'https://www.boppingbabes.com', '/search'),
+    839: ('Upskirt Jerk', 'https://www.upskirtjerk.com', '/search'),
     840: ('Interracial Pass', 'https://www.interracialpass.com', '/t1/search.php?query='),
     841: ('LookAtHerNow', 'https://www.lookathernow.com', 'https://site-api.project1service.com'),
     842: ('Mylfwood', 'https://www.mylf.com', '/movies/'),
-    843: ('AllBlackX', 'https://www.xempire.com', '/en/search/allblackx/'),
+    843: ('AllBlackX', 'https://www.xempire.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     844: ('BBCPie', 'https://bbcpie.com', '/video/'),
-    845: ('Foster Tapes', 'https://www.fostertapes.com', '/movies'),
-    846: ('BFFs', 'https://www.bffs.com', '/movies'),
-    847: ('Shoplyfter', 'https://www.shoplyfter.com', '/movies'),
-    848: ('ShoplyfterMylf', 'https://www.shoplyftermylf.com', '/movies'),
-    849: ('Little Asians', 'https://www.littleasians.com', '/movies'),
-    850: ('Thickumz', 'https://www.thickumz.com', '/movies'),
-    851: ('Teens Love Black Cocks', 'https://www.teensloveblackcocks.com', '/movies'),
+    845: ('Foster Tapes', 'https://www.fostertapes.com', '/movies/'),
+    846: ('BFFs', 'https://www.bffs.com', '/movies/'),
+    847: ('Shoplyfter', 'https://www.shoplyfter.com', '/movies/'),
+    848: ('ShoplyfterMylf', 'https://www.shoplyftermylf.com', '/movies/'),
+    849: ('Little Asians', 'https://www.littleasians.com', '/movies/'),
+    850: ('Thickumz', 'https://www.thickumz.com', '/movies/'),
+    851: ('Teens Love Black Cocks', 'https://www.teensloveblackcocks.com', '/movies/'),
     852: ('Bi Empire', 'http://www.biempire.com', 'https://site-api.project1service.com'),
-    853: ('Mylf x Joybear', 'https://www.mylf.com', '/movies/'),
-    854: ('Mylf x Teamskeet', 'https://www.mylf.com', '/movies/'),
-    855: ('Mylf x Hussie Pass', 'https://www.mylf.com', '/movies/'),
+    853: ('Mylf X Joybear', 'https://www.mylf.com', '/movies/'),
+    854: ('Mylf X Teamskeet', 'https://www.mylf.com', '/movies/'),
+    855: ('Mylf X Hussie Pass', 'https://www.mylf.com', '/movies/'),
     856: ('Mylf Of The Month', 'https://www.mylf.com', '/movies/'),
     857: ('Mylfselects', 'https://www.mylf.com', '/movies/'),
-    858: ('Mylf x Lady Fyre', 'https://www.mylf.com', '/movies/'),
+    858: ('Mylf X Lady Fyre', 'https://www.mylf.com', '/movies/'),
     859: ('Deviant Hardcore', 'https://www.devianthardcore.com', 'https://site-api.project1service.com'),
     860: ('She Will Cheat', 'https://www.shewillcheat.com', 'https://site-api.project1service.com'),
-    861: ('My XXX Pass', 'http://www.blowpass.com', '/en/search/blowpass/scene/'),
+    861: ('My XXX Pass', 'http://www.blowpass.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     862: ('SinsLife', 'https://sinslife.com', '/tour/search.php?query='),
     863: ('Wet and Pissy', 'https://www.puffynetwork.com', '/videos?search='),
     864: ('Pissing In Action', 'https://www.sinx.com', '/videos/all?sexualOrientation=0&searchWord='),
@@ -1061,11 +1068,11 @@ searchSites = {
     872: ('Kinky Spa', 'https://www.kinkyspa.com', 'https://site-api.project1service.com'),
     873: ('SubmissiveX', 'http://www.kink.com', '/search?channelIds=submissivex&q='),
     874: ('Filthy Femdom', 'http://www.kink.com', '/search?channelIds=filthyfemdom&q='),
-    875: ('Anal Mom', 'https://analmom.com', '/movies'),
-    876: ('Bellesa House', 'https://www.bellesafilms.com', 'https://site-api.project1service.com'),
+    875: ('Anal Mom', 'https://analmom.com', '/movies/'),
+    876: ('Bellesa House', 'https://bellesaplus.co', 'https://bellesaplus.co/api/rest/v1'),
     877: ('Reality Lovers', 'https://realitylovers.com', '/videos/search'),
-    878: ('Adult Time', 'https://freetour.adulttime.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
-    879: ('RealJamVR', 'https://realjamvr.com', '/virtualreality/scene/id/'),
+    878: ('Adult Time', 'https://adulttime.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    879: ('RealJamVR', 'https://realjamvr.com', '/scene/'),
     880: ('BBC Paradise', 'https://www.bbcparadise.com', '/movies/'),
     881: ('Mylf X CamSoda', 'https://www.mylf.com', '/movies/'),
     882: ('Mylf X Fucking Awesome', 'https://www.mylf.com', '/movies/'),
@@ -1078,10 +1085,10 @@ searchSites = {
     889: ('Kink Evolved Fights', 'http://www.kink.com', '/search?channelIds=evolvedfights&q='),
     890: ('WetVR', 'https://www.wetvr.com', '/video/'),
     891: ('HoloGirlsVR', 'https://www.hologirlsvr.com', '/Scenes?back=1&search='),
-    892: ('LethalHardcoreVR', 'https://www.lethalhardcorevr.com', '/lethal-hardcore-vr-scenes.html?fq='),
+    892: (),
     893: ('Gender X', 'https://www.genderxfilms.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
-    894: ('WhoreCraftVR', 'https://www.lethalhardcorevr.com', '/lethal-hardcore-vr-scenes.html?fq='),
-    895: ('DefeatedXXX', 'http://xxx.defeated.xxx', '/?s='),
+    894: (),
+    895: ('Defeated XXX', 'http://xxx.defeated.xxx', '/?s='),
     896: ('Defeated Sex Fight', 'https://defeatedsexfight.com', '/?s='),
     897: ('XVirtual', 'https://xvirtual.com', '/tour/search/?q='),
     898: ('Lust Reality', 'https://www.lustreality.com', '/virtualreality/scene/id/'),
@@ -1125,45 +1132,45 @@ searchSites = {
     936: ('FetishNetwork', 'http://www.kink.com', '/search?channelIds=fetishnetwork&q='),
     937: ('FetishNetwork Male', 'http://www.kink.com', '/search?channelIds=fetishnetworkmale&q='),
     938: ('ScrewMeToo', 'https://screwmetoo.com', '/?amp=1&s='),
-    939: ('Box Truck Sex', 'https://www.boxtrucksex.com', '/tour/search.php?query='),
+    939: (),
     940: ('Aussie Ass', 'https://www.aussieass.com', '/models/'),
     941: ('5Kporn', 'https://www.5kporn.com', '/episodes/search?search='),
     942: ('5Kteens', 'https://www.5kporn.com', '/episodes/search?search='),
-    943: ('Analyzed Girls', 'https://teencoreclub.com', '/video/'),
-    944: ('Ass Teen Mouth', 'https://teencoreclub.com', '/video/'),
-    945: ('Bang Teen Pussy', 'https://teencoreclub.com', '/video/'),
-    946: ('Brutal Invasion', 'https://teencoreclub.com', '/video/'),
-    947: ('Cumoholic Teens', 'https://teencoreclub.com', '/video/'),
-    948: ('Defiled 18', 'https://teencoreclub.com', '/video/'),
-    949: ('Double Teamed Teens', 'https://teencoreclub.com', '/video/'),
-    950: ('Dream Teens HD', 'https://teencoreclub.com', '/video/'),
-    951: ('Girls Got Cream', 'https://teencoreclub.com', '/video/'),
-    952: ('Hardcore Youth', 'https://teencoreclub.com', '/video/'),
-    953: ('Little Hellcat', 'https://teencoreclub.com', '/video/'),
-    954: ('Make Teen Gape', 'https://teencoreclub.com', '/video/'),
-    955: ('Nylon Sweeties', 'https://teencoreclub.com', '/video/'),
-    956: ('Seductive 18', 'https://teencoreclub.com', '/video/'),
-    957: ('Teen Anal Casting', 'https://teencoreclub.com', '/video/'),
-    958: ('Teen Drillers', 'https://teencoreclub.com', '/video/'),
-    959: ('Teens Natural Way', 'https://teencoreclub.com', '/video/'),
-    960: ('Teens Try Blacks', 'https://teencoreclub.com', '/video/'),
-    961: ('Spermatino', 'https://teencoreclub.com', '/video/'),
-    962: ('Teach My Ass', 'https://teencoreclub.com', '/video/'),
-    963: ('Drilled Chicks', 'https://teencoreclub.com', '/video/'),
-    964: ('Anal Checkups', 'https://teencoreclub.com', '/video/'),
-    965: ('Fab Sluts', 'https://teencoreclub.com', '/video/'),
-    966: ('Jerk-Off Pass', 'https://teencoreclub.com', '/video/'),
-    967: ('Nylon Spunk Junkies', 'https://teencoreclub.com', '/video/'),
-    968: ('She Got Six', 'https://teencoreclub.com', '/video/'),
-    969: ('Spear Teen Pussy', 'https://teencoreclub.com', '/video/'),
-    970: ('Teen Core Club', 'https://teencoreclub.com', '/video/'),
-    971: ('Teen Core Zine', 'https://teencoreclub.com', '/video/'),
-    972: ('Teens Go Porn', 'https://teencoreclub.com', '/video/'),
-    973: ('We Need New Talents', 'https://teencoreclub.com', '/video/'),
-    974: ('X Core Club', 'https://teencoreclub.com', '/video/'),
+    943: ('Analyzed Girls', 'https://api.fundorado.com', '/api/'),
+    944: ('Ass Teen Mouth', 'https://api.fundorado.com', '/api/'),
+    945: ('Bang Teen Pussy', 'https://api.fundorado.com', '/api/'),
+    946: ('Brutal Invasion', 'https://api.fundorado.com', '/api/'),
+    947: ('Cumoholic Teens', 'https://api.fundorado.com', '/api/'),
+    948: ('Defiled 18', 'https://api.fundorado.com', '/api/'),
+    949: ('Double Teamed Teens', 'https://api.fundorado.com', '/api/'),
+    950: ('Dream Teens HD', 'https://api.fundorado.com', '/api/'),
+    951: ('Girls Got Cream', 'https://api.fundorado.com', '/api/'),
+    952: ('Hardcore Youth', 'https://api.fundorado.com', '/api/'),
+    953: ('Little Hellcat', 'https://api.fundorado.com', '/api/'),
+    954: ('Make Teen Gape', 'https://api.fundorado.com', '/api/'),
+    955: ('Nylon Sweeties', 'https://api.fundorado.com', '/api/'),
+    956: ('Seductive 18', 'https://api.fundorado.com', '/api/'),
+    957: ('Teen Anal Casting', 'https://api.fundorado.com', '/api/'),
+    958: ('Teen Drillers', 'https://api.fundorado.com', '/api/'),
+    959: ('Teens Natural Way', 'https://api.fundorado.com', '/api/'),
+    960: ('Teens Try Blacks', 'https://api.fundorado.com', '/api/'),
+    961: ('Spermatino', 'https://api.fundorado.com', '/api/'),
+    962: ('Teach My Ass', 'https://api.fundorado.com', '/api/'),
+    963: ('Drilled Chicks', 'https://api.fundorado.com', '/api/'),
+    964: ('Anal Checkups', 'https://api.fundorado.com', '/api/'),
+    965: ('Fab Sluts', 'https://api.fundorado.com', '/api/'),
+    966: ('Jerk-Off Pass', 'https://api.fundorado.com', '/api/'),
+    967: ('Nylon Spunk Junkies', 'https://api.fundorado.com', '/api/'),
+    968: ('She Got Six', 'https://api.fundorado.com', '/api/'),
+    969: ('Spear Teen Pussy', 'https://api.fundorado.com', '/api/'),
+    970: ('Teen Core Club', 'https://api.fundorado.com', '/api/'),
+    971: ('Teen Core Zine', 'https://api.fundorado.com', '/api/'),
+    972: ('Teens Go Porn', 'https://api.fundorado.com', '/api/'),
+    973: ('We Need New Talents', 'https://api.fundorado.com', '/api/'),
+    974: ('X Core Club', 'https://api.fundorado.com', '/api/'),
     975: ('Blackmailed', 'https://www.evilangel.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
     976: ('Backroom Casting Couch', 'https://backroomcastingcouch.com', '/search.php?query='),
-    977: ('Black Ambush', 'https://blackambush.com', '/search.php?query='),
+    977: ('BBC Surprise', 'https://bbcsurprise.com', '/search.php?query='),
     978: ('Exploited College Girls', 'https://exploitedcollegegirls.com', '/search.php?query='),
     979: ('Desperate Amateurs', 'https://desperateamateurs.com', '/fintour/search.php?st=advanced&qall='),
     980: ('Bang My Hand', 'http://www.bangmyhand.com', '/tour1/'),
@@ -1183,21 +1190,21 @@ searchSites = {
     994: ('Woodman Casting X', 'https://www.woodmancastingx.com', '/search?query='),
     995: ('FamilySwapXXX', 'https://familyswap.xxx', '/video/watch/'),
     996: ('GirlsOnlyPorn', 'https://girlsonlyporn.com', '/video/watch/'),
-    997: ('TeamSkeet X BAEB', 'https://www.teamskeet.com', '/movies'),
-    998: ('TeamSkeet X Banana Fever', 'https://www.teamskeet.com', '/movies'),
-    999: ('TeamSkeet X CamSoda', 'https://www.teamskeet.com', '/movies'),
-    1000: ('TeamSkeet X Club Sweethearts', 'https://www.teamskeet.com', '/movies'),
-    1001: ('TeamSkeet X Eva Elfie', 'https://www.teamskeet.com', '/movies'),
-    1002: ('TeamSkeet X Flora Rodgers', 'https://www.teamskeet.com', '/movies'),
-    1003: ('TeamSkeet X Fucking Awesome', 'https://www.teamskeet.com', '/movies'),
-    1004: ('TeamSkeet X James Deen', 'https://www.teamskeet.com', '/movies'),
-    1005: ('TeamSkeet X Joy Bear', 'https://www.teamskeet.com', '/movies'),
-    1006: ('TeamSkeet X Layna Landry', 'https://www.teamskeet.com', '/movies'),
-    1007: ('TeamSkeet X LunaXJames', 'https://www.teamskeet.com', '/movies'),
-    1008: ('TeamSkeet X Mickey Mod', 'https://www.teamskeet.com', '/movies'),
-    1009: ('TeamSkeet X OG', 'https://www.teamskeet.com', '/movies'),
-    1010: ('TeamSkeet X Reislin', 'https://www.teamskeet.com', '/movies'),
-    1011: ('TeamSkeet X SpankMonster', 'https://www.teamskeet.com', '/movies'),
+    997: ('TeamSkeet X BAEB', 'https://www.teamskeet.com', '/movies/'),
+    998: ('TeamSkeet X Banana Fever', 'https://www.teamskeet.com', '/movies/'),
+    999: ('TeamSkeet X CamSoda', 'https://www.teamskeet.com', '/movies/'),
+    1000: ('TeamSkeet X Club Sweethearts', 'https://www.teamskeet.com', '/movies/'),
+    1001: ('TeamSkeet X Eva Elfie', 'https://www.teamskeet.com', '/movies/'),
+    1002: ('TeamSkeet X Flora Rodgers', 'https://www.teamskeet.com', '/movies/'),
+    1003: ('TeamSkeet X Fucking Awesome', 'https://www.teamskeet.com', '/movies/'),
+    1004: ('TeamSkeet X James Deen', 'https://www.teamskeet.com', '/movies/'),
+    1005: ('TeamSkeet X Joy Bear', 'https://www.teamskeet.com', '/movies/'),
+    1006: ('TeamSkeet X Layna Landry', 'https://www.teamskeet.com', '/movies/'),
+    1007: ('TeamSkeet X LunaXJames', 'https://www.teamskeet.com', '/movies/'),
+    1008: ('TeamSkeet X Mickey Mod', 'https://www.teamskeet.com', '/movies/'),
+    1009: ('TeamSkeet X OG', 'https://www.teamskeet.com', '/movies/'),
+    1010: ('TeamSkeet X Reislin', 'https://www.teamskeet.com', '/movies/'),
+    1011: ('TeamSkeet X SpankMonster', 'https://www.teamskeet.com', '/movies/'),
     1012: ('Porn Mega Load', 'https://www.pornmegaload.com', '/hd-porn-scenes/'),
     1013: ('Naughty Mag', 'https://www.naughtymag.com', '/amateur-videos/'),
     1014: ('XL Girls', 'https://www.xlgirls.com', '/bbw-videos/'),
@@ -1226,17 +1233,17 @@ searchSites = {
     1037: ('GinaGerson', 'https://www.ginagerson.xxx', '/sapi/'),
     1038: (),
     1039: ('VinaSkyXXX', 'https://www.vinaskyxxx.com', '/sapi/'),
-    1040: ('Culioneros', 'http://www.pornditos.com', '/t1/videos/0_'),
-    1041: ('Sexo en Public', 'http://www.pornditos.com', '/t1/videos/0_'),
-    1042: ('Mi Primer Porno', 'http://www.pornditos.com', '/t1/videos/0_'),
-    1043: ('Por el Chiquito', 'http://www.pornditos.com', '/t1/videos/0_'),
-    1044: ('Chicas de Porno', 'http://www.pornditos.com', '/t1/videos/0_'),
-    1045: ('Tetangas Espanolas', 'http://www.pornditos.com', '/t1/videos/0_'),
-    1046: ('Costenas Locas', 'http://www.pornditos.com', '/t1/videos/0_'),
-    1047: ('Nalgas Grandes', 'http://www.pornditos.com', '/t1/videos/0_'),
-    1048: ('Tetonas Locas', 'http://www.pornditos.com', '/t1/videos/0_'),
-    1049: ('Chiva Culiona', 'http://www.pornditos.com', '/t1/videos/0_'),
-    1050: ('Cuchi Mami', 'http://www.pornditos.com', '/t1/videos/0_'),
+    1040: (),
+    1041: (),
+    1042: (),
+    1043: (),
+    1044: (),
+    1045: (),
+    1046: (),
+    1047: (),
+    1048: (),
+    1049: (),
+    1050: (),
     1051: ('Bruce and Morgan', 'https://www.bruceandmorgan.net', '/sapi/'),
     1052: ('Busted', 'https://www.cherrypimps.com', '/search.php?query='),
     1053: ('Cheese.XXX', 'https://www.cherrypimps.com', '/search.php?query='),
@@ -1253,13 +1260,13 @@ searchSites = {
     1064: ('Pornstar Vote', 'https://www.mofos.com', 'https://site-api.project1service.com'),
     1065: ('Mormon Girlz', 'https://mormongirlz.com', '/?s='),
     1066: ('PurgatoryX', 'https://www.purgatoryx.com', 'https://tour.purgatoryx.com/search/'),
-    1067: ('Plumper Pass', 'https://plumperpass.com', '/tour/search.php?q='),
+    1067: ('PlumperPass', 'https://plumperpass.com', '/tour/search.php?q='),
     1068: ('FTVMilfs', 'https://ftvmilfs.com', '/update/s-'),
     1069: ('FTVGirls', 'https://www.ftvgirls.com', '/update/s-'),
-    1070: ('Jacquie Et Michel TV', 'https://www.jacquieetmicheltv.net', '/en/recherche/'),
-    1071: ('Data18 Scenes', 'https://www.data18.com', '/sys/search.php?index=&key='),
+    1070: ('Jacquie Et Michel TV', 'https://www.jacquieetmicheltv.net', '/en/content/list?search='),
+    1071: ('Data18 Scenes', 'https://www.data18.com', '/sys/live.php?index=&key='),
     1072: ('Penthouse Gold', 'https://penthousegold.com', '/search.php?query='),
-    1073: ('Data18 Movies', 'https://www.data18.com', '/sys/search.php?index=&key='),
+    1073: ('Data18 Movies', 'https://www.data18.com', '/sys/live.php?index=&key='),
     1074: ('WakeUpNFuck', 'https://www.wakeupnfuck.com', '/search?query='),
     1075: ('Dillion Nation', 'https://dillionation.com', '/sapi/'),
     1076: ('SexMex', 'https://sexmex.xxx', '/tour/search.php?query='),
@@ -1339,12 +1346,12 @@ searchSites = {
     1150: ('Videos Enfermos', 'https://www.fakings.com', '/en/buscar/'),
     1151: ('De Paseo con FAKings', 'https://www.fakings.com', '/en/buscar/'),
     1152: ('Clases de Mamadas', 'https://www.fakings.com', '/en/buscar/'),
-    1153: ('XXXPawn', 'http://xxxpawn.com', '/'),
-    1154: ('Black Patrol', 'http://blackpatrol.com', '/'),
+    1153: ('XXXPawn', 'http://bangbrosportal.com', '/?s='),
+    1154: ('Black Patrol', 'http://bangbrosportal.com', '/?s='),
     1155: ('Putalocura', 'https://www.putalocura.com', '/buscar?q='),
-    1156: ('Mia Khalifa', 'http://miakhalifa.com', '/'),
-    1157: ('Blacks On Moms', 'http://blacksonmoms.com', '/'),
-    1158: ('Filthy Family', 'https://filthyfamily.com', '/'),
+    1156: ('Mia Khalifa', 'http://bangbrosportal.com', '/?s='),
+    1157: ('Blacks On Moms', 'http://bangbrosportal.com', '/?s='),
+    1158: ('Filthy Family', 'http://bangbrosportal.com', '/?s='),
     1159: ('Melena Maria Rya', 'https://www.melenamariarya.com', '/scene/'),
     1160: ('Anal Overdose', 'https://analoverdose.com', '/'),
     1161: ('Banging Beauties', 'https://www.bangingbeauties.com', '/'),
@@ -1352,7 +1359,7 @@ searchSites = {
     1163: ('Oral Overdose', 'https://www.oraloverdose.com', '/'),
     1164: ('Up Her Asshole', 'https://www.upherasshole.com', '/'),
     1165: ('Perv City', 'https://www.pervcity.com', '/'),
-    1166: ('Abby Winters', 'https://www.abbywinters.com', '/'),
+    1166: ('Abby Winters', 'https://www.abbywinters.com', '/amateurs/models?filters%5Bkeyword%5D='),
     1167: ('Nude Girls', 'https://www.abbywinters.com', '/'),
     1168: ('Mystery Shoot', 'https://www.abbywinters.com', '/'),
     1169: ('Girl Girl', 'https://www.abbywinters.com', '/'),
@@ -1435,11 +1442,11 @@ searchSites = {
     1246: ('Hussie Pass', 'https://hussiepass.com', '/trailers/'),
     1247: ('Babe Archives', 'https://www.babearchives.com', '/search.php?query='),
     1248: ('My Pervy Family', 'https://www.mypervyfamily.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
-    1249: ('Foster Tapes', 'https://www.fostertapes.com', '/movies'),
-    1250: ('Freeuse Fantasy', 'https://www.freeusefantasy.com', '/movies'),
-    1251: ('Not My Grandpa', 'https://www.notmygrandpa.com', '/movies'),
+    1249: ('Foster Tapes', 'https://www.fostertapes.com', '/movies/'),
+    1250: ('Freeuse Fantasy', 'https://www.freeusefantasy.com', '/movies/'),
+    1251: ('Not My Grandpa', 'https://www.notmygrandpa.com', '/movies/'),
     1252: ('AmateurBoxxx', 'https://tour.amateurboxxx.com', '/search.php?query='),
-    1253: ('AnalOnly', 'https://tour.analonly.com', '/view/'),
+    1253: ('AnalOnly', 'https://tour.analonly.com', '/_next/data/'),
     1254: ('Exposed Whores', 'https://exposedwhores.com/new-tour', '/search.php?query='),
     1255: ('She Seduced Me', 'https://www.sheseducedme.com', '/search.php?query='),
     1256: ('Family Swap', 'https://nubiles-porn.com', '/video/website/52/'),
@@ -1540,43 +1547,43 @@ searchSites = {
     1351: ('Girl Grind', 'https://www.girlgrind.com', 'https://site-api.project1service.com'),
     1352: ('Strapon Cum', 'https://straponcum.com', '/updates/'),
     1353: ('HotwifeXXX', 'http://www.hotwifexxx.com', '/tour_hwxxx/'),
-    1354: ('PervDoctor', 'http://pervdoctor.com', '/movies'),
-    1355: ('MomSwap', 'http://momswap.com', '/movies'),
-    1356: ('FreeuseMILF', 'http://freeusemilf.com', '/movies'),
-    1357: ('Slayed', 'https://www.slayed.com', '/api'),
-    1358: ('White Teens Black Cocks', 'https://teencoreclub.com', '/video/'),
+    1354: ('PervDoctor', 'http://pervdoctor.com', '/movies/'),
+    1355: ('MomSwap', 'http://momswap.com', '/movies/'),
+    1356: ('FreeuseMILF', 'http://freeusemilf.com', '/movies/'),
+    1357: ('Slayed', 'https://www.slayed.com', '/graphql'),
+    1358: ('White Teens Black Cocks', 'https://api.fundorado.com', '/api/'),
     1359: ('POVR', 'https://povr.com', '/search?q='),
     1360: ('Bratty MILF', 'https://brattymilf.com', '/video/gallery/'),
     1361: ('Swallow Bay', 'https://swallowbay.com', '/video/'),
-    1362: ('SisSwap', 'https://www.sisswap.com', '/movies'),
-    1363: ('IMadePorn', 'https://www.teamskeet.com', '/movies'),
+    1362: ('SisSwap', 'https://www.sisswap.com', '/movies/'),
+    1363: ('IMadePorn', 'https://www.teamskeet.com', '/movies/'),
     1364: ('Facials4K', 'https://www.facials4k.com', '/video/'),
-    1365: ('Bang Movies', 'https://www.bang.com', 'https://617fb597b659459bafe6472470d9073a.us-east-1.aws.found.io/dvds/_search'),
+    1365: ('Bang Movies', 'https://www.bang.com', '/movies?term='),
     1366: ('VirtualPorn', 'https://virtualporn.com', '/'),
     1367: ('JAVLibrary', 'https://www.javlibrary.com', '/en/vl_searchbyid.php?keyword='),
     1368: ('Killergram', 'https://killergram.com', '/episodes.asp?page=episodes&id='),
     1369: ('Killergram Platinum', 'https://killergram.com', '/platinum.asp?page=platinum&id='),
-    1370: ('Data18 Movie Scene', 'https://data18.com', '/sys/search.php?index=&key='),
-    1371: ('PervTherapy', 'http://www.pervtherapy.com', '/movies'),
-    1372: ('HijabHookup', 'http://www.hijabhookup.com', '/movies'),
-    1373: ('KissingSis', 'https://www.teamskeet.com', '/movies'),
+    1370: ('Data18 Movie Scene', 'https://data18.com', '/sys/live.php?index=&key='),
+    1371: ('PervTherapy', 'http://www.pervtherapy.com', '/movies/'),
+    1372: ('HijabHookup', 'http://www.hijabhookup.com', '/movies/'),
+    1373: ('KissingSis', 'https://www.teamskeet.com', '/movies/'),
     1374: ('Mr Lucky POV', 'https://www.mrluckypov.com', '/search.php?query='),
     1375: ('Real Sensual', 'https://www.realsensual.com', '/search.php?query='),
-    1376: ('Tutor4k', 'https://tutor4k.com', '/'),
-    1377: ('Daddy4k', 'https://daddy4k.com', '/en/search/'),
-    1378: ('Stuck4k', 'https://stuck4k.com', '/'),
-    1379: ('Old4k', 'https://old4k.com', '/en/search/'),
-    1380: ('Hunt4k', 'https://hunt4k.com', '/'),
-    1381: ('Sis.Porn', 'https://sis.porn', '/'),
-    1382: ('Black4k', 'https://black4k.com', '/en/search/'),
-    1383: ('Loan4k', 'https://loan4k.com', '/'),
-    1384: ('Debt4k', 'https://debt4k.com', '/'),
-    1385: ('Rim4k', 'https://rim4k.com', '/'),
-    1386: ('Fist4k', 'https://fist4k.com', '/'),
-    1387: ('Mature4k', 'https://mature4k.com', '/'),
-    1388: ('Shame4k', 'https://shame4k.com', '/'),
+    1376: ('Tutor 4k', 'https://vip4k.com', '/en/search/'),
+    1377: ('Daddy 4k', 'https://vip4k.com', '/en/search/'),
+    1378: ('Stuck 4k', 'https://vip4k.com', '/en/search/'),
+    1379: ('Old 4k', 'https://vip4k.com', '/en/search/'),
+    1380: ('Hunt 4k', 'https://vip4k.com', '/en/search/'),
+    1381: ('Sis', 'https://vip4k.com', '/en/search/'),
+    1382: ('Black 4k', 'https://vip4k.com', '/en/search/'),
+    1383: ('Loan 4k', 'https://vip4k.com', '/en/search/'),
+    1384: ('Debt 4k', 'https://vip4k.com', '/en/search/'),
+    1385: ('Rim 4k', 'https://vip4k.com', '/en/search/'),
+    1386: ('Fist 4k', 'https://vip4k.com', '/en/search/'),
+    1387: ('Mature 4k', 'https://vip4k.com', '/en/search/'),
+    1388: ('Shame 4k', 'https://vip4k.com', '/en/search/'),
     1389: ('Thicc18', 'https://thicc18.com', 'https://thicc18.team18.app/graphql'),
-    1390: ('Tiny Sis', 'https://www.tinysis.com', '/movies'),
+    1390: ('Tiny Sis', 'https://www.tinysis.com', '/movies/'),
     1391: ('Bobs TGirls', 'https://www.bobstgirls.com', '/tour/trailers/'),
     1392: ('Ladyboy', 'https://www.ladyboy.xxx', '/tour/trailers/'),
     1393: ('Mom4K', 'https://www.mom4k.com', '/video/'),
@@ -1585,33 +1592,33 @@ searchSites = {
     1396: ('Younger Mommy', 'https://youngermommy.com', '/video/gallery/'),
     1397: ('Cum Swapping Sis', 'https://cumswappingsis.com', '/video/gallery/'),
     1398: ('TMWPOV', 'http://tmwpov.com', '/search.php?query='),
-    1399: ('TeamSkeet X Avery Black', 'https://www.teamskeet.com', '/movies'),
-    1400: ('TeamSkeet X BJ Raw', 'https://www.teamskeet.com', '/movies'),
-    1401: ('TeamSkeet X Bang', 'https://www.teamskeet.com', '/movies'),
-    1402: ('TeamSkeet X Bratty Foot Girls', 'https://www.teamskeet.com', '/movies'),
-    1403: ('TeamSkeet X BritStudioXXX', 'https://www.teamskeet.com', '/movies'),
-    1404: ('TeamSkeet X Cum Kitchen', 'https://www.teamskeet.com', '/movies'),
-    1405: ('TeamSkeet X DocTayTay', 'https://www.teamskeet.com', '/movies'),
-    1406: ('TeamSkeet X Erotique TV Live', 'https://www.teamskeet.com', '/movies'),
-    1407: ('TeamSkeet X EvilAngel', 'https://www.teamskeet.com', '/movies'),
-    1408: ('TeamSkeet X GrandDadz', 'https://www.teamskeet.com', '/movies'),
-    1409: ('TeamSkeet X Herb Collins', 'https://www.teamskeet.com', '/movies'),
-    1410: ('TeamSkeet X Impure Desire', 'https://www.teamskeet.com', '/movies'),
-    1411: ('TeamSkeet X JavHub', 'https://www.teamskeet.com', '/movies'),
-    1412: ('TeamSkeet X Luxury Girl', 'https://www.teamskeet.com', '/movies'),
-    1413: ('TeamSkeet X OZ Fellatio Queens', 'https://www.teamskeet.com', '/movies'),
-    1414: ('TeamSkeet X POV Perv', 'https://www.teamskeet.com', '/movies'),
-    1415: ('TeamSkeet X POVGod', 'https://www.teamskeet.com', '/movies'),
-    1416: ('TeamSkeet X PurgatoryX', 'https://www.teamskeet.com', '/movies'),
-    1417: ('TeamSkeet X Riley Cyriis', 'https://www.teamskeet.com', '/movies'),
-    1418: ('TeamSkeet X Screampies', 'https://www.teamskeet.com', '/movies'),
-    1419: ('TeamSkeet X ToughLoveX', 'https://www.teamskeet.com', '/movies'),
-    1420: ('TeamSkeet X YoungBusty', 'https://www.teamskeet.com', '/movies'),
-    1421: ('StayHomePOV', 'https://www.teamskeet.com', '/movies'),
-    1422: ('TeamSkeet Allstars', 'https://www.teamskeet.com', '/movies'),
-    1423: ('TeamSkeet Classics', 'https://www.teamskeet.com', '/movies'),
-    1424: ('TeamSkeet Labs', 'https://www.teamskeet.com', '/movies'),
-    1425: ('TeamSkeet Selects', 'https://www.teamskeet.com', '/movies'),
+    1399: ('TeamSkeet X Avery Black', 'https://www.teamskeet.com', '/movies/'),
+    1400: ('TeamSkeet X BJ Raw', 'https://www.teamskeet.com', '/movies/'),
+    1401: ('TeamSkeet X Bang', 'https://www.teamskeet.com', '/movies/'),
+    1402: ('TeamSkeet X Bratty Foot Girls', 'https://www.teamskeet.com', '/movies/'),
+    1403: ('TeamSkeet X BritStudioXXX', 'https://www.teamskeet.com', '/movies/'),
+    1404: ('TeamSkeet X Cum Kitchen', 'https://www.teamskeet.com', '/movies/'),
+    1405: ('TeamSkeet X DocTayTay', 'https://www.teamskeet.com', '/movies/'),
+    1406: ('TeamSkeet X Erotique TV Live', 'https://www.teamskeet.com', '/movies/'),
+    1407: ('TeamSkeet X EvilAngel', 'https://www.teamskeet.com', '/movies/'),
+    1408: ('TeamSkeet X GrandDadz', 'https://www.teamskeet.com', '/movies/'),
+    1409: ('TeamSkeet X Herb Collins', 'https://www.teamskeet.com', '/movies/'),
+    1410: ('TeamSkeet X Impure Desire', 'https://www.teamskeet.com', '/movies/'),
+    1411: ('TeamSkeet X JavHub', 'https://www.teamskeet.com', '/movies/'),
+    1412: ('TeamSkeet X Luxury Girl', 'https://www.teamskeet.com', '/movies/'),
+    1413: ('TeamSkeet X OZ Fellatio Queens', 'https://www.teamskeet.com', '/movies/'),
+    1414: ('TeamSkeet X POV Perv', 'https://www.teamskeet.com', '/movies/'),
+    1415: ('TeamSkeet X POVGod', 'https://www.teamskeet.com', '/movies/'),
+    1416: ('TeamSkeet X PurgatoryX', 'https://www.teamskeet.com', '/movies/'),
+    1417: ('TeamSkeet X Riley Cyriis', 'https://www.teamskeet.com', '/movies/'),
+    1418: ('TeamSkeet X Screampies', 'https://www.teamskeet.com', '/movies/'),
+    1419: ('TeamSkeet X ToughLoveX', 'https://www.teamskeet.com', '/movies/'),
+    1420: ('TeamSkeet X YoungBusty', 'https://www.teamskeet.com', '/movies/'),
+    1421: ('StayHomePOV', 'https://www.teamskeet.com', '/movies/'),
+    1422: ('TeamSkeet Allstars', 'https://www.teamskeet.com', '/movies/'),
+    1423: ('TeamSkeet Classics', 'https://www.teamskeet.com', '/movies/'),
+    1424: ('TeamSkeet Labs', 'https://www.teamskeet.com', '/movies/'),
+    1425: ('TeamSkeet Selects', 'https://www.teamskeet.com', '/movies/'),
     1426: ('Mylf X Bang', 'https://www.mylf.com', '/movies/'),
     1427: ('Mylf X BJ Raw', 'https://www.mylf.com', '/movies/'),
     1428: ('Mylf X Chad Alva', 'https://www.mylf.com', '/movies/'),
@@ -1638,7 +1645,278 @@ searchSites = {
     1449: ('Tricky Agent', 'http://trickyagent.com', '/detailedTrailer/'),
     1550: ('Net Video Girls', 'https://netvideogirls.net', '/'),
     1551: ('Moms Family Secrets', 'https://momsfamilysecrets.com', '/video/gallery/'),
-    1552: ('Squirted', 'https://squirted.com', 'https://site-api.project1service.com')
+    1552: ('Squirted', 'https://squirted.com', 'https://site-api.project1service.com'),
+    1553: ('See Him Fuck', 'https://seehimfuck.com', '/trailers/'),
+    1554: ('MommysBoy', 'http://www.mommysboy.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1555: ('PolyFamilyLife', 'http://www.adulttime.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1556: ('ModelTime', 'http://www.modeltime.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1557: ('OutOfTheFamily', 'http://www.outofthefamily.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1558: ('GiveMeTeens', 'http://www.givemeteens.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1559: ('WhiteGhetto', 'http://www.whiteghetto.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1560: ('SilviaSaint', 'http://www.silviasaint.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1561: ('CumshotOasis', 'http://www.cumshotoasis.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1562: ('Daughter JOI', 'https://daughterjoi.com', '/1/search/'),
+    1563: ('HushPass', 'https://hushpass.com', '/t1/search.php?query='),
+    1564: ('Hot Milfs Fuck', 'https://hotmilfsfuck.com', '/search.php?query='),
+    1565: ('Sugar Daddy Porn', 'https://www.sugardaddyporn.com', '/videos/search?s='),
+    1566: ('HotGuysFuck', 'https://www.hotguysfuck.com', '/videos/search?s='),
+    1567: ('BiGuysFuck', 'https://www.biguysfuck.com', '/videos/search?s='),
+    1568: ('GayHoopla', 'https://www.gayhoopla.com', '/videos/search?s='),
+    1569: ('Big Cock Hero', 'https://naughtyamerica.com', '/search?term='),
+    1570: ('Mom\'s Money', 'https://naughtyamerica.com', '/search?term='),
+    1571: ('College Sugarbabes', 'https://naughtyamerica.com', '/search?term='),
+    1572: ('Mrs. Creampie', 'https://naughtyamerica.com', '/search?term='),
+    1573: ('Thundercock', 'https://naughtyamerica.com', '/search?term='),
+    1574: ('Conor Coxxx', 'https://conorcoxxx.com', '/MemberSceneSearch?q='),
+    1575: ('Mom Lover', 'https://momlover.com', '/video'),
+    1576: ('I\'m Not Your Mommy', 'https://momlover.com', '/video'),
+    1577: ('Mom Swapped', 'https://momlover.com', '/video'),
+    1578: ('Mom Wants to Breed', 'https://momlover.com', '/video'),
+    1579: ('Mom Wants Creampie', 'https://momlover.com', '/video'),
+    1580: ('Mom\'s Family Secrets', 'https://momlover.com', '/video'),
+    1581: ('Moms Boy Toy', 'https://momlover.com', '/video'),
+    1582: ('Mom\'s Tight', 'https://momlover.com', '/video'),
+    1583: ('Czech Casting', 'https://czechcasting.com', '/tour/search/?q='),
+    1584: ('Freaky Fembots', 'https://freakyfembots.com', '/movies/'),
+    1585: ('TeamSkeet x Kriss Kiss', 'https://www.teamskeet.com', '/movies/'),
+    1586: ('TeamSkeet x Molly RedWolf', 'https://www.teamskeet.com', '/movies/'),
+    1587: ('TeamSkeet x Sweetie Fox', 'https://www.teamskeet.com', '/movies/'),
+    1588: ('TeamSkeet Features', 'https://www.teamskeet.com', '/movies/'),
+    1589: ('PervPrincipal', 'https://www.pervprincipal.com', '/movies/'),
+    1590: ('LPI', 'https://www.mofos.com', 'https://site-api.project1service.com'),
+    1591: ('Bel Ami Online', 'https://newtour.belamionline.com', '/playvideo.aspx?'),
+    1592: ('Mom Comes First', 'https://momcomesfirst.com', '/?s='),
+    1593: ('GF Leaks', 'https://www.realitykings.com', 'https://site-api.project1service.com'),
+    1594: ('Hentaied', 'https://hentaied.com', '/?s='),
+    1595: ('Parasited', 'https://parasited.com', '/?s='),
+    1596: ('Futanari XXX', 'https://futanari.xxx', '/?s='),
+    1597: ('Caribbeancom', 'https://en.caribbeancom.com', '/eng/moviepages/'),
+    1598: ('VRAllure', 'https://www.vrallure.com', '/scenes/'),
+    1599: ('Kin8tengoku', 'https://en.kin8tengoku.com', '/gateway/entry.phpgw?en=1&provider_id=4034&action=list&q='),
+    1600: ('JAVDatabase', 'https://www.javdatabase.com', '/?wpessid=391487&s='),
+    1601: ('Adult Prime', 'https://adultprime.com', '/studios/search?q='),
+    1602: ('Beauty and the Senior', 'https://adultprime.com', '/studios/search?q='),
+    1603: ('4K CFNM', 'https://adultprime.com', '/studios/search?type='),
+    1604: ('Adult Prime Originals', 'https://adultprime.com', '/studios/search?type='),
+    1605: ('BBvideo', 'https://adultprime.com', '/studios/search?type='),
+    1606: ('Bondagettes', 'https://adultprime.com', '/studios/search?type='),
+    1607: ('Bound Men Wanked', 'https://adultprime.com', '/studios/search?type='),
+    1608: ('BrasilBimbos', 'https://adultprime.com', '/studios/search?type='),
+    1609: ('Breed Bus', 'https://adultprime.com', '/studios/search?type='),
+    1610: ('Club Bang Boys', 'https://adultprime.com', '/studios/search?type='),
+    1611: ('Club Castings', 'https://adultprime.com', '/studios/search?type='),
+    1612: ('Cockin', 'https://adultprime.com', '/studios/search?type='),
+    1613: ('Color Climax', 'https://adultprime.com', '/studios/search?type='),
+    1614: ('CuckOldest', 'https://adultprime.com', '/studios/search?type='),
+    1615: ('DaringSex HD', 'https://adultprime.com', '/studios/search?type='),
+    1616: ('Digital Desire', 'https://adultprime.com', '/studios/search?type='),
+    1617: ('Dirty Gunther', 'https://adultprime.com', '/studios/search?type='),
+    1618: ('Dirty Hospital', 'https://adultprime.com', '/studios/search?type='),
+    1619: ('Distorded', 'https://adultprime.com', '/studios/search?type='),
+    1620: ('Elegant Raw', 'https://adultprime.com', '/studios/search?type='),
+    1621: ('Evil Playgrounds', 'https://adultprime.com', '/studios/search?type='),
+    1622: ('Family Screw', 'https://adultprime.com', '/studios/search?type='),
+    1623: ('Fixxxion', 'https://adultprime.com', '/studios/search?type='),
+    1624: ('Fresh POV', 'https://adultprime.com', '/studios/search?type='),
+    1625: ('Fucking Skinny', 'https://adultprime.com', '/studios/search?type='),
+    1626: ('Gonzo 2000', 'https://adultprime.com', '/studios/search?type='),
+    1627: ('Granddadz', 'https://adultprime.com', '/studios/search?type='),
+    1628: ('GrandMams', 'https://adultprime.com', '/studios/search?type='),
+    1629: ('GrandParentsX', 'https://adultprime.com', '/studios/search?type='),
+    1630: ('Group Banged', 'https://adultprime.com', '/studios/search?type='),
+    1631: ('Group Mams', 'https://adultprime.com', '/studios/search?type='),
+    1632: ('Group Sex Games', 'https://adultprime.com', '/studios/search?type='),
+    1633: ('Hollandsche Passie', 'https://adultprime.com', '/studios/search?type='),
+    1634: ('Interraced', 'https://adultprime.com', '/studios/search?type='),
+    1635: ('Jim Slip', 'https://adultprime.com', '/studios/search?type='),
+    1636: ('Laras Playground', 'https://adultprime.com', '/studios/search?type='),
+    1637: ('Lets Go Bi', 'https://adultprime.com', '/studios/search?type='),
+    1638: ('Mams Casting', 'https://adultprime.com', '/studios/search?type='),
+    1639: ('Manalized', 'https://adultprime.com', '/studios/search?type='),
+    1640: ('Manko 88', 'https://adultprime.com', '/studios/search?type='),
+    1641: ('Massage Sins', 'https://adultprime.com', '/studios/search?type='),
+    1642: ('Mature Van', 'https://adultprime.com', '/studios/search?type='),
+    1643: ('My MILFz', 'https://adultprime.com', '/studios/search?type='),
+    1644: ('My Sexy Kittens', 'https://adultprime.com', '/studios/search?type='),
+    1645: ('OldieX', 'https://adultprime.com', '/studios/search?type='),
+    1646: ('Peep Leek', 'https://adultprime.com', '/studios/search?type='),
+    1647: ('Perfect 18', 'https://adultprime.com', '/studios/search?type='),
+    1648: ('Plumperd', 'https://adultprime.com', '/studios/search?type='),
+    1649: ('Pornstar Classics', 'https://adultprime.com', '/studios/search?type='),
+    1650: ('Pornstars Live', 'https://adultprime.com', '/studios/search?type='),
+    1651: ('Prime Lesbian', 'https://adultprime.com', '/studios/search?type='),
+    1652: ('Raw Euro', 'https://adultprime.com', '/studios/search?type='),
+    1653: ('Red Light Sex Trips', 'https://adultprime.com', '/studios/search?type='),
+    1654: ('Retro Raw', 'https://adultprime.com', '/studios/search?type='),
+    1655: ('Rodox', 'https://adultprime.com', '/studios/search?type='),
+    1656: ('Salsa XXX', 'https://adultprime.com', '/studios/search?type='),
+    1657: ('Sensual Heat', 'https://adultprime.com', '/studios/search?type='),
+    1658: ('Shadow Slaves', 'https://adultprime.com', '/studios/search?type='),
+    1659: ('Sinful Raw', 'https://adultprime.com', '/studios/search?type='),
+    1660: ('Sinful Soft', 'https://adultprime.com', '/studios/search?type='),
+    1661: ('Sinful XXX', 'https://adultprime.com', '/studios/search?type='),
+    1662: ('Southern Sins', 'https://adultprime.com', '/studios/search?type='),
+    1663: ('Submissed', 'https://adultprime.com', '/studios/search?type='),
+    1664: ('Summer Sinners', 'https://adultprime.com', '/studios/search?type='),
+    1665: ('Swhores', 'https://adultprime.com', '/studios/search?type='),
+    1666: ('Teenrs', 'https://adultprime.com', '/studios/search?type='),
+    1667: ('The Pain Files', 'https://adultprime.com', '/studios/search?type='),
+    1668: ('Tranny Bizarre', 'https://adultprime.com', '/studios/search?type='),
+    1669: ('UK Flashers', 'https://adultprime.com', '/studios/search?type='),
+    1670: ('Vintage Classic Porn', 'https://adultprime.com', '/studios/search?type='),
+    1671: ('VR Teens', 'https://adultprime.com', '/studios/search?type='),
+    1672: ('Young Busty', 'https://adultprime.com', '/studios/search?type='),
+    1673: ('Abuse Me', 'http://bangbrosportal.com', '/?s='),
+    1674: ('DirtyAuditions', 'https://dirtyauditions.com', '/_next/data/'),
+    1675: ('Sexy Modern Bull', 'https://sexymodernbull.com', '/search/'),
+    1676: ('GotFilled', 'https://gotfilled.com', '/search/'),
+    1677: ('ComeInside', 'https://comeinside.com', '/models/'),
+    1678: ('Benefit Monkey', 'https://benefitmonkey.com', '/search/'),
+    1679: ('Ricky\'s Room', 'https://rickysroom.com', '/search/'),
+    1680: ('Inserted', 'https://inserted.com', '/search/'),
+    1681: ('BJRAW', 'https://bjraw.com', '/search/'),
+    1682: ('AltErotic', 'https://alterotic.com', '/search/'),
+    1683: ('Lezkey', 'https://lezkey.com', '/search/'),
+    1684: ('Side Chick', 'https://sidechick.com', '/search/'),
+    1685: ('JAV888', 'https://jav888.com', '/search/'),
+    1686: ('Smashed', 'https://nubiles-porn.com', '/video/website/68/'),
+    1687: ('Pie 4k', 'https://vip4k.com', '/en/search/'),
+    1688: ('Shower 4K', 'https://pornplus.com', '/video/'),
+    1689: ('Kinky Sluts 4K', 'https://pornplus.com', '/video/'),
+    1690: ('Property Exploits', 'https://pornplus.com', '/video/'),
+    1691: ('Asians Exploited', 'https://pornplus.com', '/video/'),
+    1692: ('Strip Club Tryouts', 'https://pornplus.com', '/video/'),
+    1693: ('MomCum', 'https://pornplus.com', '/video/'),
+    1694: ('VIP4K', 'https://vip4k.com', '/en/search/'),
+    1695: ('PornPlus', 'https://pornplus.com', '/video/'),
+    1696: ('BBC POVD', 'https://pornplus.com', '/video/'),
+    1697: ('Girl Scout Sex', 'https://pornplus.com', '/video/'),
+    1698: ('Exploited Cheerleaders', 'https://pornplus.com', '/video/'),
+    1699: ('School of Cock', 'https://pornplus.com', '/video/'),
+    1700: ('GloryHole 4K', 'https://pornplus.com', '/video/'),
+    1701: ('Creepy Pa', 'https://pornplus.com', '/video/'),
+    1702: ('Caged Sex', 'https://pornplus.com', '/video/'),
+    1703: ('Teeny Taboo', 'https://teenytaboo.com', '/videos/'),
+    1704: ('WetVR', 'https://www.wetvr.com', '/video/'),
+    1705: ('LoveHerFilms', 'https://www.loveherfilms.com', '/tour/search.php?query='),
+    1706: ('LoveHerBoobs', 'https://www.loveherboobs.com', '/tour/search.php?query='),
+    1707: ('SheLovesBlack', 'https://www.shelovesblack.com', '/tour/search.php?query='),
+    1708: ('Try Teens', 'https://api.fundorado.com', '/api/'),
+    1709: ('Young Throats', 'https://api.fundorado.com', '/api/'),
+    1710: ('Bride 4K', 'https://vip4k.com', '/en/search/'),
+    1711: ('Dyke 4K', 'https://vip4k.com', '/en/search/'),
+    1712: ('Ignore 4K', 'https://vip4k.com', '/en/search/'),
+    1713: ('Buttmuse', 'https://www.littlecaprice-dreams.com', '/?s='),
+    1714: ('Caprice Divas', 'https://www.littlecaprice-dreams.com', '/?s='),
+    1715: ('NasstyX', 'https://www.littlecaprice-dreams.com', '/?s='),
+    1716: ('POVDreams', 'https://www.littlecaprice-dreams.com', '/?s='),
+    1717: ('Streetfuck', 'https://www.littlecaprice-dreams.com', '/?s='),
+    1718: ('SuperprivateX', 'https://www.littlecaprice-dreams.com', '/?s='),
+    1719: ('Wecumtoyou', 'https://www.littlecaprice-dreams.com', '/?s='),
+    1720: ('Xpervo', 'https://www.littlecaprice-dreams.com', '/?s='),
+    1721: ('Cuck 4K', 'https://vip4k.com', '/en/search/'),
+    1722: ('Oopsie', 'https://adulttime.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1723: ('Caught Fapping', 'https://adulttime.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1724: ('Couple Swapping', 'https://adulttime.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1725: ('Kiss Me Fuck Me', 'https://adulttime.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1726: ('Dare We Share', 'https://adulttime.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1727: ('Teen Sneaks', 'https://adulttime.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1728: ('Modern Day Sins', 'https://adulttime.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1729: ('Accidental Gangbang', 'https://adulttime.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1730: ('Aunt Judys XXX', 'https://auntjudysxxx.com', '/tour/search.php?query='),
+    1731: ('Aunt Judys', 'https://auntjudys.com', '/tour/search.php?query='),
+    1732: ('Gilfed', 'https://gilfed.com', 'https://site-api.project1service.com'),
+    1733: ('Dilfed', 'https://dilfed.com', 'https://site-api.project1service.com'),
+    1734: ('Mylf After Dark', 'https://www.mylf.com', '/movies/'),
+    1735: ('HijabMylfs', 'https://www.hijabmylfs.com', '/movies/'),
+    1736: ('PervDriver', 'https://www.teamskeet.com', '/movies/'),
+    1737: ('Hot Girls Game', 'https://www.realitykings.com', 'https://site-api.project1service.com'),
+    1738: ('WowPorn', 'https://www.wowpornblog.com', '/?s='),
+    1739: ('Black TGirls Hardcore', 'https://www.blacktgirlshardcore.com', '/tour/trailers/'),
+    1740: ('Mommy 4K', 'https://vip4k.com', '/en/search/'),
+    1741: ('Colette', 'https://www.colette.com', '/videos/'),
+    1742: (),
+    1743: ('Work Me Harder', 'https://www.realitykings.com', 'https://site-api.project1service.com'),
+    1744: ('ScoreVideos', 'https://www.scorevideos.com', '/porn-videos/'),
+    1745: ('Bush', 'https://www.cherrypimps.com', '/search.php?query='),
+    1746: ('Ginger', 'https://www.cherrypimps.com', '/search.php?query='),
+    1747: ('Divine-DD', 'https://www.divine-dd.com', '/search/'),
+    1748: ('Serve 4K', 'https://vip4k.com', '/en/search/'),
+    1749: ('Fan Fuckers', 'https://adultprime.com', '/studios/search?type='),
+    1750: ('Fill Up My Mom', 'https://www.filthykings.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1751: ('Hot Girls Raw', 'https://www.filthykings.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1752: ('Its Anal', 'https://www.filthykings.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1753: ('FK BTS', 'https://www.filthykings.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1754: ('MilfAF', 'https://www.milfaf.com', '/models/'),
+    1755: ('Shady Spa', 'https://www.shadyspa.com', '/models/'),
+    1756: ('Breed Me', 'https://www.breedme.com', '/models/'),
+    1757: ('MrLuckyRAW', 'https://www.mrluckyraw.com', '/search.php?query='),
+    1758: ('Sex Selector', 'https://www.sexselector.com', 'https://site-api.project1service.com'),
+    1759: ('Xev Unleashed', 'https://xevunleashed.com', '/search.php?query='),
+    1760: ('My POV Fam', 'https://www.mypovfam.com', '/?s='),
+    1761: ('Perverted POV', 'https://www.pervertedpov.com', '/?s='),
+    1762: ('Peter\'s Kingdom', 'https://peterskingdom.com', '/?s='),
+    1763: ('Raw White Meat', 'https://rawwhitemeat.com', '/?s='),
+    1764: ('Sluts Around Town', 'https://slutsaroundtown.com', '/?s='),
+    1765: ('18 Lust', 'https://18lust.com', '/MemberSceneSearch?q='),
+    1766: ('Bizarre Entertainment', 'https://www.bizarrevideo.com', '/MemberSceneSearch?q='),
+    1767: ('Black Massive Cocks', 'https://blackmassivecocks.com', '/MemberSceneSearch?q='),
+    1768: ('Brutha\'s Inc', 'https://bruthasinc.com', '/MemberSceneSearch?q='),
+    1769: ('Concoxxxion', 'https://concoxxxion.com', '/MemberSceneSearch?q='),
+    1770: ('Darkside Entertainment', 'https://darksideentertainment.com', '/MemberSceneSearch?q='),
+    1771: ('Digital Video Vision', 'https://digitalvideovision.com', '/MemberSceneSearch?q='),
+    1772: ('Elegant Angel', 'https://elegantangel.com', '/MemberSceneSearch?q='),
+    1773: ('Evasive Angles', 'https://evasiveangles.com', '/MemberSceneSearch?q='),
+    1774: ('Forbidden Fruits Films', 'https://forbiddenfruitsfilms.com', '/MemberSceneSearch?q='),
+    1775: ('Horny Household', 'https://hornyhousehold.com', '/MemberSceneSearch?q='),
+    1776: ('Hot Wife Fun', 'https://hotwifefun.com', '/MemberSceneSearch?q='),
+    1777: ('Joanna Angel', 'https://joannaangel.com', '/MemberSceneSearch?q='),
+    1778: ('Jodi West', 'https://jodiwest.com', '/MemberSceneSearch?q='),
+    1779: ('Jonathan Jordan XXX', 'https://jonathanjordanxxx.com', '/MemberSceneSearch?q='),
+    1780: ('Kaiia Eve', 'https://kaiiaeve.com', '/MemberSceneSearch?q='),
+    1781: ('Kings of Fetish', 'https://kingsoffetish.com', '/MemberSceneSearch?q='),
+    1782: ('Lethal Hardcore', 'https://lethalhardcore.com', '/MemberSceneSearch?q='),
+    1783: ('Lethal Hardcore VR', 'https://lethalhardcorevr.com', '/MemberSceneSearch?q='),
+    1784: ('Only 3x', 'https://only3x.com', '/MemberSceneSearch?q='),
+    1785: ('LeWood', 'https://lewood.com', '/MemberSceneSearch?q='),
+    1786: ('Pornstar Stroker', 'https://pornstarstroker.com', '/MemberSceneSearch?q='),
+    1787: ('Reagan Foxx', 'https://www.reaganfoxx.com', '/MemberSceneSearch?q='),
+    1788: ('Real Girls Fuck', 'https://realgirlsfuck.com', '/MemberSceneSearch?q='),
+    1789: ('Severe Sex Films', 'https://severesexfilms.com', '/MemberSceneSearch?q='),
+    1790: ('SINematica', 'https://sinematica.com', '/MemberSceneSearch?q='),
+    1791: ('Smut Factor', 'https://smutfactor.com', '/MemberSceneSearch?q='),
+    1792: ('Star Strokers', 'https://starstroker.com', '/MemberSceneSearch?q='),
+    1793: ('Step House XXX', 'https://stephousexxx.com', '/MemberSceneSearch?q='),
+    1794: ('Vouyer Media', 'https://vouyermedia.com', '/MemberSceneSearch?q='),
+    1795: ('West Coast Productions', 'https://westcoastproductions.com', '/MemberSceneSearch?q='),
+    1796: ('Whorecraft VR', 'https://whorecraftvr.com', '/MemberSceneSearch?q='),
+    1797: ('Freeze', 'https://freeze.xxx', '/?s='),
+    1798: ('Plants vs Cunts', 'https://plantsvscunts.com', '/?s='),
+    1799: ('Brand New Amateurs', 'https://brandnewamateurs.com', '/models'),
+    1800: ('Hot Wives Cheating', 'https://hotwivescheating.com/', '/MemberSceneSearch?q='),
+    1801: ('Pornbox', 'https://www.pornbox.com', '/store/search?q='),
+    1802: ('Downblouse Jerk', 'https://www.downblousejerk.com', '/search'),
+    1803: ('Real Bikini Girls', 'https://www.realbikinigirls.com', '/search'),
+    1804: ('Lingerie Tales', 'https://www.lingerietales.com', '/search'),
+    1805: ('DFXtra', 'https://www.dogfartnetwork.com', 'https://tsmkfa364q-dsn.algolia.net/1/indexes/*/queries'),
+    1806: ('Milfy', 'https://www.milfy.com', '/graphql'),
+    1807: ('Use POV', 'https://www.usepov.com', '/movies/'),
+    1808: ('The Loft', 'https://www.teamskeet.com', '/movies/'),
+    1809: ('TeamSkeet X Slut Inspection', 'https://www.teamskeet.com', '/movies/'),
+    1810: ('Glowupz', 'https://www.teamskeet.com', '/movies/'),
+    1811: ('Mylf X Little Puck', 'https://www.mylf.com', '/movies/'),
+    1812: ('Secrets', 'https://www.mylf.com', '/movies/'),
+    1813: ('Tiger Moms', 'https://www.mylf.com', '/movies/'),
+    1814: ('Ask Your Mother', 'https://www.mylf.com', '/movies/'),
+    1815: ('Mylf X Manko88', 'https://www.mylf.com', '/movies/'),
+    1816: ('Breeding Material', 'https://www.teamskeet.com', '/movies/'),
+    1817: ('Mormon Girlz', 'https://www.teamskeet.com', '/movies/'),
+    1818: ('Sex and Grades', 'https://www.teamskeet.com', '/movies/'),
+    1819: ('Brat Tamer', 'https://www.teamskeet.com', '/movies/'),
+    1820: ('TeamSkeet X Fit18', 'https://www.teamskeet.com', '/movies/'),
+    1821: ('TeamSkeet X Harmony Films', 'https://www.teamskeet.com', '/movies/'),
+    1822: ('TeamSkeet X Jonathan Jordan', 'https://www.teamskeet.com', '/movies/'),
+    1823: ('After Dark', 'https://www.teamskeet.com', '/movies/'),
 }
 
 abbreviations = (
@@ -1653,13 +1931,17 @@ abbreviations = (
     ('^aa ', 'AmateurAllure '),
     ('^ad ', 'AmericanDaydreams '),
     ('^add ', 'ManualAddActors '),
+    ('^afg ', '18OnlyGirls '),
     ('^agm ', 'AllGirlMassage '),
+    ('^AllFineGirls ', '18OnlyGirls '),
     ('^am ', 'AssMasterpiece '),
     ('^analb ', 'AnalBeauty '),
-    ('^legalporno ', 'AnalVids '),
     ('^ap ', 'AssParade '),
+    ('^atkg', 'ATKGirlfriends'),
     ('^aw ', 'AngelaWhite '),
+    ('^ba ', 'BBCSurprise '),
     ('^baebz ', 'Baeb '),
+    ('^bandts ', 'BeautyandtheSenior '),
     ('^bblib ', 'BigButtsLikeItBig '),
     ('^bcasting ', 'BangCasting '),
     ('^bcb ', 'BigCockBully '),
@@ -1670,12 +1952,16 @@ abbreviations = (
     ('^bex ', 'BrazzersExxtra '),
     ('^bgb ', 'BabyGotBoobs '),
     ('^bgbs ', 'BoundGangbangs '),
+    ('^bgf ', 'BiGuysFuck '),
     ('^bglamkore ', 'BangGlamkore '),
     ('^bgonzo ', 'BangGonzo '),
     ('^bin ', 'BigNaturals '),
     ('^bjf ', 'BlowjobFridays '),
+    ('^blackambush ', 'BBCSurprise '),
     ('^bp ', 'ButtPlays '),
-    ('^brealteens ', 'BangRealTeens '),
+    ('^brammed ', 'Bang '),
+    ('^brealteens ', 'Bang '),
+    ('^bsurprise ', 'Bang '),
     ('^btas ', 'BigTitsatSchool '),
     ('^btaw ', 'BigTitsatWork '),
     ('^btc', 'BigTitCreampie '),
@@ -1683,13 +1969,24 @@ abbreviations = (
     ('^btiu ', 'BigTitsinUniform '),
     ('^btlbd ', 'BigTitsLikeBigDicks '),
     ('^btra ', 'BigTitsRoundAsses '),
-    ('^bts ', 'BoxTruckSex '),
     ('^burna ', 'BurningAngel '),
     ('^bwb ', 'BigWetButts '),
+    ('^byngr ', 'Bang '),
+    ('^cc ', 'Czech Casting '),
+    ('^ccxxx ', 'Conor Coxxx '),
     ('^cfnm ', 'ClothedFemaleNudeMale '),
     ('^clip ', 'AnalVids '),
     ('^clubseventeen ', 'ClubSweethearts '),
     ('^cps ', 'CherryPimps '),
+    ('^cpbush ', 'Bush '),
+    ('^cpbusted ', 'Busted '),
+    ('^cpcheese ', 'Cheese.XXX '),
+    ('^cpconfessions ', 'Confessions.XXX '),
+    ('^cpcucked ', 'Cucked.XXX '),
+    ('^cpfresh ', 'Fresh '),
+    ('^cpginger ', 'Ginger '),
+    ('^cppetite ', 'Petite.XXX '),
+    ('^cptaboo ', 'Taboo '),
     ('^css ', 'CzechStreets '),
     ('^cuf ', 'CumFiesta '),
     ('^cws ', 'CzechWifeSwap '),
@@ -1700,9 +1997,11 @@ abbreviations = (
     ('^dbm ', 'DontBreakMe '),
     ('^dc ', 'DorcelVision '),
     ('^ddfb ', 'DDFBusty '),
+    ('^dfxtraoriginals ', 'DFXtra '),
     ('^dm ', 'DirtyMasseur '),
     ('^dnj ', 'DaneJones '),
     ('^dpg ', 'DigitalPlayground '),
+    ('^drilled ', 'Drilled.XXX '),
     ('^ds ', 'ScrewMeToo '),
     ('^dsw ', 'DaughterSwap '),
     ('^dwc ', 'DirtyWivesClub '),
@@ -1713,7 +2012,6 @@ abbreviations = (
     ('^ext ', 'ExxxtraSmall '),
     ('^Exxtra ', 'BrazzersExxtra '),
     ('^family ', 'Taboo '),
-    ('^familyxxx ', 'Taboo '),
     ('^fams ', 'FamilyStrokes '),
     ('^faq ', 'FirstAnalQuest '),
     ('^fds ', 'FakeDrivingSchool '),
@@ -1731,6 +2029,7 @@ abbreviations = (
     ('^ftx ', 'FakeTaxi '),
     ('^gbcp ', 'GangbangCreampie '),
     ('^gft ', 'GrandpasFuckTeens '),
+    ('^glf ', 'Gilfed '),
     ('^gta ', 'GirlsTryAnal '),
     ('^gw ', 'GirlsWay '),
     ('^h1o1 ', 'Housewife1on1 '),
@@ -1738,16 +2037,20 @@ abbreviations = (
     ('^hart ', 'Hegre '),
     ('^hcm ', 'HotCrazyMess '),
     ('^hegre-art ', 'Hegre '),
+    ('^hgf ', 'HotGuysFuck '),
     ('^hlaf ', 'Hot Legs and Feet '),
     ('^hoh ', 'HandsOnHardcore '),
     ('^hotab ', 'HouseofTaboo '),
     ('^houseofyre ', 'House of Fyre '),
     ('^hr ', 'HollyRandall '),
     ('^ht ', 'Hogtied '),
+    ('^hussieauditions', 'HussiePass'),
     ('^hustl3r ', 'Hustler '),
     ('^ihaw ', 'IHaveAWife '),
     ('^iktg ', 'IKnowThatGirl '),
     ('^il ', 'ImmoralLive '),
+    ('^int3rracialpass ', 'InterracialPass '),
+    ('^irpass ', 'InterracialPass '),
     ('^itc ', 'InTheCrack '),
     ('^jb ', 'JavBus '),
     ('^jowm', 'JerkOffWithMe'),
@@ -1758,6 +2061,7 @@ abbreviations = (
     ('^la ', 'LatinAdultery '),
     ('^latn ', 'LookAtHerNow '),
     ('^lcd ', 'LittleCaprice '),
+    ('^legalporno ', 'AnalVids '),
     ('^lhf ', 'LoveHerFeet '),
     ('^lilhum ', 'LilHumpers '),
     ('^littlecapricedreams ', 'LittleCaprice '),
@@ -1792,6 +2096,7 @@ abbreviations = (
     ('^mr ', 'MassageRooms '),
     ('^mrpov ', 'MisterPOV'),
     ('^mrs ', 'MassageRooms '),
+    ('^mrsc ', 'MrsCreampie '),
     ('^mshf ', 'MySistersHotFriend '),
     ('^mts ', 'MomsTeachSex '),
     ('^mvft ', 'MyVeryFirstTime '),
@@ -1806,9 +2111,12 @@ abbreviations = (
     ('^no ', 'NaughtyOffice '),
     ('^np ', 'NubilesPorn '),
     ('^nrg ', 'NaughtyRichGirls '),
+    ('^nrx ', 'Pornbox '),
     ('^nubc ', 'NubilesCasting '),
     ('^nubet ', 'NubilesET '),
     ('^nubilef ', 'NubileFilms '),
+    ('^Nubiles.net ', 'Nubiles'),
+    ('^NubilesNet ', 'Nubiles'),
     ('^num ', 'NuruMassage '),
     ('^nvg ', 'NetVideoGirls '),
     ('^nw ', 'NaughtyWeddings '),
@@ -1827,15 +2135,16 @@ abbreviations = (
     ('^plib ', 'PornstarsLikeitBig '),
     ('^pml ', 'PornMegaLoad '),
     ('^pop ', 'PervsOnPatrol '),
-    ('^pornditos', 'Culioneros '),
     ('^ppu ', 'PublicPickups '),
     ('^prdi ', 'PrettyDirty '),
     ('^ps ', 'PropertySex '),
     ('^ptt ', 'Petite '),
     ('^pud ', 'PublicDisgrace '),
+    ('^pyx ', 'PurgatoryX '),
     ('^reg ', 'RealExGirlfriends '),
     ('^rkp ', 'RKPrime '),
     ('^rws ', 'RealWifeStories '),
+    ('^rwm ', 'RawWhiteMeat '),
     ('^saf ', 'ShesAFreak '),
     ('^sart ', 'SexArt '),
     ('^sas ', 'SexandSubmission '),
@@ -1843,13 +2152,17 @@ abbreviations = (
     ('^scoreland2', 'ScorelandTwo '),
     ('^seb ', 'SexuallyBroken '),
     ('^sed ', 'SexualDisgrace '),
+    ('^shd ', 'ScoreLand '),
     ('^Shes New ', 'She\'s New '),
     ('^sins ', 'SinsLife '),
     ('^sislove ', 'SisLovesMe '),
     ('^smb ', 'ShareMyBF '),
+    ('^SuperSkinnyGirls ', '18OnlyGirls '),
     ('^ssc ', 'StepSiblingsCaught '),
+    ('^ssg ', '18OnlyGirls '),
     ('^ssn ', 'ShesNew '),
     ('^sts ', 'StrandedTeens '),
+    ('^swm ', 'SexWithMuslims '),
     ('^swsn ', 'SwallowSalon '),
     ('^tdp ', 'TeensDoPorn '),
     ('^tds ', 'TheDickSuckers '),
@@ -1881,8 +2194,13 @@ abbreviations = (
     ('^woc ', 'WildOnCam '),
     ('^wov ', 'WivesOnVacation '),
     ('^wowg ', 'WowGirls '),
+    ('^wowp ', 'WowPorn '),
     ('^wunf', 'WakeUpNFuck'),
     ('^wy ', 'WebYoung '),
+    ('^ylp ', '18OnlyGirls '),
+    ('^xevbellringer ', 'XevUnleashed '),
+    ('^xlg ', 'XLGirls '),
+    ('^YoungLegalPorn ', '18OnlyGirls '),
     ('^ztod ', 'ZeroTolerance '),
     ('^zzs ', 'ZZseries '),
 )
@@ -1892,12 +2210,8 @@ def getProviderFromSiteNum(siteNum):
     provider = None
 
     if siteNum is not None:
-        # Blacked Raw
-        if siteNum == 0:
-            provider = networkStrike3
-
-        # Blacked
-        elif siteNum == 1:
+        # Strike3
+        if (0 <= siteNum <= 1) or siteNum == 52 or siteNum == 136 or (670 <= siteNum <= 671) or siteNum == 1357 or siteNum == 1806:
             provider = networkStrike3
 
         # Brazzers
@@ -1909,12 +2223,8 @@ def getProviderFromSiteNum(siteNum):
             provider = networkMetadataAPI
 
         # Naughty America
-        elif (5 <= siteNum <= 51) or siteNum == 341 or (393 <= siteNum <= 396) or (467 <= siteNum <= 468) or siteNum == 581 or siteNum == 620 or siteNum == 625 or siteNum == 691 or siteNum == 749:
+        elif (5 <= siteNum <= 51) or siteNum == 341 or (393 <= siteNum <= 396) or (467 <= siteNum <= 468) or siteNum == 581 or siteNum == 620 or siteNum == 625 or siteNum == 691 or siteNum == 749 or (1569 <= siteNum <= 1573):
             provider = siteNaughtyAmerica
-
-        # Vixen
-        elif siteNum == 52:
-            provider = networkStrike3
 
         # GirlsWay
         elif siteNum == 53 or (375 <= siteNum <= 379) or (795 <= siteNum <= 797):
@@ -1928,52 +2238,20 @@ def getProviderFromSiteNum(siteNum):
         elif siteNum == 277 or siteNum == 975:
             provider = networkGammaEntOther
 
-        # XEmpire / Hardx
-        elif siteNum == 278:
-            provider = networkGammaEnt
-
-        # XEmpire / Eroticax
-        elif siteNum == 285:
-            provider = networkGammaEnt
-
-        # XEmpire / Darkx
-        elif siteNum == 286:
-            provider = networkGammaEnt
-
-        # XEmpire / Lesbianx
-        elif siteNum == 287:
-            provider = networkGammaEnt
+        # XEmpire
+        elif siteNum == 278 or (285 <= siteNum <= 287) or siteNum == 843:
+            provider = networkGammaEntOther
 
         # Pure Taboo
         elif siteNum == 281:
             provider = networkGammaEntOther
 
-        # Blowpass / Throated
-        elif siteNum == 329:
-            provider = networkGammaEnt
-
-        # Blowpass / Mommy Blows Best
-        elif siteNum == 351:
-            provider = networkGammaEnt
-
-        # Blowpass / Only Teen Blowjobs
-        elif siteNum == 352:
-            provider = networkGammaEnt
-
-        # Blowpass / 1000 Facials
-        elif siteNum == 353:
-            provider = networkGammaEnt
-
-        # Blowpass / Immoral Live
-        elif siteNum == 354:
-            provider = networkGammaEnt
-
-        # Blowpass / My XXX Pass
-        elif siteNum == 861:
-            provider = networkGammaEnt
+        # Blowpass
+        elif siteNum == 329 or (351 <= siteNum <= 355) or siteNum == 861:
+            provider = networkGammaEntOther
 
         # Mile High Media
-        elif (361 <= siteNum <= 364) or siteNum == 852 or (914 <= siteNum <= 915) or siteNum == 1328:
+        elif (361 <= siteNum <= 364) or siteNum == 852 or (914 <= siteNum <= 915) or siteNum == 1328 or (1732 <= siteNum <= 1733):
             provider = network1service
 
         # Fantasy Massage
@@ -1994,7 +2272,7 @@ def getProviderFromSiteNum(siteNum):
 
         # Pretty Dirty
         elif siteNum == 382:
-            provider = networkGammaEnt
+            provider = networkGammaEntOther
 
         # Devil's Film
         elif siteNum == 383:
@@ -2002,7 +2280,7 @@ def getProviderFromSiteNum(siteNum):
 
         # Peter North
         elif siteNum == 384:
-            provider = networkGammaEnt
+            provider = networkGammaEntOther
 
         # Rocco Siffredi
         elif siteNum == 385:
@@ -2046,30 +2324,18 @@ def getProviderFromSiteNum(siteNum):
 
         # Bang Bros
         elif (83 <= siteNum <= 135):
-            provider = networkBangBros
-
-        # Tushy
-        elif siteNum == 136:
-            provider = networkStrike3
-
-        # Reality Kings
-        elif (137 <= siteNum <= 182) or (822 <= siteNum <= 828):
             provider = network1service
 
-        # PornFidelity
-        elif siteNum == 184:
-            provider = networkPornFidelity
+        # Reality Kings
+        elif (137 <= siteNum <= 182) or (822 <= siteNum <= 828) or siteNum == 1593 or siteNum == 1737 or siteNum == 1743:
+            provider = network1service
 
-        # TeenFidelity
-        elif siteNum == 185:
-            provider = networkPornFidelity
-
-        # Kelly Madison
-        elif siteNum == 186:
-            provider = networkPornFidelity
+        # Kelly Madison Productions
+        elif (184 <= siteNum <= 186):
+            provider = networkKellyMadison
 
         # TeamSkeet
-        elif (187 <= siteNum <= 215) or (566 <= siteNum <= 567) or siteNum == 626 or siteNum == 686 or siteNum == 748 or siteNum == 807 or (845 <= siteNum <= 851) or siteNum == 875 or (997 <= siteNum <= 1011) or (1249 <= siteNum <= 1251) or (1354 <= siteNum <= 1356) or (1362 <= siteNum <= 1363) or (1371 <= siteNum <= 1373) or siteNum == 1390 or (1399 <= siteNum <= 1425):
+        elif (187 <= siteNum <= 215) or (566 <= siteNum <= 567) or siteNum == 626 or siteNum == 686 or siteNum == 748 or siteNum == 807 or (845 <= siteNum <= 851) or siteNum == 875 or (997 <= siteNum <= 1011) or (1249 <= siteNum <= 1251) or (1354 <= siteNum <= 1356) or (1362 <= siteNum <= 1363) or (1371 <= siteNum <= 1373) or siteNum == 1390 or (1399 <= siteNum <= 1425) or (1584 <= siteNum <= 1588) or siteNum == 1736 or (1808 <= siteNum <= 1810) or (1816 <= siteNum <= 1823):
             provider = networkTeamSkeet
 
         # Porndoe Premium
@@ -2081,7 +2347,7 @@ def getProviderFromSiteNum(siteNum):
             provider = siteAnalVids
 
         # Mofos
-        elif (261 <= siteNum <= 270) or siteNum == 583 or (738 <= siteNum <= 740) or (1059 <= siteNum <= 1064):
+        elif (261 <= siteNum <= 270) or siteNum == 583 or (738 <= siteNum <= 740) or (1059 <= siteNum <= 1064) or siteNum == 1590:
             provider = network1service
 
         # Babes
@@ -2096,16 +2362,8 @@ def getProviderFromSiteNum(siteNum):
         elif siteNum == 280 or siteNum == 1266:
             provider = siteNewSensations
 
-        # Swallowed
-        elif siteNum == 282:
-            provider = networkSteppedUp
-
-        # TrueAnal
-        elif siteNum == 283:
-            provider = networkSteppedUp
-
-        # Nympho
-        elif siteNum == 284:
+        # SteppedUp
+        elif (282 <= siteNum <= 284) or siteNum == 767 or siteNum == 1253 or siteNum == 1674:
             provider = networkSteppedUp
 
         # Twistys
@@ -2113,7 +2371,7 @@ def getProviderFromSiteNum(siteNum):
             provider = network1service
 
         # Spizoo
-        elif siteNum == 293 or (571 <= siteNum <= 577) or (1374 <= siteNum <= 1375):
+        elif siteNum == 293 or (571 <= siteNum <= 577) or (1374 <= siteNum <= 1375) or siteNum == 1757:
             provider = siteSpizoo
 
         # Private
@@ -2121,7 +2379,7 @@ def getProviderFromSiteNum(siteNum):
             provider = sitePrivate
 
         # PornPros Network
-        elif (306 <= siteNum <= 327) or (479 <= siteNum <= 489) or siteNum == 624 or siteNum == 769 or siteNum == 844 or siteNum == 890 or siteNum == 1263 or siteNum == 1364 or siteNum == 1393:
+        elif (306 <= siteNum <= 327) or (479 <= siteNum <= 489) or siteNum == 624 or siteNum == 769 or siteNum == 844 or siteNum == 890 or siteNum == 1263 or siteNum == 1364 or siteNum == 1393 or (1688 <= siteNum <= 1692) or siteNum == 1693 or (1695 <= siteNum <= 1702) or siteNum == 1704:
             provider = networkPornPros
 
         # DigitalPlayground
@@ -2133,12 +2391,12 @@ def getProviderFromSiteNum(siteNum):
             provider = network1service
 
         # FullPornNetwork
-        elif (343 <= siteNum <= 350) or siteNum == 1394:
+        elif (343 <= siteNum <= 350) or siteNum == 1394 or siteNum == 1562:
             provider = networkFullPornNetwork
 
         # DogfartNetwork
-        elif (408 <= siteNum <= 431):
-            provider = networkDogfart
+        elif (408 <= siteNum <= 431) or siteNum == 1805:
+            provider = networkGammaEntOther
 
         # FakeHub
         elif siteNum == 340 or (397 <= siteNum <= 407):
@@ -2200,20 +2458,16 @@ def getProviderFromSiteNum(siteNum):
         elif siteNum == 477:
             provider = siteMilfVR
 
-        # Joymii
-        elif siteNum == 478:
-            provider = siteJoymii
-
         # Kink
         elif (490 <= siteNum <= 521) or siteNum == 687 or (735 <= siteNum <= 736) or (873 <= siteNum <= 874) or (888 <= siteNum <= 889):
             provider = networkKink
 
         # Nubiles
-        elif (525 <= siteNum <= 545) or (755 <= siteNum <= 756) or siteNum == 766 or (995 <= siteNum <= 996) or siteNum == 1256 or siteNum == 1360 or (1396 <= siteNum <= 1397) or siteNum == 1551:
+        elif (525 <= siteNum <= 545) or (755 <= siteNum <= 756) or siteNum == 766 or (995 <= siteNum <= 996) or siteNum == 1256 or siteNum == 1360 or (1396 <= siteNum <= 1397) or siteNum == 1551 or (1575 <= siteNum <= 1582) or siteNum == 1686:
             provider = networkNubiles
 
         # BellaPass
-        elif (548 <= siteNum <= 563) or (1246 <= siteNum <= 1247):
+        elif (548 <= siteNum <= 563) or (1246 <= siteNum <= 1247) or siteNum == 1553:
             provider = networkBellaPass
 
         # AllureMedia
@@ -2268,21 +2522,13 @@ def getProviderFromSiteNum(siteNum):
         elif siteNum == 669:
             provider = siteDorcelClub
 
-        # Tushy
-        elif siteNum == 670:
-            provider = networkStrike3
-
-        # Deeper
-        elif siteNum == 671:
-            provider = networkStrike3
-
         # MissaX / AllHerLuv / AmateurBoxxx / Exposed Whores / She Seduced Me / House of Fyre / Philavise / Lauren Phillips
         elif siteNum == 672 or siteNum == 673 or siteNum == 1252 or (1254 <= siteNum <= 1255) or (1264 <= siteNum <= 1265) or siteNum == 1327:
             provider = siteMissaX
 
         # Mylf
-        elif (674 <= siteNum <= 683) or siteNum == 757 or siteNum == 842 or (siteNum >= 853 and siteNum <= 858) or (881 <= siteNum <= 887) or siteNum == 1329 or (1426 <= siteNum <= 1445):
-            provider = siteMylf
+        elif (674 <= siteNum <= 683) or siteNum == 757 or siteNum == 842 or (siteNum >= 853 and siteNum <= 858) or (881 <= siteNum <= 887) or siteNum == 1329 or (1426 <= siteNum <= 1445) or siteNum == 1589 or (1734 <= siteNum <= 1735) or siteNum == 1807 or (1811 <= siteNum <= 1815):
+            provider = networkMYLF
 
         # Manually Add Actors
         elif siteNum == 684:
@@ -2309,7 +2555,7 @@ def getProviderFromSiteNum(siteNum):
             provider = siteXConfessions
 
         # CzechAV
-        elif (696 <= siteNum <= 728):
+        elif (696 <= siteNum <= 728) or siteNum == 1583:
             provider = networkCzechAV
 
         # ArchAngel
@@ -2320,9 +2566,9 @@ def getProviderFromSiteNum(siteNum):
         elif siteNum == 730:
             provider = siteWeAreHairy
 
-        # Love Her Feet
-        elif siteNum == 731:
-            provider = siteLoveHerFeet
+        # Love Her Films
+        elif siteNum == 731 or (1705 <= siteNum <= 1707):
+            provider = networkLoveHerFilms
 
         # MomPOV
         elif siteNum == 732:
@@ -2345,12 +2591,8 @@ def getProviderFromSiteNum(siteNum):
             provider = siteStraplezz
 
         # LittleCaprice
-        elif siteNum == 742:
+        elif siteNum == 742 or (1713 <= siteNum <= 1720):
             provider = siteLittleCaprice
-
-        # WowGirls
-        elif siteNum == 743:
-            provider = siteWowGirls
 
         # VIPissy
         elif siteNum == 744:
@@ -2366,7 +2608,7 @@ def getProviderFromSiteNum(siteNum):
 
         # Gangbang Creampie
         elif siteNum == 747:
-            provider = siteGangbangCreampie
+            provider = networkGammaEntOther
 
         # StepSecrets
         elif siteNum == 751:
@@ -2392,7 +2634,7 @@ def getProviderFromSiteNum(siteNum):
         elif siteNum == 761:
             provider = siteVogoV
 
-        # Ultrafilms
+        # UltraFilms
         elif siteNum == 762:
             provider = siteUltrafilms
 
@@ -2408,10 +2650,6 @@ def getProviderFromSiteNum(siteNum):
         elif siteNum == 765:
             provider = siteCumLouder
 
-        # AllAnal / AnalOnly
-        elif siteNum == 767 or siteNum == 1253:
-            provider = networkSteppedUp
-
         # ZeroTolerance
         elif siteNum == 770:
             provider = siteZTOD
@@ -2425,32 +2663,24 @@ def getProviderFromSiteNum(siteNum):
             provider = networkIntersec
 
         # Cherry Pimps
-        elif (783 <= siteNum <= 792) or (1052 <= siteNum <= 1056):
+        elif (783 <= siteNum <= 792) or (1052 <= siteNum <= 1056) or (1745 <= siteNum <= 1746):
             provider = networkCherryPimps
 
         # Wicked
         elif siteNum == 793:
             provider = networkGammaEntOther
 
-        # 18OnlyGirls
-        elif siteNum == 794:
-            provider = site18OnlyGirls
-
         # LilHumpers
         elif siteNum == 798:
             provider = network1service
 
-        # Bellesa Films
+        # Bellesa
         elif siteNum == 799 or siteNum == 876:
-            provider = network1service
+            provider = networkBellesa
 
-        # ClubSeventeen / ClubSweethearts
-        elif siteNum == 800:
-            provider = siteClubSweethearts
-
-        # Elegant Angel
-        elif siteNum == 801:
-            provider = siteElegantAngel
+        # Adult Prime
+        elif siteNum == 800 or (1601 <= siteNum <= 1672) or siteNum == 1749:
+            provider = networkAdultPrime
 
         # Family Sinners
         elif siteNum == 802:
@@ -2488,10 +2718,6 @@ def getProviderFromSiteNum(siteNum):
         elif siteNum == 811:
             provider = siteAmourAngels
 
-        # JAV
-        elif siteNum == 812:
-            provider = networkR18
-
         # Bang
         elif siteNum == 813 or siteNum == 1365:
             provider = networkBang
@@ -2501,7 +2727,7 @@ def getProviderFromSiteNum(siteNum):
             provider = siteVivid
 
         # AdultEmpireCash Network
-        elif siteNum == 815 or siteNum == 1337:
+        elif siteNum == 815 or siteNum == 1337 or siteNum == 1574 or (1765 <= siteNum <= 1796) or siteNum == 1800:
             provider = networkAdultEmpireCash
 
         # My Pervy Family
@@ -2509,7 +2735,7 @@ def getProviderFromSiteNum(siteNum):
             provider = networkGammaEntOther
 
         # Filthy Kings sites
-        elif 1257 <= siteNum <= 1262:
+        elif (1257 <= siteNum <= 1262) or (1750 <= siteNum <= 1753):
             provider = networkGammaEntOther
 
         # PJGirls
@@ -2529,20 +2755,16 @@ def getProviderFromSiteNum(siteNum):
             provider = siteATKGirlfriends
 
         # TwoWebMedia
-        elif (837 <= siteNum <= 839):
+        elif (837 <= siteNum <= 839) or (1802 <= siteNum <= 1804):
             provider = networkTwoWebMedia
 
         # Interracial Pass / ExploitedX / I Kiss Girls
-        elif siteNum == 840 or (976 <= siteNum <= 978) or siteNum == 1244:
+        elif siteNum == 840 or (976 <= siteNum <= 978) or siteNum == 1244 or (1563 <= siteNum <= 1564):
             provider = siteInterracialPass
 
         # LookAtHerNow
         elif siteNum == 841:
             provider = network1service
-
-        # XEmpire / AllBlackX
-        elif siteNum == 843:
-            provider = networkGammaEnt
 
         # Deviant Hardcore
         elif siteNum == 859:
@@ -2573,7 +2795,7 @@ def getProviderFromSiteNum(siteNum):
             provider = siteRealityLovers
 
         # Adult Time
-        elif siteNum == 878:
+        elif siteNum == 478 or siteNum == 878 or (1554 <= siteNum <= 1561) or (1722 <= siteNum <= 1729):
             provider = networkGammaEntOther
 
         # RealJamVR
@@ -2582,27 +2804,19 @@ def getProviderFromSiteNum(siteNum):
 
         # BBC Paradise
         elif siteNum == 880:
-            provider = siteMylf
+            provider = networkMYLF
 
         # HoloGirlsVR
         elif siteNum == 891:
             provider = siteHoloGirlsVR
 
-        # LethalHardcoreVR
-        elif siteNum == 892:
-            provider = siteLethalHardcoreVR
-
         # Gender X
         elif siteNum == 893:
             provider = networkGammaEntOther
 
-        # WhoreCraftVR
-        elif siteNum == 894:
-            provider = siteLethalHardcoreVR
-
-        # Defeated
-        elif siteNum == 895 or siteNum == 896:
-            provider = siteDefeated
+        # Romero Multimedia
+        elif (895 <= siteNum <= 896) or (1594 <= siteNum <= 1596) or (1797 <= siteNum <= 1798):
+            provider = networkRomero
 
         # XVirtual
         elif siteNum == 897:
@@ -2680,10 +2894,6 @@ def getProviderFromSiteNum(siteNum):
         elif siteNum == 938:
             provider = siteScrewMeToo
 
-        # Box Truck Sex
-        elif siteNum == 939:
-            provider = siteBoxTruckSex
-
         # Aussie Ass
         elif siteNum == 940:
             provider = siteAussieAss
@@ -2693,7 +2903,7 @@ def getProviderFromSiteNum(siteNum):
             provider = network5Kporn
 
         # Teen Core Club
-        elif (943 <= siteNum <= 974 or siteNum == 1358):
+        elif (943 <= siteNum <= 974 or siteNum == 1358 or 1708 <= siteNum <= 1709):
             provider = networkTeenCoreClub
 
         # Desperate Amateurs
@@ -2733,7 +2943,7 @@ def getProviderFromSiteNum(siteNum):
             provider = siteWoodmanCastingX
 
         # ScoreGroup
-        elif (1012 <= siteNum <= 1021) or (1344 <= siteNum <= 1345):
+        elif (1012 <= siteNum <= 1021) or (1344 <= siteNum <= 1345) or siteNum == 1744:
             provider = networkScoreGroup
 
         # TwoTGirls
@@ -2752,10 +2962,6 @@ def getProviderFromSiteNum(siteNum):
         elif (1025 <= siteNum <= 1039) or siteNum == 1051 or siteNum == 1058 or siteNum == 1075 or siteNum == 1191 or siteNum == 1245:
             provider = networkModelCentro
 
-        # Culioneros
-        elif (1040 <= siteNum <= 1050):
-            provider = siteCulioneros
-
         # PornWorld
         elif siteNum == 332 or (433 <= siteNum <= 439) or siteNum == 1057:
             provider = networkPornWorld
@@ -2768,7 +2974,7 @@ def getProviderFromSiteNum(siteNum):
         elif siteNum == 1066:
             provider = sitePurgatoryX
 
-        # Plumper Pass
+        # PlumperPass
         elif siteNum == 1067:
             provider = sitePlumperPass
 
@@ -2817,7 +3023,7 @@ def getProviderFromSiteNum(siteNum):
             provider = networkFAKings
 
         # Other BangBros Sites
-        elif (1153 <= siteNum <= 1154) or (1156 <= siteNum <= 1158):
+        elif (1153 <= siteNum <= 1154) or (1156 <= siteNum <= 1158) or siteNum == 1673:
             provider = networkBangBrosOther
 
         # Putalocura
@@ -2893,7 +3099,7 @@ def getProviderFromSiteNum(siteNum):
             provider = siteData18Empire
 
         # Grooby Network
-        elif (1331 <= siteNum <= 1333) or (1338 <= siteNum <= 1343) or (1391 <= siteNum <= 1392):
+        elif (1331 <= siteNum <= 1333) or (1338 <= siteNum <= 1343) or (1391 <= siteNum <= 1392) or siteNum == 1739:
             provider = networkGrooby
 
         # Adult Empire
@@ -2935,10 +3141,6 @@ def getProviderFromSiteNum(siteNum):
         elif siteNum == 1353:
             provider = siteHotwifeXXX
 
-        # Slayed
-        elif siteNum == 1357:
-            provider = networkStrike3
-
         # POVR
         elif siteNum == 1359:
             provider = sitePOVR
@@ -2959,9 +3161,9 @@ def getProviderFromSiteNum(siteNum):
         elif (1368 <= siteNum <= 1369):
             provider = siteKillergram
 
-        # Huge Media
-        elif (1376 <= siteNum <= 1388):
-            provider = networkHugeMedia
+        # VIP4K
+        elif (1376 <= siteNum <= 1388) or siteNum == 1687 or siteNum == 1694 or (1710 <= siteNum <= 1712) or siteNum == 1721 or siteNum == 1740 or siteNum == 1748:
+            provider = networkVIP4K
 
         # Dirty Flix Network
         elif (1446 <= siteNum <= 1449):
@@ -2970,5 +3172,77 @@ def getProviderFromSiteNum(siteNum):
         # NetVideoGirls
         elif siteNum == 1550:
             provider = networkNVG
+
+        # Blurred Media
+        elif (1565 <= siteNum <= 1568):
+            provider = networkBlurredMedia
+
+        # Bel Ami Online
+        elif siteNum == 1591:
+            provider = siteBelAmi
+
+        # Mom Comes First
+        elif siteNum == 1592:
+            provider = siteMomComesFirst
+
+        # Caribbeancom
+        elif siteNum == 1597:
+            provider = siteCaribbeancom
+
+        # VRAllure
+        elif siteNum == 1598:
+            provider = siteVRAllure
+
+        # Kin8tengoku
+        elif siteNum == 1599:
+            provider = siteKin8tengoku
+
+        # JAV Database
+        elif siteNum == 1600:
+            provider = siteJAVDatabase
+
+        # Radical Cash
+        elif (1675 <= siteNum <= 1685) or siteNum == 1747:
+            provider = networkRadicalCash
+
+        # Teeny Taboo
+        elif siteNum == 1703:
+            provider = siteTeenyTaboo
+
+        # WowNetwork
+        elif siteNum == 743 or siteNum == 794 or siteNum == 1738:
+            provider = networkWowNetwork
+
+        # Aunt Judys
+        elif (1730 <= siteNum <= 1731):
+            provider = networkAuntJudys
+
+        # Colette
+        elif siteNum == 1741:
+            provider = siteColette
+
+        # Thick Cash Other
+        elif (1754 <= siteNum <= 1756):
+            provider = networkThickCashOther
+
+        # Sex Selector
+        elif siteNum == 1758:
+            provider = network1service
+
+        # Xev Unleashed
+        elif siteNum == 1759:
+            provider = siteXevUnleashed
+
+        # PKJ Media
+        elif 1760 <= siteNum <= 1764:
+            provider = networkPKJMedia
+
+        # Brand New Amateurs
+        elif siteNum == 1799:
+            provider = siteBrandNewAmateurs
+
+        # Pornbox
+        elif siteNum == 1801:
+            provider = sitePornbox
 
     return provider
